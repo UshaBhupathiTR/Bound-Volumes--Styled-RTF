@@ -1,0 +1,220 @@
+<chapter>
+ <metadata.block metadata.store="yes">
+  <metadata field="right.running.head">
+   <value>Chapter Name</value>
+  </metadata>
+  <metadata field="volume.break">
+   <value>Chapter Number</value>
+  </metadata>
+ </metadata.block>
+ <front>
+  <outline.name.block toc.include="y">
+   <label>Chapter</label>
+   <designator>Number</designator>
+   <name>Chapter Title</name>
+  </outline.name.block>
+ </front>
+ <chapter.body>
+  <analytical.level>
+   <metadata.block metadata.store="yes">
+    <metadata field="classification">
+     <value>General Considerations</value>
+    </metadata>
+   </metadata.block>
+   <front>
+    <outline.name.block toc.include="y">
+     <designator>I</designator>
+     <name>General Considerations</name>
+    </outline.name.block>
+   </front>
+   <analytical.level.body>
+    <analytical.level>
+     <front>
+      <outline.name.block>
+       <designator>A</designator>
+       <name>Introduction</name>
+      </outline.name.block>
+     </front>
+     <analytical.level.body>
+      <section.block>
+       <section>
+        <section.front>
+         <outline.name.block toc.include="y">
+          <label>&sect;</label>
+          <designator>32:1</designator>
+          <name>Definitions</name>
+         </outline.name.block>
+        </section.front>
+        <section.body>
+         <para><para.text>Research References</para.text></para>
+         <para><para.text>Some text here</para.text></para>
+        </section.body>
+       </section>
+      </section.block>
+      <section.block>
+       <section>
+        <section.front>
+         <outline.name.block toc.include="y">
+          <label>&sect;</label>
+          <designator>32:2</designator>
+          <name>General background</name>
+         </outline.name.block>
+        </section.front>
+        <section.body>
+         <para><para.text>Research References</para.text></para>
+         <para><para.text>Some text here</para.text></para>
+        </section.body>
+       </section>
+      </section.block>
+     </analytical.level.body>
+    </analytical.level>
+    <analytical.level>
+     <front>
+      <outline.name.block>
+       <designator>B</designator>
+       <name>Tax Aspects</name>
+      </outline.name.block>
+     </front>
+     <analytical.level.body>
+      <section.block>
+       <section>
+        <section.front>
+         <outline.name.block toc.include="y">
+          <label>&sect;</label>
+          <designator>32:3</designator>
+          <name>In general</name>
+         </outline.name.block>
+        </section.front>
+        <section.body>
+         <para><para.text>Research References</para.text></para>
+         <para><para.text>Some text here</para.text></para>
+        </section.body>
+       </section>
+      </section.block>
+      <section.block>
+       <section>
+        <section.front>
+         <outline.name.block toc.include="y">
+          <label>&sect;</label>
+          <designator>32:4</designator>
+          <name>Tax consequences for exempt farmers' cooperative</name>
+         </outline.name.block>
+        </section.front>
+        <section.body>
+         <para><para.text>Research References</para.text></para>
+         <para><para.text>Some text here</para.text></para>
+        </section.body>
+       </section>
+      </section.block>
+      <section.block>
+       <section>
+        <section.front>
+         <outline.name.block toc.include="y">
+          <label>&sect;</label>
+          <designator>32:5</designator>
+          <name>Tax consequences for nonexempt cooperative</name>
+         </outline.name.block>
+        </section.front>
+        <section.body>
+         <para><para.text>Research References</para.text></para>
+         <para><para.text>Some text here</para.text></para>
+        </section.body>
+       </section>
+      </section.block>
+      <section.block>
+       <section>
+        <section.front>
+         <outline.name.block toc.include="y">
+          <label>&sect;</label>
+          <designator>32:6</designator>
+          <name>Written notices of allocation</name>
+         </outline.name.block>
+        </section.front>
+        <section.body>
+         <para><para.text>Research References</para.text></para>
+         <para><para.text>Some text here</para.text></para>
+        </section.body>
+       </section>
+      </section.block>
+     </analytical.level.body>
+    </analytical.level>
+    <analytical.level>
+     <front>
+      <outline.name.block>
+       <designator>II</designator>
+       <name>Agricultural Cooperative Corporations</name>
+      </outline.name.block>
+     </front>
+     <analytical.level.body>
+      <section.block>
+       <section>
+        <section.front>
+         <outline.name.block toc.include="y">
+          <label>&sect;</label>
+          <designator>32:8</designator>
+          <name>Introduction</name>
+         </outline.name.block>
+        </section.front>
+        <section.body>
+         <para><para.text>Research References</para.text></para>
+         <para><para.text>Some text here</para.text></para>
+        </section.body>
+       </section>
+      </section.block>
+      <section.block>
+       <section>
+        <section.front>
+         <outline.name.block toc.include="y">
+          <label>&sect;</label>
+          <designator>32:9</designator>
+          <name>Drafting preorganization agreements and certificates of incorporation</name>
+         </outline.name.block>
+        </section.front>
+        <section.body>
+         <para><para.text>Research References</para.text></para>
+         <para><para.text>Some text here</para.text></para>
+         <para><para.text>Practice Tip:</para.text></para>
+         <para><para.text>Some text here</para.text></para>
+         <para><para.text>Practice Tips:</para.text></para>
+         <para><para.text>Some text here</para.text></para>
+        </section.body>
+       </section>
+      </section.block>
+      <section.block>
+       <section>
+        <section.front>
+         <outline.name.block toc.include="y">
+          <label>&sect;</label>
+          <designator>32:10</designator>
+          <name>Drafting certificate of incorporation; formal requirements</name>
+         </outline.name.block>
+        </section.front>
+        <section.body>
+         <para><para.text>Research References</para.text></para>
+         <para><para.text>Some text here</para.text></para>
+         <para><para.text>Practice Tip:</para.text></para>
+         <para><para.text>Some text here</para.text></para>
+        </section.body>
+       </section>
+      </section.block>
+      <section.block>
+       <section>
+        <section.front>
+         <outline.name.block toc.include="y">
+          <label>&sect;</label>
+          <designator>32:11</designator>
+          <name>Drafting bylaws</name>
+         </outline.name.block>
+        </section.front>
+        <section.body>
+         <para><para.text>Research References</para.text></para>
+         <para><para.text>Some text here</para.text></para>
+        </section.body>
+       </section>
+      </section.block>
+     </analytical.level.body>
+    </analytical.level>
+   </analytical.level.body>
+  </analytical.level>
+ </chapter.body>
+</chapter>

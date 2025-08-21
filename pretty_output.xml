@@ -1,0 +1,2011 @@
+<?xml version="1.0" ?>
+<n-load xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.thomsonreuters.com/legal/judicialdocs" xsi:schemaLocation="http://www.thomsonreuters.com/legal/judicialdocs http://prod.content.judicial.int.westgroup.com/ContentService/resources/judicialartifact/schema/judicial.artifact.xsd">
+  
+
+  <n-document>
+    
+
+    <n-docbody>
+      <judicial.artifact>
+        
+  
+        <disclaimer>
+          
+    
+          <para>
+            
+    
+            <text.line>
+              <bold>PRECEDENTIAL</bold>
+            </text.line>
+            
+    
+          </para>
+          
+    
+        </disclaimer>
+        
+  
+        <content.venue>
+          
+    
+          <venue.name>
+            
+    
+            <text.line>UNITED STATES COURT OF APPEALS</text.line>
+            
+    
+            <text.line>FOR THE THIRD CIRCUIT</text.line>
+            
+    
+          </venue.name>
+          
+    
+        </content.venue>
+        
+  
+        <content.long.title level="primary">
+          
+        
+          <individual.title>
+            
+          
+            <title.segment>MARTHA STRINGER; PAUL STRINGER</title.segment>
+            
+          
+            <title.segment.connector type="vs">v.</title.segment.connector>
+            
+          
+            <title.segment>COUNTY OF BUCKS; MR. ANDREW KOVACH; KYLE WYLIE; JENIFER FORMAN; CRYSTAL BIEMULLER; CHRISTINE CUTEO; JACQUELINE TORRES; C.O. PAGONE; C.O. HINES; C.O. STYERS; JOHN DOES 1-20; C.O. MURDOCH; LANGSTON MASON; C.O.G. WILLIAMS; SERGEANT MANDER; C.O. NESTER; C.O. DUPREY; C.O. GEIBERT; C.O.A. CRUZ; C.O. SHERROD; C.O. HUGHES; C.O. MILES; C.O. HEILMAN; SERGEANT GILL; LT. MORRIS; C.O. MIME; C.O. MCINTYRE; C.O. DEVLIN; C.O. SOUTH; SERGEANT LYNN; C.O. CANTERMAN. Mr. Andrew Kovach, Kyle Wyle, Jenifer Forman, Crystal Biemuller, Christine Cuteo, Jacquline Torres, C.O. Pagone, C.O. Hines; C.O. Styers, C.O. Murdoch, Langston Mason, C.O. G. Williams; Sergeant Mander, C.O. Nester; C.O. Duprey; C.O. Geibert, C.O.A. Cruz, C.O. Sherrod, C.O. Hughes, C.O. Miles, C.O. Heilman; Sergeant Gill, LT. Morris, C.O. Mine, C.O. McIntyre, C.O. Devlin, C.O. South, Sergeant Lynn, C.O. Canterman,</title.segment>
+            
+        
+          </individual.title>
+          
+      
+        </content.long.title>
+        
+  
+        <content.docket.number>
+          
+    
+          <docket.line>No. 23-1373</docket.line>
+          
+    
+          <docket.number>23-1373</docket.number>
+          
+    
+        </content.docket.number>
+        
+  
+        <content.date xml:lang="en">
+          
+    
+          <date.line type="argued">Argued January 30, 2024</date.line>
+          
+    
+          <date.line type="filed">(Filed: June 18, 2025)</date.line>
+          
+    
+        </content.date>
+        
+  
+        <procedural.history xml:lang="en">
+          
+    
+          <appeal>
+            
+    
+            <appeal.text>
+              
+    
+              <para>
+                
+    
+                <paratext ID="p1" first-line="1">On Appeal from the United States District Court for the Eastern District of Pennsylvania</paratext>
+                
+    
+              </para>
+              
+    
+            </appeal.text>
+            
+    
+          </appeal>
+          
+    
+          <appeal>
+            
+    
+            <appeal.text>
+              
+    
+              <para>
+                
+    
+                <paratext ID="p2" first-line="1">(D.C. No. 2:22-cv-01525)</paratext>
+                
+    
+              </para>
+              
+    
+            </appeal.text>
+            
+    
+          </appeal>
+          
+    
+          <appeal>
+            
+    
+            <appeal.text>
+              
+    
+              <para>
+                
+    
+                <paratext ID="p3" first-line="1">District Judge: Honorable Berle M. Schiller</paratext>
+                
+    
+              </para>
+              
+    
+            </appeal.text>
+            
+    
+          </appeal>
+          
+    
+        </procedural.history>
+        
+  
+        <content.attorney.block>
+          
+    
+          <content.attorney>
+            
+    
+            <attorney.line first-line="1">
+              Kerri E. Chewning 
+              <bold>[ARGUED]</bold>
+              , Jeffrey M. Scott, Archer &amp; Greiner, Three Logan Square, 1717 Arch Street, Suite 3500, Philadelphia, PA 19103, 
+              <ital>Counsel for Appellants</ital>
+            </attorney.line>
+            
+    
+            <attorney.line first-line="1">
+              Charles L. Becker 
+              <bold>[ARGUED]</bold>
+              , David K. Inscho, Ruxandra M. Laidacker, Kline &amp; Specter, PC, 1525 Locust Street, 19th Floor, Philadelphia, PA 19102, 
+              <ital>Counsel for Appellee</ital>
+            </attorney.line>
+            
+    
+          </content.attorney>
+          
+    
+        </content.attorney.block>
+        
+  
+        <panel>
+          
+    
+          <content.judge xml:lang="en">
+            
+    
+            <judge.line first-line="1">
+              Before: KRAUSE, PORTER, and CHUNG, 
+              <ital>Circuit Judges</ital>
+              .
+            </judge.line>
+            
+    
+          </content.judge>
+          
+    
+        </panel>
+        
+    
+        <decision>
+          
+
+          <decision.body>
+            
+
+            <opinion category="lead">
+              
+
+              <head>
+                
+    
+                <headtext align="center">
+        OPINION OF THE COURT
+    </headtext>
+                
+
+              </head>
+              
+
+              <content.judge role="majority" xml:lang="en">
+                
+
+                <judge.line first-line="1">
+                  
+KRAUSE, 
+                  <ital>Circuit Judge</ital>
+                  
+
+                </judge.line>
+                
+
+              </content.judge>
+              <section.body>
+                
+
+                <para>
+                  
+
+                  <paratext ID="p2" level="1">
+When hauled into federal court, state actors undoubtedly want qualified immunity at the earliest possible stage. But how soon is too soon? We consider in this interlocutory appeal whether to deny a motion to dismiss on qualified immunity grounds where the complaint is sufficiently detailed to state a claim for a constitutional violation but not specific enough to assess whether the right was clearly established at the time it was allegedly violated.
+</paratext>
+                  
+
+                </para>
+                <para>
+                  
+
+                  <paratext ID="p3" level="1">
+                    
+In spring 2020, Plaintiffs Martha and Paul Stringer received news that any parent would dread: Their daughter, Kimberly, who had long struggled with severe mental illness, had been detained after an altercation with a neighbor and was being mistreated by the staff of the Bucks County Correctional Facility (BCCF), where she was being held. After Kimberly was finally transferred to a mental hospital and then released, the Stringers sued the County of Bucks and various BCCF corrections officers on Kimberly's behalf,
+                    <footnote.reference ID="fr1" refid="f1" style="percent_n">
+1
+</footnote.reference>
+                     alleging that the officers' actions—which included pepper spraying Kimberly and subjecting her to a restraint chair—violated her Fourteenth Amendment right to be free from excessive force. The District Court concluded the Stringers sufficiently pleaded a violation of Kimberly's Fourteenth Amendment rights and denied Defendants' motion to dismiss, reasoning that a more
+
+                  </paratext>
+                  
+
+                </para>
+                
+
+                <footnote ID="FN1">
+                  
+    
+                  <footnote.body>
+                    
+        
+                    <para>
+                      
+            
+                      <label.designator>
+                1
+            </label.designator>
+                      <paratext ID="para_001">
+            Martha and Paul have power of attorney for Kimberly.
+        </paratext>
+                      
+    
+                    </para>
+                    
+
+                  </footnote.body>
+                  
+
+                </footnote>
+                
+
+
+                <para>
+                  
+    
+                  <paratext ID="p1" level="1">
+        developed factual record was needed to ascertain whether the Defendants were entitled to qualified immunity.
+    </paratext>
+                  
+
+                </para>
+                <para>
+                  
+
+                  <paratext ID="p2" level="1">
+    We agree. While the Stringers' complaint states a claim for a violation of a constitutional right, namely, Kimberly's right to be free from the use of excessive force, it is not sufficiently detailed to enable the Court to define that right with more specificity and then assess whether that right was clearly established, as required for qualified immunity. Because the District Court correctly determined that Defendants' entitlement to qualified immunity is not clear from the face of the complaint, we will affirm and remand for limited discovery as needed for a fact-specific qualified immunity analysis.
+</paratext>
+                  
+
+                </para>
+                
+
+              </section.body>
+              
+
+              <head>
+                
+
+                <headtext align="left" first-line="0" turnover="hanging">
+I. Factual and Procedural Background
+</headtext>
+                
+
+              </head>
+              <head>
+                
+
+                <headtext align="left" first-line="1" turnover="hanging">
+A. Kimberly's Detention at BCCF
+</headtext>
+                
+
+              </head>
+              
+
+              <section.body>
+                
+
+                <para>
+                  
+
+                  <paratext ID="p3" level="1">
+Kimberly Stringer has long struggled with mental illness, including bipolar disorder. In the spring of 2020, her mental health deteriorated further, and her "worsening paranoia" led her to hit and threaten a neighbor. App. 78. Falls Township police officers arrested her and held her at BCCF to await trial.
+</paratext>
+                  
+
+                </para>
+                <para>
+                  
+
+                  <paratext ID="p4" level="1">
+At BCCF, Kimberly suffered greatly. According to the amended complaint (Complaint), even though Kimberly's mental illness rendered her unable to comply with prison directives, Defendants "punished" her on multiple occasions for her noncompliance by pepper spraying her, handcuffing her, and placing her in a restraint chair. The Complaint asserts that Defendants used a combination of these tactics not once, but many times, including, at a minimum, on May 6, 10, 11,
+</paratext>
+                  
+
+                </para>
+                
+
+                <para>
+                  
+    
+                  <paratext ID="p1" level="1">
+                    
+        20, and 29. On May 10, Defendants allegedly put Kimberly in the restraint chair twice in the same day: once at 10:10 AM and again at 12:25 PM. At no time, according to the Complaint, did Kimberly pose a threat to the guards or other inmates, nor could she have, as she allegedly deteriorated into a catatonic state over the course of her detention. Even as her condition became so severe that she was moved to a cell in the Women's Special Housing Unit for Mental Health Inmates, Defendants allegedly continued to pepper spray and restrain her as punishment for noncompliance with their directives.
+                    <footnote.reference ID="fr1" refid="f2" style="percent_n">
+        2
+    </footnote.reference>
+                    
+
+                  </paratext>
+                  
+
+                </para>
+                
+
+                <footnote ID="FN1">
+                  
+    
+                  <footnote.body>
+                    
+        
+                    <para>
+                      
+            
+                      <label.designator>
+                1
+            </label.designator>
+                      <paratext ID="para_001">
+            Martha and Paul have power of attorney for Kimberly.
+        </paratext>
+                      
+    
+                    </para>
+                    
+
+                  </footnote.body>
+                  
+
+                </footnote>
+                
+
+                <para>
+                  
+
+                  <paratext ID="p2" level="1">
+At some point, according to the Complaint, other inmates became so alarmed by Kimberly's treatment that they
+</paratext>
+                  
+
+                </para>
+                
+
+                <para>
+                  
+    
+                  <paratext ID="p1" level="1">
+        managed to contact the Stringers to alert them to their daughter's critical condition. Kimberly's mother, Martha, promptly emailed the Bucks County Commissioner to ask if her daughter had faced pepper spray, but she was assured that was not the case. Two days later, however, a news article was published about Kimberly's treatment, allegedly based on firsthand accounts of inmates who had witnessed her ordeal. Two days after that public disclosure, Kimberly was transferred to Norristown State Mental Hospital. By that point, however, she allegedly had suffered pain, disfigurement, and possible brain damage and was "cat[at]onic," "unable to verbally communicate[,] and nearly entirely unresponsive." App. 84.
+    </paratext>
+                  
+
+                </para>
+                
+
+              </section.body>
+              
+
+              <head>
+                
+
+                <headtext align="left" first-line="0" turnover="hanging">
+    B. District Court Proceedings
+</headtext>
+                
+
+              </head>
+              
+
+              <section.body>
+                
+
+                <para>
+                  
+
+                  <paratext ID="p2" level="1">
+                    
+In April 2022, Kimberly's parents sued Bucks County and various BCCF corrections officers in the Eastern District of Pennsylvania, alleging violations of Kimberly's Eighth Amendment rights under 42 U.S.C. § 1983.
+                    <footnote.reference ID="fr1" refid="f3" style="percent_n">
+3
+</footnote.reference>
+                     Although Plaintiffs diligently sought access to documents and videotapes concerning Kimberly's time at BCCF—including the recordings of at least two "planned" uses of force that supposedly were recorded—Defendants allegedly refused to produce any video evidence. Plaintiffs' initial complaint identified certain officers by name but also included 20 John Doe officers. In August 2022, after receiving a limited number
+
+                  </paratext>
+                  
+
+                </para>
+                
+
+                <footnote ID="FN2">
+                  
+    
+                  <footnote.body>
+                    
+        
+                    <para>
+                      
+            
+                      <label.designator>
+                2
+            </label.designator>
+                      <paratext ID="p1">
+            The Complaint alleges that Sergeants Morris, Lynn, Mason, Kovach, Wylie, and Mander, the supervisors at the jail who authorized the use of force against Kimberly, knew that Kimberly was unable to comply with directives from the guards because of her mental illness—though it is unclear when they became aware of these facts. It does not specifically allege knowledge on the part of the other Defendants. That, too, will require factual development on remand because, while excessive force claims and qualified immunity defense are evaluated under an objective reasonableness standard, see Kingsley v. Hendrickson, 576 U.S. 389, 396–97 (2015); Ziglar v. Abbasi, 582 U.S. 120, 151 (2017), "deciding whether a use of force was objectively reasonable demands 'careful attention to the facts and circumstances' relating to the incident, as then known to the officer." Barnes v. Felix, 145 S. Ct. 1353, 1358 (2025) (quoting Graham v. Connor, 490 U.S. 386, 396 (1989)); see Kingsley, 576 U.S. at 397 (evaluating alleged excessive force "from the perspective of a reasonable officer on the scene, including what the officer knew at the time, not with the 20/20 vision of hindsight").
+        </paratext>
+                      
+    
+                    </para>
+                    
+
+                  </footnote.body>
+                  
+
+                </footnote>
+                
+
+                <para>
+                  
+
+                  <paratext ID="p3" level="1">
+                    
+
+                    <footnote.reference ID="fr2" refid="f3" style="percent_n">
+3
+</footnote.reference>
+                     As the District Court explained, because Kimberly was a pretrial detainee, not a post-conviction prisoner, the Fourteenth Amendment (as opposed to the Eighth Amendment) governed her rights while detained. Plaintiffs' counsel acknowledged this point in Plaintiffs' response to Defendants' motion to dismiss.
+
+                  </paratext>
+                  
+
+                </para>
+                
+
+                <footnote ID="FN2">
+                  
+    
+                  <footnote.body>
+                    
+        
+                    <para>
+                      
+            
+                      <label.designator>
+                2
+            </label.designator>
+                      <paratext ID="para_001">
+            The Complaint alleges that Sergeants Morris, Lynn, Mason, Kovach, Wylie, and Mander, the supervisors at the jail who authorized the use of force against Kimberly, knew that Kimberly was unable to comply with directives from the guards because of her mental illness—though it is unclear when they became aware of these facts. It does not specifically allege knowledge on the part of the other Defendants. That, too, will require factual development on remand because, while excessive force claims and qualified immunity defense are evaluated under an objective reasonableness standard, see Kingsley v. Hendrickson, 576 U.S. 389, 396–97 (2015); Ziglar v. Abbasi, 582 U.S. 120, 151 (2017), "deciding whether a use of force was objectively reasonable demands 'careful attention to the facts and circumstances' relating to the incident, as then known to the officer." Barnes v. Felix, 145 S. Ct. 1353, 1358 (2025) (quoting Graham v. Connor, 490 U.S. 386, 396 (1989)); see Kingsley, 576 U.S. at 397 (evaluating alleged excessive force "from the perspective of a reasonable officer on the scene, including what the officer knew at the time, not with the 20/20 vision of hindsight").
+        </paratext>
+                      
+    
+                    </para>
+                    
+
+                  </footnote.body>
+                  
+
+                </footnote>
+                
+
+
+                <para>
+                  
+    
+                  <paratext ID="p1" level="1">
+        of use-of-force records, the Stringers amended their Complaint to identify the John Does. Defendants moved to dismiss on various grounds, including failure to state a claim and qualified immunity—an affirmative defense that shields officials from civil liability to the extent that their conduct did not violate clearly established constitutional rights of which a reasonable official would have known.
+    </paratext>
+                  
+
+                </para>
+                <para>
+                  
+
+                  <paratext ID="p2" level="1">
+                    
+    In February 2023, the District Court granted Defendants' motion in part and denied it in part.
+                    <footnote.reference ID="fr1" refid="f4" style="percent_n">
+    4
+</footnote.reference>
+                     As relevant to qualified immunity, the only subject of this interlocutory appeal, the District Court concluded that the Stringers had stated a claim for a violation of Kimberly's Fourteenth Amendment right to be free from excessive force that amounts to punishment. The Court then denied without prejudice the remaining Defendants' request for qualified immunity as
+
+                  </paratext>
+                  
+
+                </para>
+                
+
+                <footnote ID="FN3">
+                  
+    
+                  <footnote.body>
+                    
+        
+                    <para>
+                      
+            
+                      <label.designator>
+                3
+            </label.designator>
+                      <paratext ID="para_001">
+            As the District Court explained, because Kimberly was a pretrial detainee, not a post-conviction prisoner, the Fourteenth Amendment (as opposed to the Eighth Amendment) governed her rights while detained. Plaintiffs' counsel acknowledged this point in Plaintiffs' response to Defendants' motion to dismiss.
+        </paratext>
+                      
+    
+                    </para>
+                    
+
+                  </footnote.body>
+                  
+
+                </footnote>
+                
+
+                <para>
+                  
+
+                  <paratext ID="p3" level="1">
+                    
+
+                    <footnote.reference ID="fr2" refid="f4" style="percent_n">
+4
+</footnote.reference>
+                     The Court determined that, because the Stringers' amended claims related back to their initial complaint, it would not dismiss the newly named defendants for the Stringers' failure to file within the relevant statute of limitations. In addition, the Court declined to dismiss the excessive force and supervisory liability claims against all individual Defendants other than Defendant Mander, against whom the Stringers' supervisory liability claim was dismissed. The Court dismissed the municipal liability claim against Bucks County because the Stringers did not plead facts showing either that the County had a "custom or policy" of authorizing the use of excessive force on mentally ill prisoners or that the County failed to adequately train or supervise its employees. 
+                    <ital>
+Stringer v. County of Bucks
+</ital>
+                    , No. 22-1525, 2023 WL 2163871, at *6 (E.D. Pa. Feb. 22, 2023) (quoting 
+                    <ital>
+McTernan v. City of York
+</ital>
+                    , 564 F.3d 636, 658 (3d Cir. 2009)).
+
+                  </paratext>
+                  
+
+                </para>
+                
+
+                <footnote ID="FN3">
+                  
+    
+                  <footnote.body>
+                    
+        
+                    <para>
+                      
+            
+                      <label.designator>
+                3
+            </label.designator>
+                      <paratext ID="p6_fn3_pt1">
+            As the District Court explained, because Kimberly was a pretrial detainee, not a post-conviction prisoner, the Fourteenth Amendment (as opposed to the Eighth Amendment) governed her rights while detained. Plaintiffs' counsel acknowledged this point in Plaintiffs' response to Defendants' motion to dismiss.
+        </paratext>
+                      
+    
+                    </para>
+                    
+
+                  </footnote.body>
+                  
+
+                </footnote>
+                
+
+
+                <para>
+                  
+    
+                  <paratext ID="p1" level="1">
+                    
+        "premature" because it could not, without further factual development, "presently determine whether it would have been clear to any of the correctional officers that their conduct was unlawful when interacting with Stringer." 
+                    <ital>
+        Stringer v. County of Bucks
+    </ital>
+                    , No. 22-1525, 2023 WL 2163871, at *5 n.7 (E.D. Pa. Feb. 22, 2023). The Court noted that Defendants could re-raise qualified immunity once limited discovery uncovered the facts necessary to meaningfully assess whether they acted reasonably in light of clearly established law. Defendants timely appealed.
+                    <footnote.reference ID="fr1" refid="f1" style="percent_n">
+    5
+</footnote.reference>
+                    
+
+                  </paratext>
+                  
+
+                </para>
+                
+
+                <footnote ID="FN4">
+                  
+    
+                  <footnote.body>
+                    
+        
+                    <para>
+                      
+            
+                      <label.designator>
+                4
+            </label.designator>
+                      <paratext ID="para_001">
+            The Court determined that, because the Stringers' amended claims related back to their initial complaint, it would not dismiss the newly named defendants for the Stringers' failure to file within the relevant statute of limitations. In addition, the Court declined to dismiss the excessive force and supervisory liability claims against all individual Defendants other than Defendant Mander, against whom the Stringers' supervisory liability claim was dismissed. The Court dismissed the municipal liability claim against Bucks County because the Stringers did not plead facts showing either that the County had a "custom or policy" of authorizing the use of excessive force on mentally ill prisoners or that the County failed to adequately train or supervise its employees. Stringer v. County of Bucks, No. 22-1525, 2023 WL 2163871, at *6 (E.D. Pa. Feb. 22, 2023) (quoting McTernan v. City of York, 564 F.3d 636, 658 (3d Cir. 2009)).
+        </paratext>
+                      
+    
+                    </para>
+                    
+
+                  </footnote.body>
+                  
+
+                </footnote>
+                
+
+
+              </section.body>
+              
+
+              <head>
+                
+
+                <headtext align="left" first-line="0" turnover="hanging">
+II. Jurisdiction and Standard of Review
+</headtext>
+                
+
+              </head>
+              
+
+              <section.body>
+                
+
+                <para>
+                  
+
+                  <paratext ID="p2" level="1">
+                    
+The District Court had jurisdiction under 28 U.S.C. §§ 1331 and 1343. Because qualified immunity serves as an "
+                    <ital>
+immunity from suit
+</ital>
+                     rather than a mere defense to liability," 
+                    <ital>
+Mitchell v. Forsyth
+</ital>
+                    , 472 U.S. 511, 526 (1985), a district court's decision to allow discovery operates as a denial for purposes of an interlocutory appeal, 
+                    <ital>
+see Weimar v. County of Fayette
+</ital>
+                    , 972 F.3d 177, 185 (3d Cir. 2020). Thus, we have appellate
+
+                  </paratext>
+                  
+
+                </para>
+                
+
+                <para>
+                  
+    
+                  <paratext ID="p1" level="1">
+                    
+        jurisdiction here under the collateral order doctrine based on the District Court's postponement of the qualified immunity analysis. 
+                    <ital>
+        See George v. Rehiel
+    </ital>
+                    , 738 F.3d 562, 571 (3d Cir. 2013).
+
+                  </paratext>
+                  
+
+                </para>
+                <para>
+                  
+
+                  <paratext ID="p2" level="1">
+                    
+We review the denial of a motion to dismiss on qualified immunity grounds 
+                    <ital>
+de novo
+</ital>
+                    , 
+                    <ital>
+id.
+</ital>
+                    , and we may affirm on any basis supported by the record, 
+                    <ital>
+TD Bank N.A. v. Hill
+</ital>
+                    , 928 F.3d 259, 270 (3d Cir. 2019). In conducting our review, we "accept all plaintiff[s'] allegations as true and draw all inferences in [their] favor," 
+                    <ital>
+George
+</ital>
+                    , 738 F.3d at 567 n.4, and we will not dismiss a complaint "merely because it appears unlikely that the plaintiff[s] can prove those facts or will ultimately prevail on the merits," 
+                    <ital>
+Phillips v. County of Allegheny
+</ital>
+                    , 515 F.3d 224, 231 (3d Cir. 2008).
+
+                  </paratext>
+                  
+
+                </para>
+                
+
+              </section.body>
+              
+
+              <head>
+                
+
+                <headtext align="left">
+III. Discussion
+</headtext>
+                
+
+              </head>
+              
+
+              <section.body>
+                
+
+                <para>
+                  
+
+                  <paratext ID="p3" level="1">
+Defendants contest the District Court's denial of qualified immunity on several different grounds. Below we first set out the framework for analyzing qualified immunity at the pleading stage before turning to Defendants arguments, specifically that (1) the lack of factual details in the Complaint entitled them to immunity, (2) the District Court erred in denying their request for immunity as "premature" without fully analyzing the clearly established prong, and (3) the District Court should have made specific qualified immunity determinations for each individual Defendant, even at the pleading stage.
+</paratext>
+                  
+
+                </para>
+                
+
+              </section.body>
+              
+
+              <head>
+                
+    
+                <headtext align="left" first-line="0" turnover="hanging">
+        A. The Analytical Framework for Qualified Immunity on the Pleadings
+    </headtext>
+                
+
+              </head>
+              
+
+              <section.body>
+                
+
+                <para>
+                  
+
+                  <paratext ID="p1" level="1">
+                    
+    The doctrine of qualified immunity "balances two important interests—the need to hold public officials accountable when they exercise power irresponsibly and the need to shield officials from harassment, distraction, and liability when they perform their duties reasonably." 
+                    <ital>
+    Pearson v. Callahan
+</ital>
+                    , 555 U.S. 223, 231 (2009). Whether qualified immunity can be invoked to shield an official from personal liability turns on the "objective legal reasonableness" of the official's action, 
+                    <ital>
+Harlow v. Fitzgerald
+</ital>
+                    , 457 U.S. 800, 819 (1982), "assessed in light of the legal rules that were 'clearly established' at the time it was taken," 
+                    <ital>
+Anderson v. Creighton
+</ital>
+                    , 483 U.S. 635, 639 (1987) (quoting 
+                    <ital>
+Harlow
+</ital>
+                    , 457 U.S. at 818).
+
+                  </paratext>
+                  
+
+                </para>
+                <para>
+                  
+
+                  <paratext ID="p2" level="1">
+                    
+An official sued under § 1983 for an alleged constitutional violation is entitled to qualified immunity unless he (1) violated a constitutional right that (2) was clearly established when he acted. 
+                    <ital>
+George
+</ital>
+                    , 738 F.3d at 571–72. For a right to be "clearly established," the contours of that right "must be sufficiently clear that a reasonable official would understand that what he is doing violates that right." 
+                    <ital>
+Anderson
+</ital>
+                    , 483 U.S. at 640. Existing case law, in other words, must give the official "fair warning" that his conduct is unconstitutional. 
+                    <ital>
+Hope v. Pelzer
+</ital>
+                    , 536 U.S. 730, 741 (2002). Typically, analogous precedent from the Supreme Court or this Court or a consensus of persuasive authority in the Courts of Appeals is required. 
+                    <ital>
+Clark v. Coupe
+</ital>
+                    , 55 F.4th 167, 182 (3d Cir. 2022); 
+                    <ital>
+Peroza-Benitez v. Smith
+</ital>
+                    , 994 F.3d 157, 165 (3d Cir. 2021). Yet broad principles of law suffice to give fair warning when an official commits a patently "obvious" constitutional violation. 
+                    <ital>
+Hope
+</ital>
+                    , 536 U.S. at 741; 
+                    <ital>
+Mack v. Yost
+</ital>
+                    , 63 F.4th 211, 233 (3d Cir.
+
+                  </paratext>
+                  
+
+                </para>
+                
+
+                <para>
+                  
+    
+                  <paratext ID="p1" level="1">
+                    
+        2023) (quoting 
+                    <ital>
+        Schneyder v. Smith
+    </ital>
+                    , 653 F.3d 313, 330 (3d Cir. 2011)); 
+                    <ital>
+    see, e.g., Taylor v. Riojas
+</ital>
+                    , 592 U.S. 7, 9 (2020).
+
+                  </paratext>
+                  
+
+                </para>
+                <para>
+                  
+
+                  <paratext ID="p2" level="1">
+                    
+As for timing, the Supreme Court has repeatedly stressed the importance of resolving qualified immunity "at the earliest possible stage in litigation." 
+                    <ital>
+Pearson
+</ital>
+                    , 555 U.S. at 232 (quoting 
+                    <ital>
+Hunter v. Bryant
+</ital>
+                    , 502 U.S. 224, 227 (1991) (per curiam)). But even though the defense may be raised either in a motion to dismiss under Federal Rule of Civil Procedure 12(b)(6) or in a motion for summary judgment under Federal Rule of Civil Procedure Rule 56, Rule 12(b)(6) is often "a mismatch for immunity and almost always a bad ground for dismissal." 
+                    <ital>
+Fogle v. Sokol
+</ital>
+                    , 957 F.3d 148, 162 n.14 (3d Cir. 2020) (quoting 
+                    <ital>
+Jacobs v. City of Chicago
+</ital>
+                    , 215 F.3d 758, 775 (7th Cir. 2000) (Easterbrook, J., concurring in part and concurring in the judgment)).
+
+                  </paratext>
+                  
+
+                </para>
+                <para>
+                  
+
+                  <paratext ID="p3" level="1">
+                    
+To be sure, the first prong of the qualified immunity analysis—whether the facts alleged make out a violation of a constitutional right—fits like a glove at the motion-to-dismiss stage because it overlaps with a district court's inquiry under Rules 8(a) and 12(b)(6). 
+                    <ital>
+See Kedra v. Schroeter
+</ital>
+                    , 876 F.3d 424, 435 (3d Cir. 2017). In other words, a well-pleaded § 1983 complaint necessarily alleges a constitutional violation for purposes of qualified immunity, while a complaint that fails to plausibly plead the violation of a right does not.
+
+                  </paratext>
+                  
+
+                </para>
+                <para>
+                  
+
+                  <paratext ID="p4" level="1">
+                    
+As we have repeatedly recognized, however, the second prong of a qualified immunity analysis—whether the right allegedly violated was "clearly established"—presents unique difficulties at the pleading stage. 
+                    <ital>
+See Curley v. Klem
+</ital>
+                    , 298 F.3d 271, 278 (3d Cir. 2002); 
+                    <ital>
+Grant v. City of Pittsburgh
+</ital>
+                    , 98 F.3d 116, 122 (3d Cir. 1996). That is because "the right allegedly violated must be defined at the appropriate level of specificity
+
+                  </paratext>
+                  
+
+                </para>
+                
+
+                <para>
+                  
+    
+                  <paratext ID="p1" level="1">
+                    
+        before a court can determine if it was clearly established," 
+                    <ital>
+        Wilson v. Layne
+    </ital>
+                    , 526 U.S. 603, 615 (1999), and defining the right with specificity is a "fact-intensive inquiry," 
+                    <ital>
+    Grant
+</ital>
+                    , 98 F.3d at 122, that "must be undertaken in light of the specific context of the case," 
+                    <ital>
+Thomas v. Indep. Twp.
+</ital>
+                    , 463 F.3d 285, 300 (3d Cir. 2006) (quoting 
+                    <ital>
+Saucier v. Katz
+</ital>
+                    , 533 U.S. 194, 201 (2001)). But "qualified immunity will be upheld on a 12(b)(6) motion only when the immunity is established on the face of the complaint," 
+                    <ital>
+id.
+</ital>
+                     at 291 (quoting 
+                    <ital>
+Leveto v. Lapina
+</ital>
+                    , 258 F.3d 156, 161 (3d Cir. 2001)), and complaints typically lack the case-specific details needed to conduct the clearly established analysis. Thus, it is often the case that, without more than the complaint to go on, a court "cannot fairly tell whether a right is obvious or squarely governed and thus clearly established by precedent, making qualified immunity inappropriate" on a motion to dismiss. 
+                    <ital>
+Myers v. City of Centerville
+</ital>
+                    , 41 F.4th 746, 758 (6th Cir. 2022) (cleaned up); 
+                    <ital>
+see, e.g., Sause v. Bauer
+</ital>
+                    , 585 U.S. 957, 959-60 (2018) (per curiam) (reversing the grant of qualified immunity on a 12(b)(6) motion because factual issues precluded resolution of the question).
+
+                  </paratext>
+                  
+
+                </para>
+                <para>
+                  
+
+                  <paratext ID="p2" level="1">
+                    
+That is unsurprising given the parties' respective burden at the 12(b)(6) stage. Courts do not "apply a heightened pleading standard in cases in which a defendant pleads qualified immunity," so a plaintiff "has no pleading burden to anticipate or overcome a qualified immunity defense." 
+                    <ital>
+Thomas
+</ital>
+                    , 463 F.3d at 289, 294. Instead, the "burden of pleading a qualified immunity defense," like any other affirmative defense, "rests with the defendant." 
+                    <ital>
+Id.
+</ital>
+                     at 293. But because plaintiffs are "no[t] obligat[ed] to plead a violation of clearly established law in order to avoid dismissal on qualified immunity grounds," 
+                    <ital>
+id.
+</ital>
+                    , even well-pleaded complaints may not include sufficient facts to allow a court to identify the right
+
+                  </paratext>
+                  
+
+                </para>
+                
+
+                <para>
+                  
+    
+                  <paratext ID="p1" level="1">
+                    
+        with the requisite specificity, 
+                    <ital>
+        see, e.g.
+    </ital>
+                    , 
+                    <ital>
+    Russell v. Richardson
+</ital>
+                    , 905 F.3d 239, 253 (3d Cir. 2018). So the fact-bound nature of the clearly established inquiry combined with the dearth of facts at the pleading stage makes it "difficult for a defendant to claim qualified immunity on the pleadings 
+                    <ital>
+before discovery
+</ital>
+                     and before the parties (much less the courts)" uncover the precise contours of the official's conduct and the context in which it occurred. 
+                    <ital>
+Evans-Marshall v. Bd. of Educ. of Tipp City Exempted Vill. Sch. Dist.
+</ital>
+                    , 428 F.3d 223, 235 (6th Cir. 2005) (Sutton, J., concurring); 
+                    <ital>
+see also
+</ital>
+                     Joanna C. Schwartz, 
+                    <ital>
+How Qualified Immunity Fails
+</ital>
+                    , 127 Yale L.J. 2, 38, 53–54 (2017) (analyzing qualified immunity cases from five districts over a two-year period and concluding that motions to dismiss on qualified immunity grounds are granted less than 10% of the time).
+
+                  </paratext>
+                  
+
+                </para>
+                <para>
+                  
+
+                  <paratext ID="p2" level="1">
+                    
+In such cases, the district court must deny the motion to dismiss and seek to resolve qualified immunity at summary judgment. That is because, when a court cannot determine on the face of the complaint whether a "reasonable official would have understood" that what he did violated the asserted constitutional right, 
+                    <ital>
+Mullenix v. Luna
+</ital>
+                    , 577 U.S. 7, 11 (2015) (per curiam) (quoting 
+                    <ital>
+Reichle v. Howards
+</ital>
+                    , 566 U.S. 658, 664 (2012)), the plaintiff "will be entitled to some discovery." 
+                    <ital>
+Thomas
+</ital>
+                    , 463 F.3d at 301. But "[u]ntil the Rule 12(b)(6) motion is resolved, all discovery [related to the claims subject to the qualified immunity defense] must be stayed."
+                    <footnote.reference ID="fr1" refid="f6" style="percent_n">
+6
+</footnote.reference>
+                    <ital>
+Id.
+</ital>
+                     at 302. So
+
+                  </paratext>
+                  
+
+                </para>
+                
+
+                <footnote ID="FN4">
+                  
+    
+                  <footnote.body>
+                    
+        
+                    <para>
+                      
+            
+                      <label.designator>
+                4
+            </label.designator>
+                      <paratext ID="para_001">
+            The Court determined that, because the Stringers' amended claims related back to their initial complaint, it would not dismiss the newly named defendants for the Stringers' failure to file within the relevant statute of limitations. In addition, the Court declined to dismiss the excessive force and supervisory liability claims against all individual Defendants other than Defendant Mander, against whom the Stringers' supervisory liability claim was dismissed. The Court dismissed the municipal liability claim against Bucks County because the Stringers did not plead facts showing either that the County had a "custom or policy" of authorizing the use of excessive force on mentally ill prisoners or that the County failed to adequately train or supervise its employees. Stringer v. County of Bucks, No. 22-1525, 2023 WL 2163871, at *6 (E.D. Pa. Feb. 22, 2023) (quoting McTernan v. City of York, 564 F.3d 636, 658 (3d Cir. 2009)).
+        </paratext>
+                      
+    
+                    </para>
+                    
+
+                  </footnote.body>
+                  
+
+                </footnote>
+                
+
+                <para>
+                  
+
+                  <paratext ID="p3" level="1">
+                    
+
+                    <footnote.reference ID="fr2" refid="f6" style="percent_n">
+6
+</footnote.reference>
+                     This limitation on discovery does not forbid a district court from exercising its discretion to allow discovery to proceed on claims not subject to a qualified immunity defense while the Rule 12(b)(6) motion is pending, even if the information sought overlaps with claims subject to a qualified immunity
+
+                  </paratext>
+                  
+
+                </para>
+                
+
+                <footnote ID="FN5">
+                  
+    
+                  <footnote.body>
+                    
+        
+                    <para>
+                      
+            
+                      <label.designator>
+                5
+            </label.designator>
+                      <paratext ID="para_001">
+                        
+            In the same order denying in part Defendants' motion to dismiss, the District Court authorized the Stringers to amend their municipal liability claim against Bucks County and their supervisory liability claim against Defendant Mander. After Defendants appealed, the Stringers took advantage of that opportunity, filing a second amended complaint. Because the amendments did not alter the allegations against the individual Defendants asserting qualified immunity, this appeal will "resolve [the] disputed question" of whether they are entitled to qualified immunity on the face of the now-operative complaint. 
+                        <i>Roberts v. Lau
+        </i>
+                        , 90 F.4th 618, 623 n.1 (3d Cir. 2024) (alteration in original) (quoting 
+                        <i>Saint-Jean v. Palisades Interstate Park Comm'n
+    </i>
+                        , 49 F.4th 830, 835 (3d Cir. 2022)).
+
+                      </paratext>
+                      
+
+                    </para>
+                    
+
+                  </footnote.body>
+                  
+
+                </footnote>
+                
+
+
+                <para>
+                  
+    
+                  <paratext ID="p1" level="1">
+                    
+        before ordering 
+                    <ital>
+        any
+    </ital>
+                     discovery, a 12(b)(6) motion on qualified immunity grounds must be denied.
+                    <footnote.reference ID="fr1" refid="f7" style="percent_n">
+    7
+</footnote.reference>
+                     Of course, a district court
+
+                  </paratext>
+                  
+
+                </para>
+                
+
+                <footnote ID="FN5">
+                  
+    
+                  <footnote.body>
+                    
+        
+                    <para>
+                      
+            
+                      <label.designator>
+                5
+            </label.designator>
+                      <paratext ID="para_001">
+                        
+            In the same order denying in part Defendants' motion to dismiss, the District Court authorized the Stringers to amend their municipal liability claim against Bucks County and their supervisory liability claim against Defendant Mander. After Defendants appealed, the Stringers took advantage of that opportunity, filing a second amended complaint. Because the amendments did not alter the allegations against the individual Defendants asserting qualified immunity, this appeal will "resolve [the] disputed question" of whether they are entitled to qualified immunity on the face of the now-operative complaint. 
+                        <i>Roberts v. Lau
+        </i>
+                        , 90 F.4th 618, 623 n.1 (3d Cir. 2024) (alteration in original) (quoting 
+                        <i>Saint-Jean v. Palisades Interstate Park Comm'n
+    </i>
+                        , 49 F.4th 830, 835 (3d Cir. 2022)).
+
+                      </paratext>
+                      
+
+                    </para>
+                    
+
+                  </footnote.body>
+                  
+
+                </footnote>
+                
+
+
+                <para>
+                  
+    
+                  <paratext ID="p1" level="1">
+                    
+        may "limit the timing, sequence, frequency, and extent of that discovery under Rule 26," 
+                    <ital>
+        id.
+    </ital>
+                     at 301, and "should give priority to discovery concerning issues that bear upon the qualified immunity defense," 
+                    <ital>
+    Crawford-El v. Britton
+</ital>
+                    , 523 U.S. 574, 600 (1998).
+
+                  </paratext>
+                  
+
+                </para>
+                <para>
+                  
+
+                  <paratext ID="p2" level="1">
+                    
+In short, "the fact-intensive nature of qualified immunity makes it often a bad fit for Rule 12(b)(6)." 
+                    <ital>
+Siefert v. Hamilton County
+</ital>
+                    , 951 F.3d 753, 761 (6th Cir. 2020). And "because a qualified immunity defense so closely depends on the facts of the case, a complaint is generally not dismissed under Rule 12(b)(6) on qualified immunity grounds," 
+                    <ital>
+Reed v. Palmer
+</ital>
+                    , 906 F.3d 540, 548 (7th Cir. 2018) (cleaned up), but rather at summary judgment,
+                    <footnote.reference ID="fr1" refid="f8" style="percent_n">
+8
+</footnote.reference>
+                    <ital>
+see Fogle
+</ital>
+                    , 957 F.3d at 162 n.14.
+
+                  </paratext>
+                  
+
+                </para>
+                
+
+                <footnote ID="FN6">
+                  
+    
+                  <footnote.body>
+                    
+        
+                    <para>
+                      
+            
+                      <label.designator>
+                6
+            </label.designator>
+                      <paratext ID="paratext_001">
+            This limitation on discovery does not forbid a district court from exercising its discretion to allow discovery to proceed on claims not subject to a qualified immunity defense while the Rule 12(b)(6) motion is pending, even if the information sought overlaps with claims subject to a qualified immunity
+        </paratext>
+                      
+    
+                    </para>
+                    
+
+                  </footnote.body>
+                  
+
+                </footnote>
+                
+
+                <para>
+                  
+
+                  <paratext ID="p3" level="1">
+                    
+is well-pleaded, Rule 12(c) has limited utility, 
+                    <ital>
+see, e.g., Dudley v. Smick
+</ital>
+                    , 751 F. Supp. 3d 514, 528–29 (W.D. Pa. 2023); 
+                    <ital>
+Garanin v. City of Scranton
+</ital>
+                    , No. 3:19-CV-1275, 2019 WL 6875541, at *6 (M.D. Pa. Dec. 17, 2019), though they have "broad discretion to utilize these procedures in a manner that is useful and equitable to the parties," 
+                    <ital>
+Thomas
+</ital>
+                    , 463 F.3d at 301; 
+                    <ital>
+Fogle v. Sokol
+</ital>
+                    , 957 F.3d 148, 162 n.14 (3d Cir. 2020) ("We defer to the District Court to determine the best path.").
+
+                  </paratext>
+                  
+
+                </para>
+                <para>
+                  
+
+                  <paratext ID="p4" level="1">
+                    
+
+                    <footnote.reference ID="fr2" refid="f8" style="percent_n">
+8
+</footnote.reference>
+                     Our sister circuits have come to the same conclusion. 
+                    <ital>
+See, e.g., Riddick v. Barber
+</ital>
+                    , 109 F.4th 639, 650 n.5 (4th Cir. 2024) ("Qualified immunity defenses are usually not successful at this early stage in the proceedings, where plaintiffs must present only a claim that is 
+                    <ital>
+plausible
+</ital>
+                     on its face. Instead, qualified immunity typically is best addressed at the summary judgment stage after the facts have been developed through discovery." (cleaned up)); 
+                    <ital>
+Thompson v. Ragland
+</ital>
+                    , 23 F.4th 1252, 1256 (10th Cir. 2022) ("Because they turn on a fact-
+
+                  </paratext>
+                  
+
+                </para>
+                
+
+                <footnote ID="FN6">
+                  
+    
+                  <footnote.body>
+                    
+        
+                    <para>
+                      
+            
+                      <label.designator>
+                6
+            </label.designator>
+                      <paratext ID="paratext_001">
+            This limitation on discovery does not forbid a district court from exercising its discretion to allow discovery to proceed on claims not subject to a qualified immunity defense while the Rule 12(b)(6) motion is pending, even if the information sought overlaps with claims subject to a qualified immunity
+        </paratext>
+                      
+    
+                    </para>
+                    
+
+                  </footnote.body>
+                  
+
+                </footnote>
+                
+
+
+              </section.body>
+              
+
+              <head>
+                
+    
+                <headtext align="left" first-line="0" turnover="hanging">
+        B. Whether the District Court Erred in Denying Qualified Immunity
+    </headtext>
+                
+
+              </head>
+              
+
+              <section.body>
+                
+
+                <para>
+                  
+
+                  <paratext ID="p1" level="1">
+                    
+    The District Court correctly determined the Complaint plausibly pleaded a violation of Kimberly's Fourteenth Amendment right to be free from objectively unreasonable excessive force that amounts to punishment. 
+                    <ital>
+    See Kingsley v. Hendrickson
+</ital>
+                    , 576 U.S. 389, 397–98 (2015). So under our analytical framework for analyzing qualified immunity at the 12(b)(6) stage, Defendants are entitled to dismissal only if they can show, based on the pleadings alone, that this right was neither clearly established nor obvious.
+                    <footnote.reference ID="fr1" refid="f9" style="percent_n">
+9
+</footnote.reference>
+                    <ital>
+Leveto
+</ital>
+                    , 258 F.3d at
+
+                  </paratext>
+                  
+
+                </para>
+                
+
+                <footnote ID="FN7">
+                  
+    
+                  <footnote.body>
+                    
+        
+                    <para>
+                      
+            
+                      <label.designator>
+                7
+            </label.designator>
+                      <paratext ID="para_7_1">
+            To be sure, before ruling on the motion to dismiss, a district court has discretion to order the plaintiff to reply to the qualified immunity defense under Rule 7(a)(7) or grant a defendant's motion for a more definite statement under Rule 12(e). See Thomas v. Indep. Twp., 463 F.3d 285, 301 (3d Cir. 2006). But the more-definite-statement route is appropriate only in the "rare case," Schaedler v. Reading Eagle Publ'n, Inc., 370 F.2d 795, 798 (3d Cir. 1967), such as in Thomas, where (1) the "pleading . . . is so vague or ambiguous" that the defendant cannot respond with his qualified immunity defense without prejudice to himself and (2) the requested information is both peculiarly within the plaintiff's knowledge and tailored to framing the defendant's response, 463 F.3d at 301 (quoting Fed. R. Civ. P. 12(e)); see also 5C Charles C. Wright &amp; Arthur H. Miller, Federal Practice and Procedure § 1376 ("[T]he class of pleadings that are appropriate subjects for a motion under Rule 12(e) is quite small" because Rule 12(e)'s purpose "is to permit litigants to procure information needed to frame a responsive pleading, not as a substitute for discovery."). Post-Iqbal, such cases are even rarer because overly vague or ambiguous complaints will not survive a 12(b)(6) motion. See Russell v. Richardson, 905 F.3d 239, 253 (3d Cir. 2018) (explaining that Rule 12(e) is not appropriate when the complaint "is not devoid of factual allegations"); Chapman v. Yellow Cab Coop., 875 F.3d 846, 849 (7th Cir. 2017). So, as district courts have repeatedly concluded, when the complaint
+        </paratext>
+                      
+    
+                    </para>
+                    
+
+                  </footnote.body>
+                  
+
+                </footnote>
+                
+
+                <para>
+                  
+
+                  <paratext ID="p2" level="1">
+                    
+bound inquiry, 'qualified immunity defenses are typically resolved at the summary judgment stage' rather than on a motion to dismiss." (quoting 
+                    <ital>
+Thomas v. Kaven
+</ital>
+                    , 765 F.3d 1183, 1194 (10th Cir. 2014))); 
+                    <ital>
+Reed v. Palmer
+</ital>
+                    , 906 F.3d 540, 549 (7th Cir. 2018); 
+                    <ital>
+Keates v. Koile
+</ital>
+                    , 883 F.3d 1228, 1235 (9th Cir. 2018); 
+                    <ital>
+Wesley v. Campbell
+</ital>
+                    , 779 F.3d 421, 433 (6th Cir. 2015) ("[I]t is generally inappropriate for a district court to grant a 12(b)(6) motion to dismiss on the basis of qualified immunity."); 
+                    <ital>
+Giragosian v. Bettencourt
+</ital>
+                    , 614 F.3d 25, 29 (1st Cir. 2010) ("It is not always possible to determine before any discovery has occurred whether a defendant is entitled to qualified immunity."); 
+                    <ital>
+McKenna v. Wright
+</ital>
+                    , 386 F.3d 432, 434 (2d Cir. 2004) (concluding "that a qualified immunity defense . . . faces a formidable hurdle when advanced on [a 12(b)(6)] motion").
+
+                  </paratext>
+                  
+
+                </para>
+                <para>
+                  
+
+                  <paratext ID="p3" level="1">
+                    
+
+                    <footnote.reference ID="fr2" refid="f9" style="percent_n">
+9
+</footnote.reference>
+                     Defendants argue they also win on "the first prong" because the Complaint did not plead "facts which demonstrate that each . . . Defendant violated Ms. Stringer's 
+                    <ital>
+clearly established
+</ital>
+                     constitutional rights." Opening Br. 25, 28 (emphasis added). But that conflates the two prongs of qualified immunity. Prong
+
+                  </paratext>
+                  
+
+                </para>
+                
+
+                <footnote ID="FN7">
+                  
+    
+                  <footnote.body>
+                    
+        
+                    <para>
+                      
+            
+                      <label.designator>
+                7
+            </label.designator>
+                      <paratext ID="para_7_1">
+            To be sure, before ruling on the motion to dismiss, a district court has discretion to order the plaintiff to reply to the qualified immunity defense under Rule 7(a)(7) or grant a defendant's motion for a more definite statement under Rule 12(e). See Thomas v. Indep. Twp., 463 F.3d 285, 301 (3d Cir. 2006). But the more-definite-statement route is appropriate only in the "rare case," Schaedler v. Reading Eagle Publ'n, Inc., 370 F.2d 795, 798 (3d Cir. 1967), such as in Thomas, where (1) the "pleading . . . is so vague or ambiguous" that the defendant cannot respond with his qualified immunity defense without prejudice to himself and (2) the requested information is both peculiarly within the plaintiff's knowledge and tailored to framing the defendant's response, 463 F.3d at 301 (quoting Fed. R. Civ. P. 12(e)); see also 5C Charles C. Wright &amp; Arthur H. Miller, Federal Practice and Procedure § 1376 ("[T]he class of pleadings that are appropriate subjects for a motion under Rule 12(e) is quite small" because Rule 12(e)'s purpose "is to permit litigants to procure information needed to frame a responsive pleading, not as a substitute for discovery."). Post-Iqbal, such cases are even rarer because overly vague or ambiguous complaints will not survive a 12(b)(6) motion. See Russell v. Richardson, 905 F.3d 239, 253 (3d Cir. 2018) (explaining that Rule 12(e) is not appropriate when the complaint "is not devoid of factual allegations"); Chapman v. Yellow Cab Coop., 875 F.3d 846, 849 (7th Cir. 2017). So, as district courts have repeatedly concluded, when the complaint
+        </paratext>
+                      
+    
+                    </para>
+                    
+
+                  </footnote.body>
+                  
+
+                </footnote>
+                
+
+
+                <para>
+                  
+    
+                  <paratext ID="p1" level="1">
+        161 ("Qualified immunity will be upheld on a 12(b)(6) motion only when the immunity is established on the face of the complaint." (cleaned up)). Defendants concur with the District Court that the Complaint is not sufficiently specific to make this fact-bound determination. Yet they offer three other arguments for why they should prevail. None passes muster.
+    </paratext>
+                  
+
+                </para>
+                <para>
+                  
+
+                  <paratext ID="p2" level="1">
+                    
+    First, Defendants contend that "the lack of requisite factual detail" precluding a meaningful analysis of the clearly established prong "
+                    <ital>
+    requires
+</ital>
+                     a finding of qualified immunity." Opening Br. 17, 24 (emphasis added). In their view, "if the District Court could not discern whether it would have been clear to [them] that using a restraint chair and [pepper] spray on a[]. . . mentally ill pretrial detainee violated a clearly established constitutional right, then qualified immunity must be found and the motion to dismiss granted." 
+                    <ital>
+Id.
+</ital>
+                     at 16. But this argument flips our precedent on its head.
+
+                  </paratext>
+                  
+
+                </para>
+                <para>
+                  
+
+                  <paratext ID="p3" level="1">
+                    
+Because "the burden of pleading qualified immunity rests with the defendant, not the plaintiff," 
+                    <ital>
+Thomas
+</ital>
+                    , 463 F.3d at 293, an "absence of detailed factual allegations supporting a plaintiff's claim for relief under § 1983 does not . . . establish defendants' immunity," 
+                    <ital>
+id.
+</ital>
+                     at 289. Instead, as "qualified immunity will be upheld on a 12(b)(6) motion only when the immunity is established on the face of the complaint," 
+                    <ital>
+id.
+</ital>
+                     at 291, a defendant cannot carry his burden where, as here, a complaint makes out a violation of a constitutional right but is
+
+                  </paratext>
+                  
+
+                </para>
+                <para>
+                  
+
+                  <paratext ID="p4" level="1">
+                    
+one is satisfied whenever a plaintiff sufficiently pleads a 
+                    <ital>
+general
+</ital>
+                     constitutional violation under Rule 8(a)(2): There is no daylight between the first prong of the qualified immunity inquiry and a 12(b)(6) analysis. 
+                    <ital>
+See Thomas
+</ital>
+                    , 463 F.3d at 295; 
+                    <ital>
+Kedra v. Schroeter
+</ital>
+                    , 876 F.3d 424, 435 (3d Cir. 2017).
+
+                  </paratext>
+                  
+
+                </para>
+                
+
+                <para>
+                  
+    
+                  <paratext ID="p1" level="1">
+                    
+        not specific enough to assess whether the right at issue was clearly established when the event occurred, 
+                    <ital>
+        see id.
+    </ital>
+                     at 293.
+
+                  </paratext>
+                  
+
+                </para>
+                <para>
+                  
+
+                  <paratext ID="p2" level="1">
+Defendants' second argument is simply the flip side of the same coin. They challenge the District Court's conclusion that the clearly established inquiry was premature and that the Court was "obligated" to conduct a "[f]ull," detailed qualified immunity analysis before denying their motion to dismiss. Opening Br. 17, 19. That argument, however, conflates the standard for dismissal at the pleading stage with that at summary judgment.
+</paratext>
+                  
+
+                </para>
+                <para>
+                  
+
+                  <paratext ID="p3" level="1">
+                    
+We ourselves have repeatedly stated that resolution of a qualified immunity defense is "premature when there are unresolved disputes of historical fact relevant to the immunity analysis." 
+                    <ital>
+Reilly v. City of Atl. City
+</ital>
+                    , 532 F.3d 216, 234 (3d Cir. 2008) (quoting 
+                    <ital>
+Wright v. City of Philadelphia
+</ital>
+                    , 409 F.3d 595, 599 (3d Cir. 2005)); 
+                    <ital>
+Phillips
+</ital>
+                    , 515 F.3d at 242 n.7; 
+                    <ital>
+Curley
+</ital>
+                    , 298 F.3d at 278; 
+                    <ital>
+see also Kovats v. Rutgers
+</ital>
+                    , 822 F.2d 1303, 1313–14 (3d Cir. 1987) (holding that a qualified immunity determination was "premature" when the "legal issues [were] inextricably intertwined with the factual issues" and "there has been no discovery on th[ose] factual issues"). And discovery related to the claims against which qualified immunity is asserted is not permitted "[u]ntil the Rule 12(b)(6) motion is resolved." 
+                    <ital>
+Thomas
+</ital>
+                    , 463 F.3d at 302. So when the clearly established inquiry "is not possible" at the pleading stage without a more developed factual record, a district court must reject qualified immunity as "premature," deny the motion to
+
+                  </paratext>
+                  
+
+                </para>
+                
+
+                <para>
+                  
+    
+                  <paratext ID="p1" level="1">
+                    
+        dismiss, and proceed with at least limited discovery. 
+                    <ital>
+        Schrob v. Catterson
+    </ital>
+                    , 948 F.2d 1402, 1421 (3d Cir. 1991).
+                    <footnote.reference ID="fr1" refid="f10" style="percent_n">
+    10
+</footnote.reference>
+                    
+
+                  </paratext>
+                  
+
+                </para>
+                
+
+                <footnote ID="FN8">
+                  
+    
+                  <footnote.body>
+                    
+        
+                    <para>
+                      
+            
+                      <label.designator>
+                8
+            </label.designator>
+                      <paratext ID="para_001">
+            Our sister circuits have come to the same conclusion. See, e.g., Riddick v. Barber, 109 F.4th 639, 650 n.5 (4th Cir. 2024) ("Qualified immunity defenses are usually not successful at this early stage in the proceedings, where plaintiffs must present only a claim that is plausible on its face. Instead, qualified immunity typically is best addressed at the summary judgment stage after the facts have been developed through discovery." (cleaned up)); Thompson v. Ragland, 23 F.4th 1252, 1256 (10th Cir. 2022) ("Because they turn on a fact-
+        </paratext>
+                      
+    
+                    </para>
+                    
+
+                  </footnote.body>
+                  
+
+                </footnote>
+                
+
+                <para>
+                  
+
+                  <paratext ID="p2" level="1">
+                    
+That is precisely what occurred when the District Court concluded Defendants' request for qualified immunity was "premature" because it could not, without further factual development, "determine whether it would have been clear to any of the [Defendants] that their conduct was unlawful when interacting with Stringer." 
+                    <ital>
+Stringer
+</ital>
+                    , 2023 WL 2163871, at *5 n.7. Even Defendants concede that a proper analysis of the second prong was "impossible" because the Complaint lacks vital "facts" and "details" needed to understand the specifics of what happened in BCCF, Opening Br. 21–22, including whether the use of force or restraint chair was punitive or done for the security of the prison or Kimberly's safety, how long she was confined to the restraint chair or pepper sprayed, and whether she was a danger to herself.
+
+                  </paratext>
+                  
+
+                </para>
+                <para>
+                  
+
+                  <paratext ID="p3" level="1">
+                    
+Such factual questions must be answered before we—or the District Court—can define the right with appropriate specificity and reach "the crucial question" at the core of the qualified immunity analysis: "whether the [Defendants] acted reasonably 
+                    <ital>
+in the particular circumstances
+</ital>
+                     that [they] faced." 
+                    <ital>
+Plumhoff v. Rickard
+</ital>
+                    , 572 U.S. 765, 779 (2014) (emphasis added). And specificity is "especially important" in excessive-force cases, 
+                    <ital>
+Mullenix
+</ital>
+                    , 577 U.S. at 12, because the "reasonab[leness] of force often hinges on the details of an
+
+                  </paratext>
+                  
+
+                </para>
+                
+
+                <para>
+                  
+    
+                  <paratext ID="p1" level="1">
+                    
+        individual case," 
+                    <ital>
+        Jacobs v. Cumberland County
+    </ital>
+                    , 8 F.4th 187, 196 (3d Cir. 2021). Here, for example, when Kimberly was not responding to the directives of the guards, was she actively resisting or merely non-compliant? 
+                    <ital>
+    See Goodwin v. City of Painesville
+</ital>
+                    , 781 F.3d 314, 326 (6th Cir. 2015). Did she "pose a threat to [her]self or others" each time she was placed in the restraint chair? 
+                    <ital>
+Young v. Martin
+</ital>
+                    , 801 F.3d 172, 173 (3d Cir. 2015). If she did, for how long was she handcuffed and restrained, and did she remain in this state even after she no longer posed a threat? Why was she pepper-sprayed and for how long? What prior knowledge of her condition did each Defendant have when they took the alleged actions? Put simply, Defendants' immunity defense cannot be resolved without some discovery, so the District Court properly denied the Defendants' motion to dismiss and indicated it would consider qualified immunity at summary judgment.
+                    <footnote.reference ID="fr1" refid="f11" style="percent_n">
+11
+</footnote.reference>
+                    
+
+                  </paratext>
+                  
+
+                </para>
+                
+
+                <footnote ID="FN8">
+                  
+    
+                  <footnote.body>
+                    
+        
+                    <para>
+                      
+            
+                      <label.designator>
+                8
+            </label.designator>
+                      <paratext ID="para_001">
+            Our sister circuits have come to the same conclusion. See, e.g., Riddick v. Barber, 109 F.4th 639, 650 n.5 (4th Cir. 2024) ("Qualified immunity defenses are usually not successful at this early stage in the proceedings, where plaintiffs must present only a claim that is plausible on its face. Instead, qualified immunity typically is best addressed at the summary judgment stage after the facts have been developed through discovery." (cleaned up)); Thompson v. Ragland, 23 F.4th 1252, 1256 (10th Cir. 2022) ("Because they turn on a fact-
+        </paratext>
+                      
+    
+                    </para>
+                    
+
+                  </footnote.body>
+                  
+
+                </footnote>
+                
+
+                <para>
+                  
+
+                  <paratext ID="p2" level="1">
+                    
+Defendants next argue that the District Court erred by failing to conduct a qualified immunity analysis for each individual Defendant based on his specific conduct. At the pleading stage, however, the Stringers only needed to state a claim as to each individual Defendant for a constitutional violation, and the complaint alleges that 
+                    <ital>
+all
+</ital>
+                     Defendants either authorized or engaged in conduct that amounted to excessive force—including pepper spraying Kimberly, handcuffing her, and placing her in a restraint chair for an indeterminate amount of time. At this stage, we must accept these allegations as true, drawing all reasonable inferences in favor of Plaintiffs. 
+                    <ital>
+Kedra
+</ital>
+                    , 876 F.3d at 434. And while discovery may allow the District
+
+                  </paratext>
+                  
+
+                </para>
+                
+
+                <para>
+                  
+    
+                  <paratext ID="p1" level="1">
+                    
+        Court to differentiate between the Defendants claiming immunity, 
+                    <ital>
+        see Grant
+    </ital>
+                    , 98 F.3d at 122–23; 
+                    <ital>
+    Rouse v. Plantier
+</ital>
+                    , 182 F.3d 192, 200 (3d Cir. 1999), the Court was within its discretion to postpone that decision until that discovery was obtained.
+                    <footnote.reference ID="fr1" refid="f12" style="percent_n">
+12
+</footnote.reference>
+                    
+
+                  </paratext>
+                  
+
+                </para>
+                
+
+                <footnote ID="FN9">
+                  
+    
+                  <footnote.body>
+                    
+        
+                    <para>
+                      
+            
+                      <label.designator>
+                9
+            </label.designator>
+                      <paratext ID="para_001">
+            Defendants argue they also win on "the first prong" because the Complaint did not plead "facts which demonstrate that each . . . Defendant violated Ms. Stringer's clearly established constitutional rights." Opening Br. 25, 28 (emphasis added). But that conflates the two prongs of qualified immunity. Prong
+        </paratext>
+                      
+    
+                    </para>
+                    
+
+                  </footnote.body>
+                  
+
+                </footnote>
+                
+
+                <para>
+                  
+
+                  <paratext ID="p2" level="1">
+                    
+In sum, because "resolution of the qualified immunity of [Defendants] is not possible" until "the record is . . . expanded," the District Court "correctly determined that dismissal on a 12(b)(6) motion in this case was premature and that the case would be better decided on summary judgment." 
+                    <ital>
+Schrob
+</ital>
+                    , 948 F.2d at 1421. We "express no opinion" on the objective reasonableness of Defendants' actions because the District Court "is in a better position to resolve these issues on a motion for summary judgment after supplementation of the record." 
+                    <ital>
+Id.
+</ital>
+                     Instead, "[b]ecause the record before us is insufficient for determination of [Defendants'] claim of qualified immunity, . . . we will remand to the district court for further development of the record" with respect to that defense. 
+                    <ital>
+Brown v. United States
+</ital>
+                    , 851 F.2d 615, 617 (3d Cir. 1988).
+
+                  </paratext>
+                  
+
+                </para>
+                
+
+              </section.body>
+              
+
+              <head>
+                
+
+                <headtext align="left">
+IV. Conclusion
+</headtext>
+                
+
+              </head>
+              
+
+              <section.body>
+                
+
+                <para>
+                  
+
+                  <paratext ID="p3" level="1">
+For these reasons, we will affirm the District Court's order denying the motion to dismiss on qualified immunity grounds without prejudice and remand with instructions for the District Court to conduct limited discovery tailored to uncovering those facts needed to rule on Appellants' immunity defense.
+</paratext>
+                  
+
+                </para>
+                <para>
+                  
+
+                  <paratext ID="p4" level="1">
+                    
+
+                    <footnote.reference ID="fr2" refid="f12" style="percent_n">
+12
+</footnote.reference>
+                     Although two video recordings of Defendants' encounters with Kimberly allegedly exist, the Defendants allegedly have refused to turn over those recordings and other recordings requested by Kimberly's parents.
+
+                  </paratext>
+                  
+
+                </para>
+                
+
+                <footnote ID="FN9">
+                  
+    
+                  <footnote.body>
+                    
+        
+                    <para>
+                      
+            
+                      <label.designator>
+                9
+            </label.designator>
+                      <paratext ID="para_001">
+            Defendants argue they also win on "the first prong" because the Complaint did not plead "facts which demonstrate that each . . . Defendant violated Ms. Stringer's clearly established constitutional rights." Opening Br. 25, 28 (emphasis added). But that conflates the two prongs of qualified immunity. Prong
+        </paratext>
+                      
+    
+                    </para>
+                    
+
+                  </footnote.body>
+                  
+
+                </footnote>
+                
+
+
+              </section.body>
+              
+
+            </opinion>
+            
+
+          </decision.body>
+          
+
+        </decision>
+        
+
+      </judicial.artifact>
+      
+
+    </n-docbody>
+    
+
+  </n-document>
+  
+
+</n-load>
