@@ -44,7 +44,8 @@ This chapter contains forms for final judgments, some forms of orders that are f
 <section.body>
 <para ct.id="3d29be30775711ee8e1ba9ecff0bf883|2|10:2">
 <para.text>
-Judgments and final orders, as well as the orders in this chapter that are not final, contain a caption in the form of the action, a designation as the appropriate judgment or order, a commencement that sometimes includes findings of fact and a body that contains the adjudications made by the judgment or order. See <st>2:2</st>; <st>Fla. R. Civ. P. 1.100(c)</st>; <st>Fla. Fam. L. R. P. 12.100(c)</st>. Judgments and orders are completed by a conclusion that gives the date and place of entry and the signature of the judge. A notation of the parties or attorneys to whom conformed copies of the judgment have been sent is in the lower left-hand part of the form.
+Judgments and final orders, as well as the orders in this chapter that are not final, contain a caption in the form of the action, a designation as the appropriate judgment or order, a commencement that sometimes includes findings of fact and a body that contains the adjudications made by the judgment or order. See <x>&sect;2:2; st.ref.id="I03XWRW">Fla. R. Civ. P. 1.100(c); <field>st.ref.id="I015V9P"</field>Fla. Fam. L. R. P. 12.100(c). Judgments and orders are completed by a conclusion that gives the date and place of entry and the signature of the judge. A notation of the parties or attorneys to whom conformed copies of the judgment have been sent is in the lower left-hand part of the form.
+</x>
 </para.text>
 </para>
 <para ct.id="3d29be30775711ee8e1ba9ecff0bf883|2|10:2">
@@ -59,12 +60,12 @@ The commencement of final judgments differs. There is one form for an applicatio
 </para>
 <para ct.id="3d29be30775711ee8e1ba9ecff0bf883|2|10:2">
 <para.text>
-The commencement must contain findings of fact in some cases.<trace> </trace><trace></trace><trace>The failure to include the required findings of fact in </trace><trace>a</trace><trace> final judgment</trace><trace> leave the judgment open to attack by rehearing, appeal, and ultimately a new trial</trace><trace>. </trace><trace></trace><trace>See Fla. R. Civ. P. 1.530</trace><trace> and Fam. L. R. P. 12.530.</trace>
+The commencement must contain findings of fact in some cases.<trace>The failure to include the required findings of fact inafinal judgmentleave the judgment open to attack by rehearing, appeal, and ultimately a new trial.See Fla. R. Civ. P. 1.530and Fam. L. R. P. 12.530.</trace>
 </para.text>
 </para>
 <para ct.id="3d29be30775711ee8e1ba9ecff0bf883|2|10:2">
 <para.text>
-<st>Rule 1.560(c) of the Florida Rules of Civil Procedure</st> was amended to authorize a requirement that a judgment debtor furnish a fact information sheet to the judgment creditor's attorney. See <st>Fla. R. Civ. P. Form 1.977</st>. The form may be subject to challenge in requiring a nonparty spouse to divulge separate property. A similar requirement form is authorized for small claims. See <st>Fla. Sm. Cl. R. 7.221</st>. The provision for the requirement is in <x>&sect;10:13. It can be added to any other form to which it is applicable.
+st.ref.id="I02T6UB">Rule 1.560(c) of the Florida Rules of Civil Procedure was amended to authorize a requirement that a judgment debtor furnish a fact information sheet to the judgment creditor's attorney. See <field>st.ref.id="I05VWWO"</field>Fla. R. Civ. P. Form 1.977. The form may be subject to challenge in requiring a nonparty spouse to divulge separate property. A similar requirement form is authorized for small claims. See <field>st.ref.id="I052Z2G"</field>Fla. Sm. Cl. R. 7.221. The provision for the requirement is in <x>&sect;10:13. It can be added to any other form to which it is applicable.
 </x>
 </para.text>
 </para>
@@ -85,8 +86,11 @@ For a money judgment to become a lien on the judgment debtor's property it must 
 <label>Author's</label>
 <designator>&lsqb;'Comment'&rsqb;</designator>
 </name.block></item.reference></item.reference.block>
+<para ct.id="3d29be30775711ee8e1ba9ecff0bf883|2|10:2">
 <para.text>
-See <st>28.222(3)(c), Fla. Stat.</st>; <st>28.29, Fla. Stat.</st> See <cc>Sun Bank/Southwest, N.A. v. Schad, 482 So. 2d 554 (Fla. 2d DCA 1986)</cc> for the immediate issuance of the execution; and <cc>Robinson v. Sterling Door &amp; Window Co., Inc., 698 So. 2d 570 (Fla. 1st DCA 1997)</cc> for the requirement of the parties' addresses and the judgment debtor's party's Social Security number for money judgments. See <st>55.10(2), Fla. Stat.</st>
+See st.ref.id="I02T71J">&sect;28.222(3)(c), Fla. Stat.; <field>st.ref.id="I02T776"</field>&sect;28.29, Fla. Stat. See <field>cc.ref.id="I05QEGP"</field>Sun Bank/Southwest, N.A. v. Schad, 482 So. 2d 554 (Fla. 2d DCA 1986) for the immediate issuance of the execution; and <field>cc.ref.id="I05NLHH"</field>Robinson v. Sterling Door &amp; Window Co., Inc., 698 So. 2d 570 (Fla. 1st DCA 1997) for the requirement of the parties' addresses and the judgment debtor's party's Social Security number for money judgments. See <field>st.ref.id="I05VWI9"</field>&sect;55.10(2), Fla. Stat.
+</para.text>
+</para>
 </section.body>
 </section>
 <section>
@@ -256,7 +260,7 @@ ORDERED at &lsqb;name of city&rsqb;, Florida on &lsqb;date of order&rsqb;.
 </caption.block>
 <form.para ct.id="3d29be30775711ee8e1ba9ecff0bf883|4|10:4">
 <form.text>
-This action was heard on the petition for adoption<trace>. The petitioners and the minor child appeared before</trace><trace> the court. The</trace><trace.deleted/> court finds that <trace>a valid</trace><trace.deleted/> termination of parental rights has been adjudged<trace> and the date for a birth parent to file an appeal </trace><trace>of that judgment </trace><trace>has </trace><trace>pas</trace><trace>sed</trace>, <trace>a proper </trace><trace>home</trace><trace> study </trace>has <trace>been filed and </trace>reviewed<trace>,</trace> and <trace.deleted/>the best interests of the minor will be accomplished by the adoption so
+This action was heard on the petition for adoption<trace>. The petitioners and the minor child appeared beforethe court. The</trace><trace.deleted/> court finds that <trace>a validand the date for a birth parent to file an appealof that judgmenthaspassed</trace>, <trace>a properhomestudy</trace>has <trace>been filed and </trace>reviewed<trace>,</trace> and <trace.deleted/>the best interests of the minor will be accomplished by the adoption so
 </form.text>
 </form.para>
 <form.para ct.id="3d29be30775711ee8e1ba9ecff0bf883|4|10:4">
@@ -491,7 +495,7 @@ ORDERED at &lsqb;name of city&rsqb;, Florida on &lsqb;date of order&rsqb;.
 </caption.block>
 <form.para ct.id="3d29be30775711ee8e1ba9ecff0bf883|6|10:6">
 <form.text>
-This action was heard on plaintiff's motion for attorney fees and to tax costs and the court finds that plaintiff's attorney has reasonably expended <inline.instr>&lsqb;number of hours&rsqb;</inline.instr> hours in representing plaintiff in this action and that $<inline.instr>&lsqb;dollar amount of hourly rate&rsqb;</inline.instr> is a reasonable hourly rate for the services <trace>rendered under the facts of this case </trace><trace>therefore</trace><trace.deleted/>
+This action was heard on plaintiff's motion for attorney fees and to tax costs and the court finds that plaintiff's attorney has reasonably expended <inline.instr>&lsqb;number of hours&rsqb;</inline.instr> hours in representing plaintiff in this action and that $<inline.instr>&lsqb;dollar amount of hourly rate&rsqb;</inline.instr> is a reasonable hourly rate for the services <trace>rendered under the facts of this casetherefore</trace><trace.deleted/>
 </form.text>
 </form.para>
 <form.para ct.id="3d29be30775711ee8e1ba9ecff0bf883|6|10:6">
@@ -530,10 +534,12 @@ ORDERED at <inline.instr>&lsqb;name of city&rsqb;</inline.instr>, Florida on <in
   </signature.group>
   
 </signature.block>
+<form.para ct.id="3d29be30775711ee8e1ba9ecff0bf883|6|10:6">
 <form.text>
-This example was derived from <st>Florida Rule of Civil Procedure Form 1.990</st> with the required findings from <cc>Florida Patient's Compensation Fund v. Rowe, 472 So. 2d 1145 (Fla. 1985), holding modified by Standard Guar. Ins. Co. v. Quanstrom, 555 So. 2d 828 (Fla. 1990)</cc>. This form can be used in family actions after changing the caption and party designations. See <x>&sect;5:5.<trace> I</trace><trace>f</trace><trace> the Plaintiff owes the attorney </trace><trace>for the services rendered, </trace><trace>consideration should be given to</trace><trace> i</trace><trace>nclud</trace><trace>ing</trace><trace> language</trace><trace> that payment is to be made directly to the lawyer and failure of the defendan</trace><trace>t to pay said funds shall </trace><trace>also be </trace><trace>actionable by the lawyer.</trace>
-</form>
+This example was derived from st.ref.id="I02T7EI">Florida Rule of Civil Procedure Form 1.990 with the required findings from <field>cc.ref.id="I06RQJK"</field>Florida Patient's Compensation Fund v. Rowe, 472 So. 2d 1145 (Fla. 1985), holding modified by Standard Guar. Ins. Co. v. Quanstrom, 555 So. 2d 828 (Fla. 1990). This form can be used in family actions after changing the caption and party designations. See <x>&sect;5:5.<trace>Ifthe Plaintiff owes the attorneyfor the services rendered,consideration should be given toincludinglanguagethat payment is to be made directly to the lawyer and failure of the defendant to pay said funds shallalso beactionable by the lawyer.</trace>
 </x>
+</form.text>
+</form>
 </section.body>
 </section>
 <section>
@@ -766,13 +772,14 @@ ORDERED at &lsqb;name of city&rsqb;, Florida on &lsqb;date of order&rsqb;.
         <row><entry style="block" resize="same">Copies to:</entry><entry style="block" resize="same">&lsqb;Name of attorney&rsqb;</entry></row>
       </thead>
       <tbody>
-        <row><entry style="block" resize="same"></entry><entry style="block" resize="same">&lsqb;Name of attorney&rsqb;</entry></row>
+        <row><entry style="block" resize="same"></entry></row>
       </tbody>
     </tgroup>
   </table>
 </tbl>
 </form.unit>
 </form>
+<field>entry.colname="2"</field><field>entry.style="block"</field><field>entry.resize="same"</field>&lsqb;Name of attorney&rsqb;
 </section.body>
 </section>
 <section>
@@ -816,7 +823,7 @@ ORDERED at &lsqb;name of city&rsqb;, Florida on &lsqb;date of order&rsqb;.
 </caption.block>
 <form.para ct.id="3d29be30775711ee8e1ba9ecff0bf883|9|10:9">
 <form.text>
-This action seeks a writ of certiorari to the County Court of <inline.instr>&lsqb;name of county&rsqb;</inline.instr>, Florida, to review a discovery order. Petitioner in this action is plaintiff in the county court and seeks damages for breach of contract. Defendant counterclaimed for malicious interference. Defendant propounded interrogatories seeking information about plaintiff's assets, liabilities, customer names and other financial information. The pleadings do not seek punitive damages at this stage and no discovery has been conducted as contemplated by <st>768.72 Florida Statutes</st> as a predicate for amending to plead punitive damages.
+This action seeks a writ of certiorari to the County Court of <inline.instr>&lsqb;name of county&rsqb;</inline.instr>, Florida, to review a discovery order. Petitioner in this action is plaintiff in the county court and seeks damages for breach of contract. Defendant counterclaimed for malicious interference. Defendant propounded interrogatories seeking information about plaintiff's assets, liabilities, customer names and other financial information. The pleadings do not seek punitive damages at this stage and no discovery has been conducted as contemplated by st.ref.id="I05Q5XJ">&sect;768.72 Florida Statutes as a predicate for amending to plead punitive damages.
 </form.text>
 </form.para>
 <form.para ct.id="3d29be30775711ee8e1ba9ecff0bf883|9|10:9">
@@ -986,7 +993,7 @@ ORDERED at <inline.instr>&lsqb;name of town&rsqb;</inline.instr>, Florida on <in
 </signature.block>
 <form.para ct.id="3d29be30775711ee8e1ba9ecff0bf883|10|10:10">
 <form.text>
-See <st>68.07, Fla. Stat.</st> Florida Family Law Rules of Procedure Form 12.982(b) is a form approved by the Supreme Court for an adult and <trace>Fla. Fam. L. R. P. </trace>Form<trace.deleted/> 12.982(e) and <trace>Form </trace>12.982(g) are for a minor and a family. All have findings not required by the statute. It is a special statutory proceeding so the statute governs.
+See st.ref.id="I04BRJ6">&sect;68.07, Fla. Stat. Florida Family Law Rules of Procedure Form 12.982(b) is a form approved by the Supreme Court for an adult and <trace>Fla. Fam. L. R. P. </trace>Form<trace.deleted/> 12.982(e) and <trace>Form </trace>12.982(g) are for a minor and a family. All have findings not required by the statute. It is a special statutory proceeding so the statute governs.
 </form.text>
 </form>
 </section.body>
@@ -1005,7 +1012,7 @@ See <st>68.07, Fla. Stat.</st> Florida Family Law Rules of Procedure Form 12.982
 <section.body>
 <para ct.id="3d29be30775711ee8e1ba9ecff0bf883|11|10:11">
 <para.text>
-See <st>Fla. R. Civ. P. Form 1.991</st>. This is the standard form of judgment for defendant after a verdict. See <x>&sect;10:12 for the nonjury form.
+See st.ref.id="I04BRDC">Fla. R. Civ. P. Form 1.991. This is the standard form of judgment for defendant after a verdict. See <x>&sect;10:12 for the nonjury form.
 </x>
 </para.text>
 </para>
@@ -1025,7 +1032,7 @@ See <st>Fla. R. Civ. P. Form 1.991</st>. This is the standard form of judgment f
 <section.body>
 <para ct.id="3d29be30775711ee8e1ba9ecff0bf883|12|10:12">
 <para.text>
-See <st>Fla. R. Civ. P. Form 1.994</st>; <x>&sect;10:11, Comment.
+See st.ref.id="I04BQZB">Fla. R. Civ. P. Form 1.994; <x>&sect;10:11, Comment.
 </x>
 </para.text>
 </para>
@@ -1045,7 +1052,7 @@ See <st>Fla. R. Civ. P. Form 1.994</st>; <x>&sect;10:11, Comment.
 <section.body>
 <para ct.id="3d29be30775711ee8e1ba9ecff0bf883|13|10:13">
 <para.text>
-See <st>Fla. R. Civ. P. Form 1.990</st>. This is the standard form for a money judgment on a verdict. See <st>55.10, Fla. Stat</st>; <st>55.202, Fla. Stat.</st>; <st>Fla. R. Civ. P. 1.560(c), (d)</st>; <st>Fla. Sm. Cl. R. 7.221</st>.
+See st.ref.id="I04BQZ9">Fla. R. Civ. P. Form 1.990. This is the standard form for a money judgment on a verdict. See <field>st.ref.id="I01RO2S"</field>&sect;55.10, Fla. Stat; &sect;55.202, Fla. Stat.; <field>st.ref.id="I032GT2"</field>Fla. R. Civ. P. 1.560(c), (d); <field>st.ref.id="I032GU8"</field>Fla. Sm. Cl. R. 7.221.
 </para.text>
 </para>
 </section.body>
@@ -1303,7 +1310,7 @@ ORDERED at <inline.instr>&lsqb;name of city&rsqb;</inline.instr>, Florida on <in
 </signature.block>
 <form.para ct.id="3d29be30775711ee8e1ba9ecff0bf883|15|10:15">
 <form.text>
-See <st>Fla. R. Civ. P. Form 1.988(b)</st>. The address and Social Security number of the defendant are omitted because most often they are not known. If known, the address and last four digits of the Social Security number must be inserted. See <x>&sect;10:13, Comment.<trace> . If the Plaintiff owes the attorney for the services rendered, consideration should be given to including language that payment is to be made directly to the lawyer and failure of the defendant to pay said funds shall also be actionable by the lawyer.</trace>
+See st.ref.id="I04BQJR">Fla. R. Civ. P. Form 1.988(b). The address and Social Security number of the defendant are omitted because most often they are not known. If known, the address and last four digits of the Social Security number must be inserted. See <x>&sect;10:13, Comment.<trace> . If the Plaintiff owes the attorney for the services rendered, consideration should be given to including language that payment is to be made directly to the lawyer and failure of the defendant to pay said funds shall also be actionable by the lawyer.</trace>
 </x>
 </form.text>
 </form>
@@ -1323,7 +1330,7 @@ See <st>Fla. R. Civ. P. Form 1.988(b)</st>. The address and Social Security numb
 <section.body>
 <para ct.id="3d29be30775711ee8e1ba9ecff0bf883|16|10:16">
 <para.text>
-See <st>Fla. R. Civ. P. Form 1.988</st><trace> </trace>(a); <x>&sect;10:13, Comment; <x>&sect;10:15, Comment. The address and the last four digits of the Social Security number for the defendant are omitted because generally when default occurs these are not known to the plaintiff.
+See st.ref.id="I04BQJO">Fla. R. Civ. P. Form 1.988<trace> </trace>(a); <x>&sect;10:13, Comment; <x>&sect;10:15, Comment. The address and the last four digits of the Social Security number for the defendant are omitted because generally when default occurs these are not known to the plaintiff.
 </x>
 </para.text>
 </para>
@@ -1412,7 +1419,7 @@ ORDERED at <inline.instr>&lsqb;name of city&rsqb;</inline.instr>, Florida on <in
 </signature.block>
 <form.para ct.id="3d29be30775711ee8e1ba9ecff0bf883|17|10:17">
 <form.text>
-A deficiency judgment is a money judgment entered in a foreclosure action. If an attorney fee is given, this form must contain the requirements of <cc>Florida Patient's Compensation Fund v. Rowe, 472 So. 2d 1145 (Fla. 1985), holding modified by Standard Guar. Ins. Co. v. Quanstrom, 555 So. 2d 828 (Fla. 1990)</cc> or a reservation of jurisdiction to set the fee. See <x>&sect;10:13, Comment.
+A deficiency judgment is a money judgment entered in a foreclosure action. If an attorney fee is given, this form must contain the requirements of cc.ref.id="I06RQ6I">Florida Patient's Compensation Fund v. Rowe, 472 So. 2d 1145 (Fla. 1985), holding modified by Standard Guar. Ins. Co. v. Quanstrom, 555 So. 2d 828 (Fla. 1990) or a reservation of jurisdiction to set the fee. See <x>&sect;10:13, Comment.
 </x>
 </form.text>
 </form>
@@ -1498,10 +1505,12 @@ ORDERED at <inline.instr>&lsqb;name of city&rsqb;</inline.instr>, Florida on <in
   </signature.group>
   
 </signature.block>
+<form.para ct.id="3d29be30775711ee8e1ba9ecff0bf883|18|10:18">
 <form.text>
-This form is a slightly different version of <st>Florida Rules of Civil Procedure Form 1.994</st> in that it is designed for the dismissal of an extraordinary writ action. This form assumes the alternative writ was issued as required by <st>Rule 1.630(d)</st> or <st>Rule 12.630(d)</st>. If the writ is granted the terminology would be “peremptory writ shall be issued and defendant shall obey it.” Ordinarily, a defendant in a mandamus action will have no assessable costs. See the exception for certiorari in <x>section 10:8. See <cc>Fla. R. Civ. P. 1.630</cc>; <cc>Fla. Fam. L. R. P. 12.630</cc>; <st>Fla. R. Gen. Prac. &amp; Jud. Admin. 2.130</st>.
-</form>
+This form is a slightly different version of st.ref.id="I02T7TW">Florida Rules of Civil Procedure Form 1.994 in that it is designed for the dismissal of an extraordinary writ action. This form assumes the alternative writ was issued as required by Rule 1.630(d) or Rule 12.630(d). If the writ is granted the terminology would be “peremptory writ shall be issued and defendant shall obey it.” Ordinarily, a defendant in a mandamus action will have no assessable costs. See the exception for certiorari in <x>section 10:8. See <field>cc.ref.id="I03TU75"</field>Fla. R. Civ. P. 1.630; <field>cc.ref.id="I03WNC1"</field>Fla. Fam. L. R. P. 12.630; <field>st.ref.id="I0469QC"</field>Fla. R. Gen. Prac. &amp; Jud. Admin. 2.130.
 </x>
+</form.text>
+</form>
 </section.body>
 </section>
 <section>
@@ -1546,7 +1555,7 @@ This form is a slightly different version of <st>Florida Rules of Civil Procedur
 </caption.block>
 <form.para ct.id="3d29be30775711ee8e1ba9ecff0bf883|19|10:19">
 <form.text>
-This action was heard on the motion to dismiss for lack of prosecution served by <inline.instr>&lsqb;name of server&rsqb;</inline.instr>. The court finds that the notice prescribed by <st>Fla. R. Civ. P. 1.420(e)</st> was served on <inline.instr>&lsqb;date of service of notice&rsqb;</inline.instr>; there was no record activity during the ten months immediately proceeding service of the notice; there was no record activity during the 60 days immediately following service of the notice; no stay has been issued or approved by the court; and no party has shown good cause why this action should remain pending so
+This action was heard on the motion to dismiss for lack of prosecution served by <inline.instr>&lsqb;name of server&rsqb;</inline.instr>. The court finds that the notice prescribed by st.ref.id="I04BPZO">Fla. R. Civ. P. 1.420(e) was served on <inline.instr>&lsqb;date of service of notice&rsqb;</inline.instr>; there was no record activity during the ten months immediately proceeding service of the notice; there was no record activity during the 60 days immediately following service of the notice; no stay has been issued or approved by the court; and no party has shown good cause why this action should remain pending so
 </form.text>
 </form.para>
 <form.para ct.id="3d29be30775711ee8e1ba9ecff0bf883|19|10:19">
@@ -1585,10 +1594,11 @@ ORDERED at <inline.instr>&lsqb;name of city&rsqb;</inline.instr>, Florida on <in
   </signature.group>
   
 </signature.block>
+<form.para ct.id="3d29be30775711ee8e1ba9ecff0bf883|19|10:19">
 <form.text>
-See <st>Fla. R. Civ. P. Form 1.989</st>(b). This form can be used in family actions after changing the caption and party designations. See <st>Fla. Fam. L. R. P. 12.420(d)</st>; <x>&sect;7:6<trace>8</trace><trace.deleted/>.<trace> See </trace><trace></trace><trace>Trawick’s Florida Practice and Procedure </trace><trace> 21:7.</trace>
+See st.ref.id="I04BPZJ">Fla. R. Civ. P. Form 1.989<trace>8SeeTrawick’s Florida Practice and Procedure 21:7.</trace>
+</form.text>
 </form>
-</x>
 </section.body>
 </section>
 <section>
@@ -1860,7 +1870,7 @@ ORDERED at &lsqb;name of city&rsqb;, Florida on &lsqb;date of order&rsqb;.
 <form.para ct.id="3d29be30775711ee8e1ba9ecff0bf883|22|10:22">
 </caption.block>
 <form.text>
-This action was tried before the court. On the evidence presented the court finds that the directors of <inline.instr>&lsqb;NAME OF DEFENDANT CORPORATION&rsqb;</inline.instr> are deadlocked in the management of the corporate affairs and the shareholders are unable to break the deadlock. As a result irreparable injury to the corporate defendant's assets is now being suffered and unless the action taken under this final judgment occurs, the assets will be lost to the shareholders. The corporation has complied with <st>607.1431(4), Fla. Stat.</st>, however the shareholders have not elected to purchase the plaintiff's shares, therefore
+This action was tried before the court. On the evidence presented the court finds that the directors of <inline.instr>&lsqb;NAME OF DEFENDANT CORPORATION&rsqb;</inline.instr> are deadlocked in the management of the corporate affairs and the shareholders are unable to break the deadlock. As a result irreparable injury to the corporate defendant's assets is now being suffered and unless the action taken under this final judgment occurs, the assets will be lost to the shareholders. The corporation has complied with st.ref.id="I04BHVZ">&sect;607.1431(4), Fla. Stat., however the shareholders have not elected to purchase the plaintiff's shares, therefore
 </form.text>
 </form.para>
 <form.para ct.id="3d29be30775711ee8e1ba9ecff0bf883|22|10:22">
@@ -1986,24 +1996,24 @@ ORDERED at &lsqb;name of city&rsqb;, Florida on &lsqb;date of judgment&rsqb;.
 </caption.block>
 <form.para ct.id="3d29be30775711ee8e1ba9ecff0bf883|23|10:23">
 <form.text>
-This <trace>fi</trace><trace>nal hearing in this </trace>action was tried before the court. On the evidence presented the court finds<trace> and orders as follows:</trace><trace.deleted/>
+This <trace>final hearing in this</trace>action was tried before the court. On the evidence presented the court finds<trace> and orders as follows:</trace><trace.deleted/>
 </form.text>
 </form.para>
 <trace> 1.  </trace>
-<trace></trace><trace>The parties were married on <inline.instr>&lsqb;date of marriage&rsqb;</inline.instr></trace><trace> and separated on <inline.instr>&lsqb;date of separation&rsqb;</inline.instr>.</trace>
+<trace>The parties were married on <inline.instr>&lsqb;date of marriage&rsqb;</inline.instr>and separated on <inline.instr>&lsqb;date of separation&rsqb;</inline.instr>.</trace>
 <trace> 2.</trace>
-<trace></trace><trace>At least one of the parties has resided in</trace><trace> Florida for six (6) months prior to the filing of this action.</trace>
+<trace>At least one of the parties has resided inFlorida for six (6) months prior to the filing of this action.</trace>
 <trace> 3.</trace>
-<trace></trace><trace>Florida is the home state of the minor child and is the sole jurisdictional state to determine child custody and vis</trace><trace>i</trace><trace>tation under the Uniform Child Custody Jurisdiction and Enfo</trace><trace>rcement Act. </trace>
+<trace>Florida is the home state of the minor child and is the sole jurisdictional state to determine child custody and visitation under the Uniform Child Custody Jurisdiction and Enforcement Act.</trace>
 <trace> 4. </trace>
-<trace></trace><trace>The court has jurisdiction of the parties, child, and the subject matter herein.</trace>
-<trace></trace><trace> 5.  </trace>
-<trace>       </trace><trace>The parties have</trace><trace> one</trace><trace> child </trace><trace>who were born of this marriage:</trace>
-<trace><inline.instr>&lsqb;name of child&rsqb;</inline.instr></trace><trace>, dat</trace><trace>e of birth</trace><trace> <inline.instr>&lsqb;date of birth</trace><trace> of child</trace><trace>&rsqb;</inline.instr></trace>
-<trace></trace><trace>6</trace><trace>.</trace>
-<trace>       </trace><trace>Th</trace><trace>e marriage between the party is irretrievably broken</trace><trace>.</trace>
-<trace>E</trace><trace>quitable Distribution</trace><trace>:</trace>
-<trace></trace><trace>7.  </trace>
+<trace>The court has jurisdiction of the parties, child, and the subject matter herein.</trace>
+<trace>5.</trace>
+<trace>The parties haveonechildwho were born of this marriage:</trace>
+<trace><inline.instr>&lsqb;name of child&rsqb;</inline.instr>, date of birth<inline.instr>&lsqb;date of birthof child&rsqb;</inline.instr></trace>
+<trace>6.</trace>
+<trace>The marriage between the party is irretrievably broken.</trace>
+<trace>Equitable Distribution:</trace>
+<trace>7.</trace>
 <trace>       </trace><trace>E</trace><trace.deleted/>quitable distribution between the parties is proper and that the parties had the marital and nonmarital assets and liabilities on <inline.instr>&lsqb;date of asset and liability inventory&rsqb;</inline.instr> set forth below:
 <trace.deleted/>
 <form.unit>
@@ -2253,10 +2263,10 @@ Respondent does not use the fishing camp property and can receive distribution o
 <form.item>
 <name.block>
 <designator>K</designator>
-<name><trace>Parental Responsibility and Time Sharing.</trace><trace> The parties have entered into a Parenting Plan which provides for shared parental responsibility and a time sharing schedule. The Parenting Plan is in the bes</trace><trace>t interests of the minor child.</trace></name>
+<name><trace>Parental Responsibility and Time Sharing.The parties have entered into a Parenting Plan which provides for shared parental responsibility and a time sharing schedule. The Parenting Plan is in the best interests of the minor child.</trace></name>
 </name.block>
 <form.para>
-<form.text><trace>Parental Responsibility and Time Sharing.</trace><trace> The parties have entered into a Parenting Plan which provides for shared parental responsibility and a time sharing schedule. The Parenting Plan is in the bes</trace><trace>t interests of the minor child.</trace></form.text>
+<form.text><trace>Parental Responsibility and Time Sharing.The parties have entered into a Parenting Plan which provides for shared parental responsibility and a time sharing schedule. The Parenting Plan is in the best interests of the minor child.</trace></form.text>
 </form.para>
 </form.item>
 <form.item>
@@ -2285,7 +2295,7 @@ The bonds of marriage between petitioner &lsqb;NAME OF SPOUSE 1&rsqb; and respon
 </form.para>
 <form.para ct.id="3d29be30775711ee8e1ba9ecff0bf883|23|10:23">
 <form.text>
-Parental responsibility and time sharing in regards to the minor child of the parties &lsqb;name of child&rsqb;, born on &lsqb;date of birth&rsqb;, shall be pursuant to the parenting plan. A copy of the parenting plan is attached and incorporated in this judgment by reference.<trace> The parties are ordered to comply with the terms of the Parenting</trace><trace> Plan.</trace>
+Parental responsibility and time sharing in regards to the minor child of the parties &lsqb;name of child&rsqb;, born on &lsqb;date of birth&rsqb;, shall be pursuant to the parenting plan. A copy of the parenting plan is attached and incorporated in this judgment by reference.<trace>The parties are ordered to comply with the terms of the ParentingPlan.</trace>
 </form.text>
 </form.para>
 <form.item>
@@ -2298,18 +2308,18 @@ Parental responsibility and time sharing in regards to the minor child of the pa
 </form.para>
 <form.para ct.id="3d29be30775711ee8e1ba9ecff0bf883|23|10:23">
 <form.text>
-Petitioner shall pay <trace.deleted/>$&lsqb;dollar amount of alimony&rsqb; a <trace>month</trace><trace.deleted/> to respondent <trace>beginning &lsqb;start date of alimony&rsqb; </trace>as <trace>durational </trace>alimony <trace>for </trace><trace>&lsqb;number&rsqb;</trace><trace> months</trace><trace> which does not excee</trace><trace>d 60 per cent of the length of the marriage</trace><trace>. The alimony awarded is based on the Respond</trace><trace>en</trace><trace>t’s reasonable needs of $&lsqb;amount&rsqb; per month</trace><trace> and does not e</trace><trace>x</trace><trace>ceed </trace><trace>35% of the</trace><trace> difference between the</trace><trace> parties’ </trace><trace>monthly </trace><trace>net incomes.</trace><trace> Said alimony payments may terminate earlier </trace><trace.deleted/><trace.deleted/>on the death <trace>of either party</trace><trace>,</trace><trace> </trace><trace>on the </trace>remarriage of respondent,<trace> or upon </trace><trace.deleted/>further order of this court.<trace> All support payments shall be paid through the State of Florida Disbursement Unit</trace><trace>. See paragraph 4 below.</trace>
+Petitioner shall pay <trace.deleted/>$&lsqb;dollar amount of alimony&rsqb; a <trace>monthbeginning &lsqb;start date of alimony&rsqb;durationalfor&lsqb;number&rsqb;monthswhich does not exceed 60 per cent of the length of the marriage. The alimony awarded is based on the Respondent’s reasonable needs of $&lsqb;amount&rsqb; per monthand does not exceed35% of thedifference between theparties’monthlynet incomes.Said alimony payments may terminate earlier</trace><trace.deleted/><trace.deleted/>on the death <trace>of either party,</trace><trace>on the</trace>remarriage of respondent,<trace>or uponAll support payments shall be paid through the State of Florida Disbursement Unit. See paragraph 4 below.</trace>
 </form.text>
 </form.para>
 </form.item>
 <form.para ct.id="3d29be30775711ee8e1ba9ecff0bf883|23|10:23">
 <form.text>
-Petitioner shall pay $&lsqb;dollar amount of child support&rsqb; a <trace>month</trace><trace.deleted/>, beginning &lsqb;start date of support&rsqb; to respondent as child support that shall terminate when the child reaches 18 years of age, becomes self-supporting, marries, or dies, or until the child graduates from high school if the child is still in high school, performing in good faith with a reasonable expectation of graduation before the age of 19, at which time the child support payments shall automatically cease and terminate.<trace> A Child Support Worksheet is attached to this judgment.</trace><trace> All support payments </trace><trace>s</trace><trace>hall be paid through the State of Flor</trace><trace>ida Disbursement Unit via separate Income Deduction Order. Petitioner shal</trace><trace>l be responsible for the payment of all fees associated with said payments.</trace>
+Petitioner shall pay $&lsqb;dollar amount of child support&rsqb; a <trace>monthA Child Support Worksheet is attached to this judgment.All support paymentsshall be paid through the State of Florida Disbursement Unit via separate Income Deduction Order. Petitioner shall be responsible for the payment of all fees associated with said payments.</trace>
 </form.text>
 </form.para>
 <form.para ct.id="3d29be30775711ee8e1ba9ecff0bf883|23|10:23">
 <form.text>
-Petitioner shall maintain health care and dental insurance for the minor child of the parties until the termination of his obligation for child support.<trace> </trace><trace>P</trace><trace>etitioner shall pay &lsqb;percentage&rsqb; and the respondent shall pay &lsqb;percentage&rsqb; as </trace><trace>their </trace><trace>prorata share</trace><trace>s</trace><trace> of any and all necessary and reasonable medical expenses, including but not limited to medical, dental, optical, orthodontia, and psychological expenses for the minor child not covered by insurance.</trace>
+Petitioner shall maintain health care and dental insurance for the minor child of the parties until the termination of his obligation for child support.<trace>Petitioner shall pay &lsqb;percentage&rsqb; and the respondent shall pay &lsqb;percentage&rsqb; astheirprorata sharesof any and all necessary and reasonable medical expenses, including but not limited to medical, dental, optical, orthodontia, and psychological expenses for the minor child not covered by insurance.</trace>
 </form.text>
 </form.para>
 <form.para ct.id="3d29be30775711ee8e1ba9ecff0bf883|23|10:23">
@@ -2334,7 +2344,7 @@ for a price not less than $&lsqb;minimum dollar amount of selling price&rsqb;. A
 </form.para>
 <form.para ct.id="3d29be30775711ee8e1ba9ecff0bf883|23|10:23">
 <form.text>
-Respondent is a participant in a pension plan and trust created by &lsqb;name of business&rsqb; respondent's address is &lsqb;address of respondent&rsqb;, &lsqb;name of city&rsqb;, Florida &lsqb;zip code of respondent&rsqb;, and the alternate payee is petitioner and the address is the same. When the benefits are paid from the plan to respondent, 20% of each payment shall be paid to petitioner until the death of respondent. The court reserves jurisdiction to amend this paragraph of the judgment only for the purpose of compliance with the requirements for qualified domestic relations orders under <st>414(p) of the Internal Revenue Code</st> or any similar applicable statute hereinafter enacted.
+Respondent is a participant in a pension plan and trust created by &lsqb;name of business&rsqb; respondent's address is &lsqb;address of respondent&rsqb;, &lsqb;name of city&rsqb;, Florida &lsqb;zip code of respondent&rsqb;, and the alternate payee is petitioner and the address is the same. When the benefits are paid from the plan to respondent, 20% of each payment shall be paid to petitioner until the death of respondent. The court reserves jurisdiction to amend this paragraph of the judgment only for the purpose of compliance with the requirements for qualified domestic relations orders under st.ref.id="I046E0I">&sect;414(p) of the Internal Revenue Code or any similar applicable statute hereinafter enacted.
 </form.text>
 </form.para>
 <form.para ct.id="3d29be30775711ee8e1ba9ecff0bf883|23|10:23">
@@ -2344,7 +2354,7 @@ Respondent shall have possession of the following described real property in &ls
 </form.para>
 <form.para>
 <form.text>
-Respondent shall <trace>timely </trace>pay all mortgage payments, taxes, insurance premiums, repairs, maintenance and other obligations accruing against the property or resulting from her possession of it. Her right to possession shall terminate when petitioner's obligation to pay child support terminates or when respondent vacates the property. When respondent's right to possession terminates, the property shall be sold on terms agreeable to the parties. If they cannot agree on a price and terms, the court reserves jurisdiction to determine the dispute. Wife shall be given credit for one-half of the principal on mortgage payments, taxes and insurance premiums from the proceeds of the sale.<trace> The court reserves jurisdiction as to the marital home</trace><trace> to enter any further orders consistent with this order and as may be necessary from time to time</trace><trace>.</trace><trace> </trace>
+Respondent shall <trace>timelyThe court reserves jurisdiction as to the marital hometo enter any further orders consistent with this order and as may be necessary from time to time.</trace>
 </form.text>
 </form.para>
 <form.para ct.id="3d29be30775711ee8e1ba9ecff0bf883|23|10:23">
@@ -2394,7 +2404,7 @@ Petitioner shall pay $&lsqb;dollar amount of attorney's fees&rsqb; as attorney f
 </form.para>
 <form.para ct.id="3d29be30775711ee8e1ba9ecff0bf883|23|10:23">
 <form.text>
-It is further ordered and adjudged that the judgment debtor(s) shall complete under oath <st>Florida Rule of Civil Procedure Form 1.977 (fact information sheet)</st>, including all required attachments, and serve it on the judgment creditor's attorney, or the judgment creditor if the judgment creditor is not represented by an attorney, within 45 days from the date of this final judgment, unless the final judgment is satisfied or postjudgment discovery is stayed.
+It is further ordered and adjudged that the judgment debtor(s) shall complete under oath st.ref.id="I033UTE">Florida Rule of Civil Procedure Form 1.977 (fact information sheet), including all required attachments, and serve it on the judgment creditor's attorney, or the judgment creditor if the judgment creditor is not represented by an attorney, within 45 days from the date of this final judgment, unless the final judgment is satisfied or postjudgment discovery is stayed.
 </form.text>
 </form.para>
 <form.para ct.id="3d29be30775711ee8e1ba9ecff0bf883|23|10:23">
@@ -2409,7 +2419,7 @@ ORDERED at &lsqb;name of city&rsqb;, Florida on &lsqb;date of order&rsqb;.
 </form.para>
 <form.para ct.id="3d29be30775711ee8e1ba9ecff0bf883|23|10:23">
 <form.text>
-It is further ordered and adjudged that the judgment debtor(s) shall complete under oath <st>Florida Rule of Civil Procedure Form 1.977 (fact information sheet)</st>, including all required attachments, and serve it on the judgment creditor's attorney, or the judgment creditor if the judgment creditor is not represented by an attorney, within 45 days from the date of this final judgment, unless the final judgment is satisfied or postjudgment discovery is stayed.
+It is further ordered and adjudged that the judgment debtor(s) shall complete under oath st.ref.id="I033UTE">Florida Rule of Civil Procedure Form 1.977 (fact information sheet), including all required attachments, and serve it on the judgment creditor's attorney, or the judgment creditor if the judgment creditor is not represented by an attorney, within 45 days from the date of this final judgment, unless the final judgment is satisfied or postjudgment discovery is stayed.
 </form.text>
 </form.para>
 <form.para ct.id="3d29be30775711ee8e1ba9ecff0bf883|23|10:23">
@@ -2522,7 +2532,7 @@ The marriage between petitioner &lsqb;NAME OF SPOUSE 1&rsqb; and respondent &lsq
 </form.para>
 <form.para ct.id="3d29be30775711ee8e1ba9ecff0bf883|24|10:24">
 <form.text>
-Parental responsibility and time sharing as to the minor child of the parties &lsqb;name of child&rsqb;, born on &lsqb;date of birth&rsqb;, shall be pursuant to the</trace><trace> parenting plan which the parties entered into. The parenting plan is in the best interests of the minor child</trace><trace>.</trace><trace.deleted/>
+Parental responsibility and time sharing as to the minor child of the parties &lsqb;name of child&rsqb;, born on &lsqb;date of birth&rsqb;, shall be pursuant to theparenting plan which the parties entered into. The parenting plan is in the best interests of the minor child.</trace><trace.deleted/>
 </form.text>
 </form.para>
 </form.item>
@@ -2536,7 +2546,7 @@ Parental responsibility and time sharing as to the minor child of the parties &l
 </form.para>
 <form.para ct.id="3d29be30775711ee8e1ba9ecff0bf883|24|10:24">
 <form.text>
-The property settlement agreement with the attached parenting plan, introduced in evidence and marked Exhibit 1, was executed voluntarily after full disclosure</trace><trace>,</trace><trace> is approved by the court, is incorporated in this judgment by reference</trace><trace>,</trace><trace> and the parties are ordered to comply with it.</trace>
+The property settlement agreement with the attached parenting plan, introduced in evidence and marked Exhibit 1, was executed voluntarily after full disclosure,is approved by the court, is incorporated in this judgment by reference,and the parties are ordered to comply with it.</trace>
 </form.text>
 </form.para>
 </form.item>
@@ -2695,7 +2705,7 @@ The final judgment entered in this action on &lsqb;date of judgment&rsqb; and re
 </name.block>
 <form.para ct.id="3d29be30775711ee8e1ba9ecff0bf883|25|10:25">
 <form.text>
-The amount of <trace>child support </trace><trace.deleted/>in paragraph <trace>5</trace><trace> of the Final Judgment of Dissolution of Marriage</trace> <trace>is decreased </trace>from $&lsqb;dollar amount of alimony&rsqb; a month to $&lsqb;dollar amount of new alimony&rsqb; a month effective &lsqb;date of effectivity&rsqb;.<trace> </trace><trace>The </trace><trace>Child</trace><trace> Support Worksheet is attached.</trace>
+The amount of <trace>child support5of the Final Judgment of Dissolution of Marriageis decreasedTheChildSupport Worksheet is attached.</trace>
 </form.text>
 </form.para>
 </form.item>
@@ -2705,7 +2715,7 @@ The amount of <trace>child support </trace><trace.deleted/>in paragraph <trace>5
 </name.block>
 <form.para ct.id="3d29be30775711ee8e1ba9ecff0bf883|25|10:25">
 <form.text>
-The petitioner, &lsqb;NAME OF <trace>FORMER </trace>SPOUSE 1&rsqb;, is granted sole parental responsibility of the minor child &lsqb;name of child&rsqb;, born on &lsqb;date of birth&rsqb; since shared parental responsibility would be detrimental to the child. The respondent's, &lsqb;NAME OF <trace>FORMER </trace>SPOUSE 2&rsqb;, supervised visitation shall be pursuant to the <trace>S</trace><trace.deleted/>afety <trace>F</trace><trace.deleted/>ocused <trace>P</trace><trace.deleted/>arenting <trace>P</trace><trace.deleted/>lan <trace>which is </trace>attached<trace> and incorporated herein b</trace><trace>y reference</trace><trace.deleted/>.
+The petitioner, &lsqb;NAME OF <trace>FORMERFORMERSFPPwhich isand incorporated herein by reference</trace><trace.deleted/>.
 </form.text>
 </form.para>
 </form.item>
@@ -2715,7 +2725,7 @@ The petitioner, &lsqb;NAME OF <trace>FORMER </trace>SPOUSE 1&rsqb;, is granted s
 </name.block>
 <form.para ct.id="3d29be30775711ee8e1ba9ecff0bf883|25|10:25">
 <form.text>
-The child support provided in paragraph <trace>5</trace><trace.deleted/> is suspended until the further order of the court<trace> </trace><trace>per</trace><trace> the agreement of the parties to allow the respondent to have sufficient funds to pay for the supervision of his time sharing with the minor child</trace>.
+The child support provided in paragraph <trace>5perthe agreement of the parties to allow the respondent to have sufficient funds to pay for the supervision of his time sharing with the minor child</trace>.
 </form.text>
 </form.para>
 </form.item>
@@ -3081,7 +3091,7 @@ Plaintiff recovers from defendant &lsqb;OPTIONAL:, whose address is &lsqb;addres
 </form.para>
 <form.para ct.id="3d29be30775711ee8e1ba9ecff0bf883|28|10:28">
 <form.text>
-Execution and writ of possession shall issue forthwith as requested by plaintiff pursuant to <st>66.021(6) Florida Statutes</st>.
+Execution and writ of possession shall issue forthwith as requested by plaintiff pursuant to st.ref.id="I05Z8M4">&sect;66.021(6) Florida Statutes.
 </form.text>
 </form.para>
 <form.para ct.id="3d29be30775711ee8e1ba9ecff0bf883|28|10:28">
@@ -3091,7 +3101,7 @@ ORDERED at &lsqb;name of city&rsqb;, Florida on &lsqb;date of order&rsqb;.
 </form.para>
 <form.para ct.id="3d29be30775711ee8e1ba9ecff0bf883|28|10:28">
 <form.text>
-Execution and writ of possession shall issue forthwith as requested by plaintiff pursuant to <st>66.021(6) Florida Statutes</st>.
+Execution and writ of possession shall issue forthwith as requested by plaintiff pursuant to st.ref.id="I05Z8M4">&sect;66.021(6) Florida Statutes.
 </form.text>
 </form.para>
 <form.para ct.id="3d29be30775711ee8e1ba9ecff0bf883|28|10:28">
@@ -3145,7 +3155,7 @@ ORDERED at &lsqb;name of city&rsqb;, Florida on &lsqb;date of order&rsqb;.
 <section.body>
 <para ct.id="3d29be30775711ee8e1ba9ecff0bf883|29|10:29">
 <para.text>
-The form for the prevailing party will be a judgment for money. See <st>10:13</st>. The prevailing party is determined by the mathematics required by <st>66.061, Fla. Stat.</st> Judgment is then rendered for the party receiving the balance. See also <st>66.091, Fla. Stat.</st>; <st>66.101, Fla. Stat.</st> (payment options); <x>&sect;9:23 (the verdict).
+The form for the prevailing party will be a judgment for money. See <x>&sect;10:13. The prevailing party is determined by the mathematics required by st.ref.id="I04AC7L">&sect;66.061, Fla. Stat. Judgment is then rendered for the party receiving the balance. See also <field>st.ref.id="I01SU5J"</field>&sect;66.091, Fla. Stat.; &sect;66.101, Fla. Stat. (payment options); <x>&sect;9:23 (the verdict).
 </x>
 </para.text>
 </para>
@@ -3537,7 +3547,7 @@ Plaintiff holds a construction lien for the total sum superior to any claim or i
 </form.para>
 <form.para ct.id="3d29be30775711ee8e1ba9ecff0bf883|32|10:32">
 <form.text>
-If the total sum with interest at the rate prescribed in paragraph 1 and all costs of this action accruing subsequent to this judgment are not paid, the clerk of this court shall sell the property at public sale on &lsqb;date of sale&rsqb;, between 11:00 a.m. and 2:00 p.m., to the highest bidder for cash, except as prescribed in paragraphs 4 and 5, at the &lsqb;location of sale&rsqb; door of the courthouse in &lsqb;name of county&rsqb; in accordance with <st>45.031, Fla. Stat.</st> The clerk of this court shall receive the service charge pursuant to <st>45.035, Fla. Stat.</st> in making, recording, and certifying the sale and title that shall be assessed as costs.
+If the total sum with interest at the rate prescribed in paragraph 1 and all costs of this action accruing subsequent to this judgment are not paid, the clerk of this court shall sell the property at public sale on &lsqb;date of sale&rsqb;, between 11:00 a.m. and 2:00 p.m., to the highest bidder for cash, except as prescribed in paragraphs 4 and 5, at the &lsqb;location of sale&rsqb; door of the courthouse in &lsqb;name of county&rsqb; in accordance with st.ref.id="I03HNW1">&sect;45.031, Fla. Stat. The clerk of this court shall receive the service charge pursuant to <field>st.ref.id="I03HNUW"</field>&sect;45.035, Fla. Stat. in making, recording, and certifying the sale and title that shall be assessed as costs.
 </form.text>
 </form.para>
 <form.para ct.id="3d29be30775711ee8e1ba9ecff0bf883|32|10:32">
@@ -3552,7 +3562,7 @@ Defendant &lsqb;NAME OF LIENOR&rsqb; holds a construction lien on the property f
 </form.para>
 <form.para ct.id="3d29be30775711ee8e1ba9ecff0bf883|32|10:32">
 <form.text>
-After filing the certificate of title the clerk shall distribute the proceeds of the sale, so far as they are sufficient, by paying: first, all plaintiff's and defendant &lsqb;NAME OF LIENOR&rsqb; costs; second, documentary stamps affixed to the certificate; third, plaintiff's and defendant &lsqb;NAME OF LIENOR&rsqb; attorney fees; fourth, the total sum due to plaintiff and defendant less the items paid plus interest from this date to the date of the sale; and shall retain any remaining amount for subsequent distribution pursuant to <st>45.031 Fla. Stat.</st> If the proceeds are insufficient to pay any item, the proceeds shall be prorated between plaintiff and defendant &lsqb;NAME OF LIENOR&rsqb; in proportion to the amounts of their respective claims in each category.
+After filing the certificate of title the clerk shall distribute the proceeds of the sale, so far as they are sufficient, by paying: first, all plaintiff's and defendant &lsqb;NAME OF LIENOR&rsqb; costs; second, documentary stamps affixed to the certificate; third, plaintiff's and defendant &lsqb;NAME OF LIENOR&rsqb; attorney fees; fourth, the total sum due to plaintiff and defendant less the items paid plus interest from this date to the date of the sale; and shall retain any remaining amount for subsequent distribution pursuant to st.ref.id="I03HNP6">&sect;45.031 Fla. Stat. If the proceeds are insufficient to pay any item, the proceeds shall be prorated between plaintiff and defendant &lsqb;NAME OF LIENOR&rsqb; in proportion to the amounts of their respective claims in each category.
 </form.text>
 </form.para>
 <form.para ct.id="3d29be30775711ee8e1ba9ecff0bf883|32|10:32">
@@ -3694,7 +3704,7 @@ Plaintiff holds an equitable lien for the total sum superior to any claim or int
 </form.para>
 <form.para ct.id="3d29be30775711ee8e1ba9ecff0bf883|33|10:33">
 <form.text>
-If the total sum with interest at the rate prescribed in paragraph 1 and all costs of this action accruing subsequent to this judgment are not paid, the clerk of this court shall sell the property at public sale on &lsqb;date of sale&rsqb;, between 11:00 a.m. and 2:00 p.m., to the highest bidder for cash, except as prescribed in paragraph 4, at the &lsqb;location of sale&rsqb; door of the courthouse in &lsqb;name of county&rsqb; in accordance with <st>Section 45.031, Florida Statutes</st>. The clerk of this court shall receive the service charge pursuant to <st>45.035, Fla. Stat.</st> in making, recording, and certifying the sale and title that shall be assessed as costs.
+If the total sum with interest at the rate prescribed in paragraph 1 and all costs of this action accruing subsequent to this judgment are not paid, the clerk of this court shall sell the property at public sale on &lsqb;date of sale&rsqb;, between 11:00 a.m. and 2:00 p.m., to the highest bidder for cash, except as prescribed in paragraph 4, at the &lsqb;location of sale&rsqb; door of the courthouse in &lsqb;name of county&rsqb; in accordance with st.ref.id="I03RVZV">Section 45.031, Florida Statutes. The clerk of this court shall receive the service charge pursuant to <field>st.ref.id="I03HNOZ"</field>&sect;45.035, Fla. Stat. in making, recording, and certifying the sale and title that shall be assessed as costs.
 </form.text>
 </form.para>
 <form.para ct.id="3d29be30775711ee8e1ba9ecff0bf883|33|10:33">
@@ -3704,7 +3714,7 @@ Plaintiff shall advance all subsequent costs of this action and shall be reimbur
 </form.para>
 <form.para ct.id="3d29be30775711ee8e1ba9ecff0bf883|33|10:33">
 <form.text>
-After filing the certificate of title the clerk shall distribute the proceeds of the sale, as far as they are sufficient, by paying: first, plaintiff's costs; second, documentary stamps affixed to the certificate; third, plaintiff's attorney fees; fourth, the total sum due plaintiff, less the items paid, plus interest from this date to the date of the sale; and shall retain any remaining amount for subsequent distribution pursuant to <st>45.031 Fla. Stat.</st>
+After filing the certificate of title the clerk shall distribute the proceeds of the sale, as far as they are sufficient, by paying: first, plaintiff's costs; second, documentary stamps affixed to the certificate; third, plaintiff's attorney fees; fourth, the total sum due plaintiff, less the items paid, plus interest from this date to the date of the sale; and shall retain any remaining amount for subsequent distribution pursuant to st.ref.id="I03HNNR">&sect;45.031 Fla. Stat.
 </form.text>
 </form.para>
 <form.para ct.id="3d29be30775711ee8e1ba9ecff0bf883|33|10:33">
@@ -3792,7 +3802,7 @@ ORDERED at &lsqb;name of city&rsqb;, Florida on &lsqb;date of order&rsqb;.
 <section.body>
 <para ct.id="3d29be30775711ee8e1ba9ecff0bf883|34|10:34">
 <para.text>
-See <st>Fla. R. Civ. P. Form 1.996(a) and (b)</st>. The forms are for a residential foreclosure (1) when the note is available and (2) when it is not. See <st>673.3091, Fla. Stat. (lost notes)</st>.
+See st.ref.id="I04ABL0">Fla. R. Civ. P. Form 1.996(a) and (b). The forms are for a residential foreclosure (1) when the note is available and (2) when it is not. See <field>st.ref.id="I04ABKY"</field>&sect;673.3091, Fla. Stat. (lost notes).
 </para.text>
 </para>
 </section.body>
@@ -5253,7 +5263,7 @@ The property is indivisible and cannot be partitioned in kind.
 </form.para>
 <form.para ct.id="3d29be30775711ee8e1ba9ecff0bf883|46|10:46">
 <form.text>
-The clerk of this court shall sell the property at public sale on &lsqb;date of auction&rsqb; between 11:00 a.m. and 2:00 p.m. to the highest bidder for cash, except as provided in paragraph 5, at the &lsqb;location of sale&rsqb; door of the courthouse in &lsqb;name of county&rsqb; in &lsqb;name of town&rsqb;, Florida in accordance with <st>45.031 Florida Statutes</st>. The clerk of this court shall receive the service charge pursuant to <st>45.035, Florida Statutes</st> in making, recording, and certifying the sale and title that shall be assessed as costs.
+The clerk of this court shall sell the property at public sale on &lsqb;date of auction&rsqb; between 11:00 a.m. and 2:00 p.m. to the highest bidder for cash, except as provided in paragraph 5, at the &lsqb;location of sale&rsqb; door of the courthouse in &lsqb;name of county&rsqb; in &lsqb;name of town&rsqb;, Florida in accordance with st.ref.id="I05XUEN">&sect;45.031 Florida Statutes. The clerk of this court shall receive the service charge pursuant to <field>st.ref.id="I03HMWQ"</field>&sect;45.035, Fl<trace>orid</trace>a<trace> </trace><trace.deleted/>Stat<trace>utes</trace><trace.deleted/> in making, recording, and certifying the sale and title that shall be assessed as costs.
 </form.text>
 </form.para>
 <form.para ct.id="3d29be30775711ee8e1ba9ecff0bf883|46|10:46">
@@ -5480,7 +5490,7 @@ ORDERED at <inline.instr>&lsqb;name of city&rsqb;</inline.instr>, Florida on <in
 </signature.block>
 <form.para ct.id="3d29be30775711ee8e1ba9ecff0bf883|47|10:47">
 <form.text>
-See <st>Fla. R. Civ. P. 1.140(c)</st>; <st>Fla. Fam. L. R. P. 12.140(c)</st>; <cc>Whitaker v. Powers, 424 So. 2d 154 (Fla. 5th DCA 1982)</cc>.
+See st.ref.id="I0359QU">Fla. R. Civ. P. 1.140(c); <field>st.ref.id="I02UI7U"</field>Fla. Fam. L. R. P. 12.140(c); <field>cc.ref.id="I03WDYW"</field>Whitaker v. Powers, 424 So. 2d 154 (Fla. 5th DCA 1982).
 </form.text>
 </form>
 </section.body>
@@ -5569,7 +5579,7 @@ ORDERED at <inline.instr>&lsqb;name of city&rsqb;</inline.instr>, Florida on <in
 </signature.block>
 <form.para ct.id="3d29be30775711ee8e1ba9ecff0bf883|48|10:48">
 <form.text>
-See <cc>State ex rel. Ervin v. Smith, 160 So. 2d 518 (Fla. 1964)</cc>. When judgment is for defendant, the action is dismissed. See <x>&sect;10:18. The commencement in this action omits the reference to the presentation of evidence even though it is a nonjury form. This is so because an issue of fact in prohibition is virtually impossible. See <x>&sect;10:73 (for the writ). This is a review action so the appellate rules govern. See <st>Fla. R. App. P. 9.100(f)</st>.
+See cc.ref.id="I03TKZT">State ex rel. Ervin v. Smith, 160 So. 2d 518 (Fla. 1964). When judgment is for defendant, the action is dismissed. See <x>&sect;10:18. The commencement in this action omits the reference to the presentation of evidence even though it is a nonjury form. This is so because an issue of fact in prohibition is virtually impossible. See <x>&sect;10:73 (for the writ). This is a review action so the appellate rules govern. See <field>st.ref.id="I0359XP"</field>Fla. R. App. P. 9.100(f).
 </x>
 </form.text>
 </form>
@@ -6346,7 +6356,7 @@ against plaintiff &lsqb;NAME OF PLAINTIFF&rsqb; for which the clerk shall issue 
 </form.para>
 <form.para ct.id="3d29be30775711ee8e1ba9ecff0bf883|55|10:55">
 <form.text>
-Defendant, whose address is &lsqb;ADDRESS OF DEFENDANT&rsqb;, recovers from plaintiff &lsqb;OPTIONAL:, whose address is &lsqb;address of plaintiff&rsqb; and the last four digits of Social Security number are &lsqb;last four numbers of Social Security number&rsqb;,&rsqb; and plaintiff's surety &lsqb;name of surety&rsqb; the value of the property in the sum of $&lsqb;dollar amount of value of property&rsqb; with costs of $&lsqb;dollar amount of costs&rsqb; making a total of $&lsqb;dollar amount of total value of property&rsqb;, that shall bear interest at the rate prescribed by law, for which let execution issue forthwith in the appropriate sum if defendant elects not to have the writ of possession authorized in paragraph 1 or, if the sheriff is unable to find the property, or part of it, under the writ of possession, all pursuant to <st>Section 78.21 Florida Statutes</st>.
+Defendant, whose address is &lsqb;ADDRESS OF DEFENDANT&rsqb;, recovers from plaintiff &lsqb;OPTIONAL:, whose address is &lsqb;address of plaintiff&rsqb; and the last four digits of Social Security number are &lsqb;last four numbers of Social Security number&rsqb;,&rsqb; and plaintiff's surety &lsqb;name of surety&rsqb; the value of the property in the sum of $&lsqb;dollar amount of value of property&rsqb; with costs of $&lsqb;dollar amount of costs&rsqb; making a total of $&lsqb;dollar amount of total value of property&rsqb;, that shall bear interest at the rate prescribed by law, for which let execution issue forthwith in the appropriate sum if defendant elects not to have the writ of possession authorized in paragraph 1 or, if the sheriff is unable to find the property, or part of it, under the writ of possession, all pursuant to st.ref.id="I0129NK">Section 78.21 Florida Statutes.
 </form.text>
 </form.para>
 <form.para ct.id="3d29be30775711ee8e1ba9ecff0bf883|55|10:55">
@@ -6356,7 +6366,7 @@ ORDERED at &lsqb;name of city&rsqb;, Florida on &lsqb;date of judgment&rsqb;.
 </form.para>
 <form.para ct.id="3d29be30775711ee8e1ba9ecff0bf883|55|10:55">
 <form.text>
-Defendant, whose address is &lsqb;ADDRESS OF DEFENDANT&rsqb;, recovers from plaintiff &lsqb;OPTIONAL:, whose address is &lsqb;address of plaintiff&rsqb; and the last four digits of Social Security number are &lsqb;last four numbers of Social Security number&rsqb;,&rsqb; and plaintiff's surety &lsqb;name of surety&rsqb; the value of the property in the sum of $&lsqb;dollar amount of value of property&rsqb; with costs of $&lsqb;dollar amount of costs&rsqb; making a total of $&lsqb;dollar amount of total value of property&rsqb;, that shall bear interest at the rate prescribed by law, for which let execution issue forthwith in the appropriate sum if defendant elects not to have the writ of possession authorized in paragraph 1 or, if the sheriff is unable to find the property, or part of it, under the writ of possession, all pursuant to <st>Section 78.21 Florida Statutes</st>.
+Defendant, whose address is &lsqb;ADDRESS OF DEFENDANT&rsqb;, recovers from plaintiff &lsqb;OPTIONAL:, whose address is &lsqb;address of plaintiff&rsqb; and the last four digits of Social Security number are &lsqb;last four numbers of Social Security number&rsqb;,&rsqb; and plaintiff's surety &lsqb;name of surety&rsqb; the value of the property in the sum of $&lsqb;dollar amount of value of property&rsqb; with costs of $&lsqb;dollar amount of costs&rsqb; making a total of $&lsqb;dollar amount of total value of property&rsqb;, that shall bear interest at the rate prescribed by law, for which let execution issue forthwith in the appropriate sum if defendant elects not to have the writ of possession authorized in paragraph 1 or, if the sheriff is unable to find the property, or part of it, under the writ of possession, all pursuant to st.ref.id="I0129NK">Section 78.21 Florida Statutes.
 </form.text>
 </form.para>
 <form.para ct.id="3d29be30775711ee8e1ba9ecff0bf883|55|10:55">
@@ -6464,7 +6474,7 @@ p.fl="none">against defendant &lsqb;NAME OF DEFENDANT&rsqb; &lsqb;OPTIONAL:, who
 </form.para>
 <form.para ct.id="3d29be30775711ee8e1ba9ecff0bf883|56|10:56">
 <form.text>
-Plaintiff, whose address is &lsqb;address of plaintiff&rsqb;, recovers from defendant and defendant's surety &lsqb;name of surety&rsqb; the value of the property in the sum of $&lsqb;dollar amount of value of property&rsqb; with costs in the sum of $&lsqb;dollar amount of costs&rsqb;, making a total of $&lsqb;total dollar amount of property&rsqb;, that shall bear interest at the rate prescribed by law, for which let execution issue forthwith in the appropriate sum if plaintiff elects not to have the writ of possession authorized in paragraph 1 or, if the sheriff is unable to find the property, or part of it, under the writ of possession, all pursuant to <st>78.19 Florida Statutes</st>.
+Plaintiff, whose address is &lsqb;address of plaintiff&rsqb;, recovers from defendant and defendant's surety &lsqb;name of surety&rsqb; the value of the property in the sum of $&lsqb;dollar amount of value of property&rsqb; with costs in the sum of $&lsqb;dollar amount of costs&rsqb;, making a total of $&lsqb;total dollar amount of property&rsqb;, that shall bear interest at the rate prescribed by law, for which let execution issue forthwith in the appropriate sum if plaintiff elects not to have the writ of possession authorized in paragraph 1 or, if the sheriff is unable to find the property, or part of it, under the writ of possession, all pursuant to st.ref.id="I03UYM1">&sect;78.19 Florida Statutes.
 </form.text>
 </form.para>
 <form.para ct.id="3d29be30775711ee8e1ba9ecff0bf883|56|10:56">
@@ -6474,7 +6484,7 @@ ORDERED at &lsqb;name of city&rsqb;, Florida on &lsqb;date of judgment&rsqb;.
 </form.para>
 <form.para ct.id="3d29be30775711ee8e1ba9ecff0bf883|56|10:56">
 <form.text>
-Plaintiff, whose address is &lsqb;address of plaintiff&rsqb;, recovers from defendant and defendant's surety &lsqb;name of surety&rsqb; the value of the property in the sum of $&lsqb;dollar amount of value of property&rsqb; with costs in the sum of $&lsqb;dollar amount of costs&rsqb;, making a total of $&lsqb;total dollar amount of property&rsqb;, that shall bear interest at the rate prescribed by law, for which let execution issue forthwith in the appropriate sum if plaintiff elects not to have the writ of possession authorized in paragraph 1 or, if the sheriff is unable to find the property, or part of it, under the writ of possession, all pursuant to <st>78.19 Florida Statutes</st>.
+Plaintiff, whose address is &lsqb;address of plaintiff&rsqb;, recovers from defendant and defendant's surety &lsqb;name of surety&rsqb; the value of the property in the sum of $&lsqb;dollar amount of value of property&rsqb; with costs in the sum of $&lsqb;dollar amount of costs&rsqb;, making a total of $&lsqb;total dollar amount of property&rsqb;, that shall bear interest at the rate prescribed by law, for which let execution issue forthwith in the appropriate sum if plaintiff elects not to have the writ of possession authorized in paragraph 1 or, if the sheriff is unable to find the property, or part of it, under the writ of possession, all pursuant to st.ref.id="I03UYM1">&sect;78.19 Florida Statutes.
 </form.text>
 </form.para>
 <form.para ct.id="3d29be30775711ee8e1ba9ecff0bf883|56|10:56">
@@ -6927,9 +6937,7 @@ This action was heard after defendant's default and
 IT IS ADJUDGED that plaintiff <inline.instr>&lsqb;NAME OF PLAINTIFF&rsqb;</inline.instr> whose address is <inline.instr>&lsqb;address of plaintiff&rsqb;</inline.instr>, recover possession of the following real property in <inline.instr>&lsqb;name of county&rsqb;</inline.instr>, Florida:
 </form.text>
 </form.para>
-<form.line align="c" date.updated="0">
-<inline.instr>&lsqb;legal description of property&rsqb;</inline.instr>
-</form.line>
+<field>fac.lo="n"</field><inline.instr>&lsqb;legal description of property&rsqb;</inline.instr>
 <form.para ct.id="3d29be30775711ee8e1ba9ecff0bf883|60|10:60">
 <form.text>
 p.fl="none">from defendant <inline.instr>&lsqb;NAME OF DEFENDANT&rsqb;</inline.instr> <inline.instr>&lsqb;OPTIONAL:, whose address is &lsqb;address of defendant&rsqb;</inline.instr> and the last four digits of Social Security number are <inline.instr>&lsqb;last four numbers of Social Security number&rsqb;</inline.instr>,&rsqb; with costs of $<inline.instr>&lsqb;dollar amount of costs&rsqb;</inline.instr> that shall bear interest at the rate prescribed by law, for which let a writ of possession and execution issue forthwith.
@@ -6968,7 +6976,7 @@ ORDERED at <inline.instr>&lsqb;name of city&rsqb;</inline.instr>, Florida on <in
 </signature.block>
 <form.para ct.id="3d29be30775711ee8e1ba9ecff0bf883|60|10:60">
 <form.text>
-Most tenant evictions result in a default. If judgment for attorney fees is sought, the requirement of <cc>Florida Patient's Compensation Fund v. Rowe, 472 So. 2d 1145 (Fla. 1985) (holding modified by, Standard Guar. Ins. Co. v. Quanstrom, 555 So. 2d 828 (Fla. 1990))</cc> must be complied with. See <x>section 10:6 for the form of findings.
+Most tenant evictions result in a default. If judgment for attorney fees is sought, the requirement of cc.ref.id="I06RHHO">Florida Patient's Compensation Fund v. Rowe, 472 So. 2d 1145 (Fla. 1985) (holding modified by, Standard Guar. Ins. Co. v. Quanstrom, 555 So. 2d 828 (Fla. 1990)) must be complied with. See <x>section 10:6 for the form of findings.
 </x>
 </form.text>
 </form>
@@ -7017,7 +7025,7 @@ Most tenant evictions result in a default. If judgment for attorney fees is soug
 </caption.block>
 <form.para ct.id="3d29be30775711ee8e1ba9ecff0bf883|61|10:61">
 <form.text>
-This action was heard on the petition to terminate parental rights pending adoption of <inline.instr>&lsqb;NAME OF MINOR&rsqb;</inline.instr> and the court finds by clear and convincing evidence that all persons required to give a consent under <st>63.062 Florida Statutes</st> have executed a valid consent obtained in accordance with the requirements of <st>Chapter 63 Florida Statutes</st> and have been properly served with notice of the petition and this hearing and have abandoned the minor child that is the subject of this proceeding and have made no provision for the child's support although they are able to do so and have made little or no effort to communicate with the child and the situation is sufficient to evince an intent to reject parental responsibilities so
+This action was heard on the petition to terminate parental rights pending adoption of <inline.instr>&lsqb;NAME OF MINOR&rsqb;</inline.instr> and the court finds by clear and convincing evidence that all persons required to give a consent under st.ref.id="I03W3GQ">&sect;63.062 Florida Statutes have executed a valid consent obtained in accordance with the requirements of <field>st.ref.id="I03W3GT"</field>Chapter 63 Florida Statutes and have been properly served with notice of the petition and this hearing and have abandoned the minor child that is the subject of this proceeding and have made no provision for the child's support although they are able to do so and have made little or no effort to communicate with the child and the situation is sufficient to evince an intent to reject parental responsibilities so
 </form.text>
 </form.para>
 <form.para ct.id="3d29be30775711ee8e1ba9ecff0bf883|61|10:61">
@@ -7262,7 +7270,7 @@ IT IS ADJUDGED that:
 <form.unit>
 <form.para ct.id="3d29be30775711ee8e1ba9ecff0bf883|63|10:63">
 <form.text>
-Plaintiff &lsqb;NAME OF PLAINTIFF&rsqb; is entitled to a statutory way of necessity pursuant to <st>704.01 Florida Statutes</st>.
+Plaintiff &lsqb;NAME OF PLAINTIFF&rsqb; is entitled to a statutory way of necessity pursuant to st.ref.id="I03W3NT">&sect;704.01 Florida Statutes.
 </form.text>
 </form.para>
 <form.para ct.id="3d29be30775711ee8e1ba9ecff0bf883|63|10:63">
@@ -7470,7 +7478,7 @@ ORDERED at &lsqb;name of city&rsqb;, Florida on &lsqb;date of judgment&rsqb;.
 <section.body>
 <para ct.id="3d29be30775711ee8e1ba9ecff0bf883|65|10:65">
 <para.text>
-See <st>Fla. Fam. L. R. P. 12.996(a)</st>; <st>61.1301(1), Fla. Stat.</st> Section 61.1301(1)(e) requires a statement to the obligor of his rights, remedies and duties under the income deduction order. See Form 12.996(b) and <trace>Comments in </trace><x><trace></trace>10:69 for the method of computing the sum in accordance with the <st>Consumer Credit Protection Act</st>. See also <st>Fla. Fam. L. R. P. Form 12.996(d)</st>.
+See st.ref.id="I02VNUY">Fla. Fam. L. R. P. 12.996(a); <field>st.ref.id="I048X7M"</field>&sect;61.1301(1), Fla. Stat. Section 61.1301(1)(e) requires a statement to the obligor of his rights, remedies and duties under the income deduction order. See Form 12.996(b) and <trace>Comments in </trace><x><trace></trace>10:69 for the method of computing the sum in accordance with the <field>sst.ref.id="I03YX6Z"</field>Consumer Credit Protection Act. See also <field>st.ref.id="I0463X3"</field>Fla. Fam. L. R. P. Form 12.996(d).
 </x>
 </para.text>
 </para>
@@ -7528,7 +7536,7 @@ This action was heard on the motion for a continuing writ of garnishment directe
 </form.para>
 <form.para ct.id="3d29be30775711ee8e1ba9ecff0bf883|66|10:66">
 <form.text>
-IT IS ADJUDGED that the clerk of this court shall issue a continuing writ of garnishment naming <inline.instr>&lsqb;name of employer&rsqb;</inline.instr> as garnishee requiring garnishee to answer the writ and say whether defendant <inline.instr>&lsqb;NAME OF DEFENDANT&rsqb;</inline.instr> is employed by garnishee and, if so, the gross amount of periodic payments of salary or wages payable to defendant, the amount of deductions required by law from the gross salary or wages, the period for which each payment is made and to withhold the amount in excess of 25% of defendant's net disposable earnings, unless defendant is exempt under <st>222.11 Florida Statutes</st>, from each payment of salary or wages due from garnishee to defendant and to hold the withheld amount pending the further order of the court.
+IT IS ADJUDGED that the clerk of this court shall issue a continuing writ of garnishment naming <inline.instr>&lsqb;name of employer&rsqb;</inline.instr> as garnishee requiring garnishee to answer the writ and say whether defendant <inline.instr>&lsqb;NAME OF DEFENDANT&rsqb;</inline.instr> is employed by garnishee and, if so, the gross amount of periodic payments of salary or wages payable to defendant, the amount of deductions required by law from the gross salary or wages, the period for which each payment is made and to withhold the amount in excess of 25% of defendant's net disposable earnings, unless defendant is exempt under st.ref.id="I03W4AG">&sect;222.11 Florida Statutes, from each payment of salary or wages due from garnishee to defendant and to hold the withheld amount pending the further order of the court.
 </form.text>
 </form.para>
 <form.para ct.id="3d29be30775711ee8e1ba9ecff0bf883|66|10:66">
@@ -7564,7 +7572,8 @@ ORDERED at <inline.instr>&lsqb;name of city&rsqb;</inline.instr>, Florida on <in
 </signature.block>
 <form.para ct.id="3d29be30775711ee8e1ba9ecff0bf883|66|10:66">
 <form.text>
-See <st>77.0305, Fla. Stat.</st>; <st>61.12, Fla. Stat.</st> <st>Section 61.12, Florida Statutes</st> applies to temporary relief as well as after judgment. See <st>Title 15 U.S.C.A. 1672 and 1673</st> for a limitation on the amount that can be garnished. See <trace>Comments </trace><trace.deleted/><trace></trace>10:69 for the writ and the method of computing withholding in compliance with the <st>Consumer Credit Protection Act</st>. This form is for a writ not used to collect alimony or support. The percentage for alimony or support is higher. See 10:70. This form authorizes payment from garnishee directly to plaintiff.
+See st.ref.id="I048X1W">&sect;77.0305, Fla. Stat.; <field>st.ref.id="I048WTF"</field>&sect;61.12, Fla. Stat. <field>st.ref.id="I02XE4A"</field>Section 61.12, Florida Statutes applies to temporary relief as well as after judgment. See <field>st.ref.id="I05XUTI"</field>Title 15 U.S.C.A. &dblsect;1672 and 1673 for a limitation on the amount that can be garnished. See <x><trace>Comments </trace><trace.deleted/><trace></trace>10:69 for the writ and the method of computing withholding in compliance with the <field>sst.ref.id="I03W4G6"</field>Consumer Credit Protection Act. This form is for a writ not used to collect alimony or support. The percentage for alimony or support is higher. See <x>&sect;10:70. This form authorizes payment from garnishee directly to plaintiff.
+</x>
 </form.text>
 </form>
 </section.body>
@@ -7704,9 +7713,9 @@ ORDERED at &lsqb;name of city&rsqb;, Florida on &lsqb;date of judgment&rsqb;.
 </online.view>
 </section.front>
 <section.body>
-<para ct.id="3d29be30775711ee8e1ba9ecff0bf883|68|10:68">>
+<para ct.id="3d29be30775711ee8e1ba9ecff0bf883|68|10:68">
 <para.text>
-See <st>Fla. R. Civ. P. Form 1.914(a)</st>. This form can be used for proceedings under the Florida Family Law Rules of Procedure by changing plaintiff to petitioner, defendant to respondent and the caption.
+See st.ref.id="I048WNP">Fla. R. Civ. P. Form 1.914(a). This form can be used for proceedings under the Florida Family Law Rules of Procedure by changing plaintiff to petitioner, defendant to respondent and the caption.
 </para.text>
 </para>
 </section.body>
@@ -8184,7 +8193,7 @@ ORDERED at &lsqb;name of city&rsqb;, Florida on &lsqb;date of garnishment&rsqb;.
   
 </signature.block>
 <form.text>
-YOU ARE COMMANDED, individually and in your official capacity as an officer of <inline.instr>&lsqb;name of corporation&rsqb;</inline.instr>, to forthwith permit petitioner, in person or by petitioner's duly authorized agent or representative, to inspect the minutes of any meeting of the board of directors or of the stockholders or of any action taken by the board of directors or the stockholders without a meeting, accounting records of the corporation, the record of stockholders and any other books and records within the provisions of <st>Sections 607.1601 and 607.1602 Florida Statutes</st> from time to time during regular office hours.
+YOU ARE COMMANDED, individually and in your official capacity as an officer of <inline.instr>&lsqb;name of corporation&rsqb;</inline.instr>, to forthwith permit petitioner, in person or by petitioner's duly authorized agent or representative, to inspect the minutes of any meeting of the board of directors or of the stockholders or of any action taken by the board of directors or the stockholders without a meeting, accounting records of the corporation, the record of stockholders and any other books and records within the provisions of st.ref.id="I03WDJA">Sections 607.1601 and 607.1602 Florida Statutes from time to time during regular office hours.
 </form.text>
 </form.para>
 <form.para ct.id="3d29be30775711ee8e1ba9ecff0bf883|71|10:71">
@@ -8226,7 +8235,7 @@ AND IN THIS YOU SHALL not omit, and how you have obeyed this writ shall be made 
 </signature.block>
 <form.para ct.id="3d29be30775711ee8e1ba9ecff0bf883|71|10:71">
 <form.text>
-This example was derived from <cc>State ex rel. Davidson v. Couch, 161 So. 431 (Fla. 1935)</cc>. The Davidson case was for inspection of municipal records. This form has been changed to accomplish inspection of corporate records under <st>sections 607.1601 and 607.1602, Florida Statutes</st>. Since this is not a review action, <trace>Fla. R. Civ. P.</trace><trace.deleted/> 1.630 applies.
+This example was derived from cc.ref.id="I013KMA">State ex rel. Davidson v. Couch, 161 So. 431 (Fla. 1935). The Davidson case was for inspection of municipal records. This form has been changed to accomplish inspection of corporate records under <field>st.ref.id="I02XEBF"</field>sections 607.1601 and 607.1602, Florida Statutes. Since this is not a review action, <trace>Fla. R. Civ. P.</trace><trace.deleted/> 1.630 applies.
 </form.text>
 </form>
 </section.body>
@@ -8245,7 +8254,7 @@ This example was derived from <cc>State ex rel. Davidson v. Couch, 161 So. 431 (
 <section.body>
 <para ct.id="3d29be30775711ee8e1ba9ecff0bf883|72|10:72">
 <para.text>
-See <st>Fla. R. Civ. P. Form 1.915</st>. This form can be used for proceedings under the Florida Family Law Rules of Procedure by changing plaintiff to petitioner, defendant to respondent and the caption.
+See st.ref.id="I048OK0">Fla. R. Civ. P. Form 1.915. This form can be used for proceedings under the Florida Family Law Rules of Procedure by changing plaintiff to petitioner, defendant to respondent and the caption.
 </para.text>
 </para>
 </section.body>
@@ -8343,7 +8352,7 @@ YOU ARE COMMANDED to refrain perpetually from exercising or attempting to exerci
 </signature.block>
 <form.para ct.id="3d29be30775711ee8e1ba9ecff0bf883|73|10:73">
 <form.text>
-This example was derived from <cc>State ex rel. Ayala v. Knott, 3 So. 2d 522 (Fla. 1941)</cc>. The form in the cited case is for an alternative writ. This form has been modified to make it perpetual or absolute. This is a review action so Florida Rule of Appellate Procedure 9.100(f) governs.
+This example was derived from cc.ref.id="I0308VR">State ex rel. Ayala v. Knott, 3 So. 2d 522 (Fla. 1941). The form in the cited case is for an alternative writ. This form has been modified to make it perpetual or absolute. This is a review action so Florida Rule of Appellate Procedure 9.100(f) governs.
 </form.text>
 </form>
 </section.body>
@@ -8362,7 +8371,7 @@ This example was derived from <cc>State ex rel. Ayala v. Knott, 3 So. 2d 522 (Fl
 <section.body>
 <para ct.id="3d29be30775711ee8e1ba9ecff0bf883|74|10:74">
 <para.text>
-See <st>Fla. R. Civ. P. Form 1.981</st>. The form must be changed to accommodate the change from Official Records Books in those counties that do not use that terminology.
+See st.ref.id="I048OIV">Fla. R. Civ. P. Form 1.981. The form must be changed to accommodate the change from Official Records Books in those counties that do not use that terminology.
 </para.text>
 </para>
 </section.body>
@@ -8381,7 +8390,7 @@ See <st>Fla. R. Civ. P. Form 1.981</st>. The form must be changed to accommodate
 <section.body>
 <para ct.id="3d29be30775711ee8e1ba9ecff0bf883|75|10:75">
 <para.text>
-See <st>Fla. R. Civ. P. 1.545</st>. The Supreme Court adopted <trace></trace>Form 1.998 in civil procedure and <trace></trace>Form 12.999 in family procedure. The appropriate form must be filed by the plaintiff or petitioner in family actions and by the prevailing party in civil actions when the matter is finally disposed of. The clerk files it for a pro se party or when the action is dismissed for lack of prosecution.
+See st.ref.id="I048OIS">Fla. R. Civ. P. 1.545. The Supreme Court adopted <trace></trace>Form 1.998 in civil procedure and <trace></trace>Form 12.999 in family procedure. The appropriate form must be filed by the plaintiff or petitioner in family actions and by the prevailing party in civil actions when the matter is finally disposed of. The clerk files it for a pro se party or when the action is dismissed for lack of prosecution.
 </para.text>
 </para>
 </section.body>
