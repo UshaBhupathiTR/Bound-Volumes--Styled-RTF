@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 # coding: utf-8
 
-# In[ ]:
+# In[718]:
 
 
 import zipfile
@@ -11,7 +11,6 @@ import string
 
 import re
 from collections import defaultdict
-
 
 import requests
 import time
@@ -23,9 +22,9 @@ import certifi
 from websockets.sync.client import connect
 
 
-# In[ ]:
+# In[719]:
 
-CHAPTER_NUMBER = 10
+
 def extract_full_text_with_breaks(docx_path):
     # Open the .docx file as a zip archive
     with zipfile.ZipFile(docx_path, 'r') as docx_zip:
@@ -87,7 +86,7 @@ def extract_full_text_with_breaks(docx_path):
     return ''.join(full_text)
 
 
-# In[ ]:
+# In[720]:
 
 
 # def extract_full_text_with_footnotes(doc_tree, footnote_tree):
@@ -145,7 +144,7 @@ def extract_full_text_with_breaks(docx_path):
 
 
 
-# In[ ]:
+# In[721]:
 
 
 # def extract_full_text_with_footnotes(doc_tree, footnote_tree):
@@ -209,7 +208,7 @@ def extract_full_text_with_breaks(docx_path):
 #     return ''.join(full_text)
 
 
-# In[ ]:
+# In[722]:
 
 
 # def extract_full_text_with_footnotes_track(doc_tree, footnote_tree):
@@ -324,7 +323,7 @@ def extract_full_text_with_breaks(docx_path):
 #     return ''.join(full_text)
 
 
-# In[ ]:
+# In[723]:
 
 
 def process_footnote_body(elem, inside_ins=False, inside_del=False):
@@ -390,7 +389,7 @@ def process_footnote_body(elem, inside_ins=False, inside_del=False):
 
 
 
-# In[ ]:
+# In[724]:
 
 
 # def extract_full_text_with_footnotes_track(doc_tree, footnote_tree):
@@ -464,7 +463,7 @@ def process_footnote_body(elem, inside_ins=False, inside_del=False):
 #     return ''.join(full_text)
 
 
-# In[ ]:
+# In[725]:
 
 
 def extract_full_text_with_footnotes_track(doc_tree, footnote_tree):
@@ -544,7 +543,7 @@ def extract_full_text_with_footnotes_track(doc_tree, footnote_tree):
     return ''.join(full_text)
 
 
-# In[ ]:
+# In[726]:
 
 
 def flatten(l):
@@ -555,7 +554,7 @@ def flatten(l):
             yield item
 
 
-# In[ ]:
+# In[727]:
 
 
 # def extract_full_text_with_footnotes_track(doc_tree, footnote_tree):
@@ -668,7 +667,7 @@ def flatten(l):
 #     return ''.join(full_text)
 
 
-# In[ ]:
+# In[728]:
 
 
 def extract_text_between_tags(text):
@@ -681,7 +680,7 @@ def extract_text_between_tags(text):
     return matches
 
 
-# In[ ]:
+# In[729]:
 
 
 def remove_text_between_tags(text, sub_text):
@@ -702,7 +701,7 @@ def remove_text_between_tags(text, sub_text):
     return result
 
 
-# In[ ]:
+# In[730]:
 
 
 def get_ending_treated(text):
@@ -716,7 +715,7 @@ def get_ending_treated(text):
     return return_text, i
 
 
-# In[ ]:
+# In[731]:
 
 
 # only for research references
@@ -727,28 +726,47 @@ def find_r_block_ending(text):
     return_text = []
     i = 0
     for i, line in enumerate(text):
-        # print("Processing line:", line)
-        if "<field>" not in line and "<trace.deleted/>" not in line and (not line.strip().startswith("<trace>")):
-            print("\n\nNo <field> tag found in line:", line)
+        # Check for natural ending boundaries of research reference blocks
+        clean_line = line.strip().lower()
+        
+        # Stop at structural boundaries that indicate end of research references
+        if (clean_line.startswith('<heading>') or 
+            clean_line.startswith('<section.') or
+            clean_line.startswith('<para ') or
+            clean_line.startswith('</section.') or
+            clean_line.startswith('<form.name.block>') or
+            clean_line.startswith('<outline.name.block>') or
+            ('research references' in clean_line and i > 0)):  # New research reference block
             break
-        # Extract text between <field> and </field>
-        match = re.search(r"<field>(.*?)</field>", line)
-        if match:
-            field_text = match.group(1)
-            # Check if any forbidden substring is present
-            if not any(f in field_text for f in forbidden):
-                break
-        # If no forbidden words, add to return_text
-        # updated_line = remove_text_between_tags(line)
-        # print("Adding line:", line.strip())
-        if line == "<trace.deleted/>":
+        
+        # FIXED: Process ALL lines until structural boundary, not just lines with field tags
+        if "<field>" in line:
+            # Process the line with field tags first
+            return_text.append(opening_tag_name + line.strip() + closing_tag_name)
+
+            # Extract text between <field> and </field> for lines with field tags
+            match = re.search(r"<field>(.*?)</field>", line)
+            if match:
+                field_text = match.group(1)
+                # Check if any forbidden substring is present
+                if not any(f in field_text for f in forbidden):
+                    # Found a field that's not in the allowed set - end of block
+                    break
+        elif line.strip() == "<trace.deleted/>":
+            # Handle trace.deleted tags
             return_text.append("<trace.deleted/>")
-            continue
-        return_text.append(opening_tag_name + line.strip() + closing_tag_name)
+        elif line.strip().startswith("<trace>"):
+            # Handle trace tags
+            return_text.append(line)
+        else:
+            # FIXED: Include any other content (like standalone text, other tags, etc.)
+            # This preserves all content in research reference blocks
+            return_text.append(line)
+            
     return return_text, i
 
 
-# In[ ]:
+# In[732]:
 
 
 def add_research_tags(lines):
@@ -759,6 +777,7 @@ def add_research_tags(lines):
     j = 0
     i = 0
     while i < len(lines):
+        extra_text = []
         line = lines[i]
         # print("Processing line:", i, ":", line)
 
@@ -786,10 +805,14 @@ def add_research_tags(lines):
                     rc_text = remove_text_between_tags(l, "<rc>")
                     modified_text.append( rc_text + "</rc></ref.text></reference.entry>")
                     # modified_text.append(l.replace("rc.ref.id", "<cite type=\"secondary\">") + "</cite>")
-                # else:
-                #     modified_text.append("<x>"+ l + "</x>")
+                else:
+                    # FIXED: Don't drop content that doesn't match ref patterns
+                    # This preserves trace elements and other content in research blocks
+                    extra_text.append(l)
             i = i + j + 2
             modified_text.append("</research.reference.block>")
+            # FIXED: Add any extra text that was collected from the research block
+            modified_text.extend(extra_text)
         # elif "rc.ref.id" in line or "tk.ref.id" in line or "wd.ref.id" in line:
         #     # print("Found rc.ref.id or tk.ref.id or wd.ref.id at line:", i)
         #     # Check for specific tags and replace them
@@ -810,7 +833,7 @@ def add_research_tags(lines):
     return "\n".join(modified_text), j+1
 
 
-# In[ ]:
+# In[733]:
 
 
 def split_text_by_continuous_roman_numerals(lines):
@@ -847,7 +870,7 @@ def split_text_by_continuous_roman_numerals(lines):
     return parts
 
 
-# In[ ]:
+# In[734]:
 
 
 def split_analytical_blocks(lines):
@@ -877,7 +900,7 @@ def split_analytical_blocks(lines):
     return sections
 
 
-# In[ ]:
+# In[735]:
 
 
 def split_numeric_sections(lines):
@@ -903,7 +926,7 @@ def split_numeric_sections(lines):
     return section_list
 
 
-# In[ ]:
+# In[736]:
 
 
 def split_into_sections(lines):
@@ -925,13 +948,13 @@ def split_into_sections(lines):
     return sections
 
 
-# In[ ]:
+# In[737]:
 
 
 ESSO_TOKEN='eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCIsImtpZCI6IlJERTBPVEF3UVVVMk16Z3hPRUpGTkVSRk5qUkRNakkzUVVFek1qZEZOVEJCUkRVMlJrTTRSZyJ9.eyJodHRwczovL3RyLmNvbS9mZWRlcmF0ZWRfdXNlcl9pZCI6IjYxMjIwNjAiLCJodHRwczovL3RyLmNvbS9mZWRlcmF0ZWRfcHJvdmlkZXJfaWQiOiJUUlNTTyIsImh0dHBzOi8vdHIuY29tL2xpbmtlZF9kYXRhIjpbeyJzdWIiOiJvaWRjfHNzby1hdXRofFRSU1NPfDYxMjIwNjAifV0sImh0dHBzOi8vdHIuY29tL2V1aWQiOiIzNzQ2NTE3NC0xZWI1LTQyZTgtYjFkOC02MDAwZDRlNDQ4NmQiLCJodHRwczovL3RyLmNvbS9hc3NldElEIjoiYTIwODE5OSIsImdpdmVuX25hbWUiOiJVc2hhIENoYW5kYW5hIiwiZmFtaWx5X25hbWUiOiJVc2hhIENoYW5kYW5hIiwicGljdHVyZSI6Imh0dHBzOi8vcy5ncmF2YXRhci5jb20vYXZhdGFyL2U2MTkxN2I5ZjQ2NzljNTgzYzY4NzEwODU4ZTllNjkwP3M9NDgwJnI9cGcmZD1odHRwcyUzQSUyRiUyRmNkbi5hdXRoMC5jb20lMkZhdmF0YXJzJTJGdXMucG5nIiwidXBkYXRlZF9hdCI6MTcyNzk2OTMxNywiZW1haWwiOiJ1c2hhY2hhbmRhbmEuYmh1cGF0aGlAdGhvbXNvbnJldXRlcnMuY29tIiwiZW1haWxfdmVyaWZpZWQiOmZhbHNlLCJpc3MiOiJodHRwczovL2F1dGgudGhvbXNvbnJldXRlcnMuY29tLyIsImF1ZCI6InRnVVZad1hBcVpXV0J5dXM5UVNQaTF5TnlvTjJsZmxJIiwiaWF0IjoxNzI3OTY5MzIwLCJleHAiOjE3MjgwMDUzMjAsInN1YiI6ImF1dGgwfDY0ZGRmZDkwZjZiODUwNGRmNDE5MTUyOSIsInNpZCI6IkMwWm9PSTQ2cElTWHdQQzZIbWhTalJfcjN3aHBtVGZFIiwibm9uY2UiOiJRM05GVjJ4V2ZtWjRja0pCWTNWWE1tZFlNVlZCVjFvNWJUZERhamxsWlZGMGFGUlNVRkpuV0drMWVnPT0ifQ.Zy9OGyzcK8vDFuTxNgWwvu0hHIb0zRiYATLpHHr-t-f93Y04Mvzlcnc4rS9PnIwfG7WlUOh82sX1uYZqgh2Ysw4lBYosFC7LvftopZ8hBK7HVNPOC9TEaCUUkShtdtKiifCHtY7ydEE-BDYUe6yv4NcUbtlhgKsAet1nyi4Bfl4UqVQullOlPpr693yb_76xM6EBOaHgl8_RyPK0AedD4XTWyviXn1hSAecxhyQaFqA5xxSk-6YxNujUrV9N1lZaSjxQdksapcIlc9_ugOKancs2Wvd4MTUJzoGtp_k6j3183sivzdbl47926F3Xb0OztjPXjxQ8T6gQkKbN2uzUCQ'
 
 
-# In[ ]:
+# In[738]:
 
 
 def find_closing_tag_llm(text, workflow_id):
@@ -997,7 +1020,7 @@ def find_closing_tag_llm(text, workflow_id):
             time.sleep(delay)
 
 
-# In[ ]:
+# In[739]:
 
 
 # def process_st_cc(text):
@@ -1010,7 +1033,7 @@ def find_closing_tag_llm(text, workflow_id):
 #     return result
 
 
-# In[ ]:
+# In[740]:
 
 
 def find_form_ending(lines):
@@ -1029,7 +1052,7 @@ def find_form_ending(lines):
     #     if ("<heading>" in line) and not any(x in line for x in exceptions):
     #         break
     for j, line in enumerate(lines):
-        if (f"<heading>{CHAPTER_NUMBER}:" in line):
+        if ("<heading>32:" in line) or ("Author's Comment" in line):
             break
     return j
 
@@ -1038,7 +1061,7 @@ def find_form_ending(lines):
 
 # 
 
-# In[ ]:
+# In[741]:
 
 
 # def parse_fi_levels(text):
@@ -1071,13 +1094,13 @@ def find_form_ending(lines):
 #     return root['children']
 
 
-# In[ ]:
+# In[742]:
 
 
 # parse_fi_levels_with_signatures(text)
 
 
-# In[ ]:
+# In[743]:
 
 
 import re
@@ -1151,7 +1174,7 @@ def parse_fi_levels_with_signatures(text):
 # print(hierarchy)
 
 
-# In[ ]:
+# In[744]:
 
 
 def parse_fi_levels_with_signatures_and_tables(text):
@@ -1230,7 +1253,7 @@ def parse_fi_levels_with_signatures_and_tables(text):
 # print(hierarchy)
 
 
-# In[ ]:
+# In[745]:
 
 
 def extract_placeholders(text):
@@ -1241,7 +1264,7 @@ def extract_placeholders(text):
     return re.sub(r'\[([^\]]+)\]', replacer, text)
 
 
-# In[ ]:
+# In[746]:
 
 
 def process_signature_group(lines):
@@ -1318,43 +1341,41 @@ def format_output(dated_line, groups_content):
 
     output = []
     output.append('<form.line align="l">')
-    output.append('  ' + dated_line_processed)
+    output.append(dated_line_processed)
     output.append('</form.line>')
-    output.append('\n')
     output.append('<signature.block ref="manual">')
-    output.append('  ')
     for group in groups_content:
         group_items, vertical_space_needed = process_signature_group(group)
-        output.append('  <signature.group position="r">')
-        output.append('    ')
+        output.append('<signature.group position="r">')
+
         if vertical_space_needed:
-            output.append('    <form.vertical.space amt="1"/>')
-            output.append('    ')
+            output.append('<form.vertical.space amt="1"/>')
+
         for item_type, label in group_items:
             if item_type == 'signature':
-                output.append('    <form.line align="l" lineover="y">')
-                output.append(f'      <inline.instr>&lsqb;{label}&rsqb;</inline.instr>')
-                output.append('    </form.line>')
-                output.append('    ')
+                output.append('<form.line align="l" lineover="y">')
+                output.append(f'<inline.instr>&lsqb;{label}&rsqb;</inline.instr>')
+                output.append('</form.line>')
+
             elif item_type == 'address':
-                output.append('    <form.line align="l">')
-                output.append(f'      <inline.instr>&lsqb;{label}&rsqb;</inline.instr>')
-                output.append('    </form.line>')
-                output.append('    ')
+                output.append('<form.line align="l">')
+                output.append(f'<inline.instr>&lsqb;{label}&rsqb;</inline.instr>')
+                output.append('</form.line>')
+
             elif item_type == 'accept':
-                output.append('    <form.line align="l">')
-                output.append(f'      Accepted: ')
-                output.append(f'      <inline.instr>&lsqb;{label}&rsqb;</inline.instr>')
-                output.append('    </form.line>')
-                output.append('    ')
-        output.append('  </signature.group>')
-        output.append('  ')
+                output.append('<form.line align="l">')
+                output.append(f'Accepted: ')
+                output.append(f'<inline.instr>&lsqb;{label}&rsqb;</inline.instr>')
+                output.append('</form.line>')
+
+        output.append('</signature.group>')
+
     output.append('</signature.block>')
     return '\n'.join(output)
 
 
 
-# In[ ]:
+# In[747]:
 
 
 import re
@@ -1449,29 +1470,29 @@ def table_content_to_xml(table_content, tbl_ident=None):
     # Compose XML
     xml = []
     xml.append(f'<tbl{tbl_attr_str}>')
-    xml.append('  <table>')
-    xml.append(f'    <tgroup align="{table_fields.get("tgroup.align", "left")}" cols="{table_fields.get("tgroup.cols", "2")}">')
+    xml.append('<table>')
+    xml.append(f'<tgroup align="{table_fields.get("tgroup.align", "left")}" cols="{table_fields.get("tgroup.cols", "2")}">')
     for cs in colspecs:
-        xml.append(f'      {cs}')
+        xml.append(f'{cs}')
     if thead:
-        xml.append('      <thead>')
+        xml.append('<thead>')
         for row in thead:
-            xml.append(f'        {row}')
-        xml.append('      </thead>')
+            xml.append(f'{row}')
+        xml.append('</thead>')
     if tbody:
-        xml.append('      <tbody>')
+        xml.append('<tbody>')
         for row in tbody:
-            xml.append(f'        {row}')
-        xml.append('      </tbody>')
-    xml.append('    </tgroup>')
-    xml.append('  </table>')
+            xml.append(f'{row}')
+        xml.append('</tbody>')
+    xml.append('</tgroup>')
+    xml.append('</table>')
     xml.append('</tbl>')
     for para in para_blocks:
         xml.append(para)
     return '\n'.join(xml)
 
 
-# In[ ]:
+# In[748]:
 
 
 # import re
@@ -1596,7 +1617,7 @@ def table_content_to_xml(table_content, tbl_ident=None):
 #     return '\n'.join(xml)
 
 
-# In[ ]:
+# In[749]:
 
 
 import re
@@ -1665,7 +1686,7 @@ def dict_tree_to_xml_sig(tree, indent=0, top_level=True):
     Recursively convert dict tree to XML lines.
     """
     xml_lines = []
-    indent_str = "  " * indent
+
     if top_level:
         xml_lines.append(f'<form.unit>')
 
@@ -1749,7 +1770,7 @@ def dict_tree_to_xml_sig(tree, indent=0, top_level=True):
     return xml_lines
 
 
-# In[ ]:
+# In[750]:
 
 
 def replace_bracketed(text):
@@ -1757,18 +1778,18 @@ def replace_bracketed(text):
     return re.sub(r'\[([^\]]+)\]', r'<inline.instr>&lsqb;\1&rsqb;</inline.instr>', text)
 
 
-# In[ ]:
+# In[751]:
 
 
 def find_table_ending(text):
     """Find the end of a table in the text."""
     for i, line in enumerate(text):
         if '<field>' not in line:
-            return i
+            return i-1
     return len(text)  # If no table found, return end of text
 
 
-# In[ ]:
+# In[752]:
 
 
 def find_fcap_ending(lines):
@@ -1779,7 +1800,19 @@ def find_fcap_ending(lines):
     return len(lines)  # If no non-fcap field found, return end of lines
 
 
-# In[ ]:
+# In[753]:
+
+
+def find_fi_ending(lines):
+    """Find the end of a figure/caption block."""
+    for i, line in enumerate(lines):
+        if '<heading>Notes to Form</heading>' in line or '<form.name.block>Notes to Form</form.name.block>' in line or '<form.name.block>Drafter\'s Note</form.name.block>' in line:
+            print("Found notes to form")
+            return i-1
+    return len(lines)  # If no non-fcap field found, return end of lines
+
+
+# In[754]:
 
 
 def update_form_tags(lines):
@@ -1803,9 +1836,10 @@ def update_form_tags(lines):
 
     if "fcap.ref" in lines[0] or "fcap.ref" in lines[1]:
         refname = re.search(r'fcap.ref="([^"]+)"', lines[0] + lines[1]).group(1)
-        form_result.append(f"<caption.block ref={refname} date.updated=\"0\">")
-        if "fcap.ref" in lines[1]:
-            name =  re.search(r'</field>([^<]+)$', lines[1]).group(1).strip() if name_match else ''
+        form_result.append(f"<caption.block ref=\"{refname}\" date.updated=\"0\">")
+        if "fcap.ref" in lines[1] and "</field>" in lines[1]:
+            name_match_1 = re.search(r'</field>([^<]+)$', lines[1])
+            name = name_match_1.group(1).strip() if name_match_1 else ''
         form_result.append(f"<form.line align = \"c\">{name}</form.line>")
         fcap_index = find_fcap_ending(lines)
         # form_result.append("</caption.block>")
@@ -1825,6 +1859,11 @@ def update_form_tags(lines):
             updated_lines[i]  = re.sub(r'<para.text>', '<form.text>', line.strip())
         if "</para.text>" in line.strip():
             updated_lines[i]  = re.sub(r'</para.text>', '</form.text>', line.strip())
+        if "<heading>" in line.strip(): #and all(x not in line for x in ["Notes to Form", "Drafter's Note", "Tax Notes"]):
+            print(f"Found heading line: {line.strip()}")
+            updated_lines[i]  = re.sub(r'<heading>', '<form.name.block>', line.strip())
+            updated_lines[i] = re.sub(r'</heading>', '</form.name.block>', updated_lines[i])
+            
     
     i = 0
     # print(f"Processing {updated_lines}")
@@ -1833,25 +1872,40 @@ def update_form_tags(lines):
         # Handle tables
 
         if 'table.resize=' in line or "tbl.ident" in line:
+            
             table_index = find_table_ending(updated_lines[i:])
+            # print("Table found:", updated_lines[i:i + table_index + 1])
+
             table_result = table_content_to_xml(updated_lines[i:i + table_index + 1], tbl_ident=None)
             form_result.append(table_result)
             if "fcap.ref" in lines[0] or "fcap.ref" in lines[1]:
                 form_result.append("</caption.block>")
             i += table_index + 1
+            # print("Form result so far:", form_result)
+            print("Continuing after table...", updated_lines[i])
             continue
         # Handle fi.lvl
         elif 'fi.lvl=' in line:
-            # print(updated_lines[i:])
-            temp_output = parse_fi_levels_with_signatures_and_tables(updated_lines[i:])
+            print("fi.lvl block found, processing...", updated_lines[i:])
+            # print(i)
+            fi_index =  find_fi_ending(updated_lines[i:])
+            print(updated_lines[i:i + fi_index + 1])
+            temp_output = parse_fi_levels_with_signatures_and_tables(updated_lines[i:i + fi_index + 1])
             temp_output_result = dict_tree_to_xml_sig(temp_output)
             form_result.append("\n".join(temp_output_result))
-            break  # Stop processing after fi.lvl block
+            print("Form result so far:", form_result)
+            i += fi_index + 1
+            print(len(updated_lines))
+            print(i)
+            print("Continuing after fi.lvl...", updated_lines[i] if i < len(updated_lines) else "End of lines")
+            continue  # Stop processing after fi.lvl block
         elif ('fvs.amt' in line) or ('fal.lo' in line) or ('fsig.pos' in line):
+            # print("Signature block found, processing...", updated_lines[i:])
             signature_index = find_table_ending(updated_lines[i:])
             dated_line, groups_content = parse_input(updated_lines[i:i + signature_index + 1])
             sig_result = format_output(dated_line, groups_content) 
             form_result.append(sig_result)
+            # print("Form result so far:", form_result)
             i += signature_index + 1
             continue
         else:
@@ -1860,18 +1914,118 @@ def update_form_tags(lines):
             form_result.append(line)
             i += 1
     form_result.append("</form>")
+    # print("Final form result:", form_result)
     return "\n".join(form_result), index_j
 
 
-# In[ ]:
+# In[755]:
+
+
+def add_comment_blocks(lines):
+    i = 0
+    result = []
+    while i < len(lines):
+        line = lines[i].strip()
+        # Check for Author's Comment triggers
+        if ("<heading>Author's Comment</heading>" in line) or ("<trace>Author's Comment</trace>" in line) or ("Author's Comment" in line):
+            
+            result.append(f'<commentary.note>')
+            result.append(f'<head>')
+            result.append(f'<name.block>')
+            result.append(f'<name>')
+            result.append(f'<bold>Author&apos;s Comment</bold>')
+            result.append(f'</name>')
+            result.append(f'</name.block>')
+            result.append(f'</head>')
+            i += 1  # Skip the trigger line
+
+            # Collect lines until the next heading
+            while i < len(lines) and "<heading>" not in lines[i].strip():
+                result.append(lines[i].strip())
+                i += 1
+
+            result.append("</commentary.note>")
+        else:
+            # If not a comment block, just move to the next line
+            result.append(lines[i].strip())
+            i += 1
+    return result
+
+
+# In[756]:
+
+
+def add_notes(lines):
+    i = 0
+    result = []
+    while i < len(lines):
+        line = lines[i].strip()
+        # line = line.replace("<form.name.block>Notes to Form</form.name.block>", "<heading>Notes to Form</heading>")
+        # line = line.replace("<form.name.block>Drafter's Note</form.name.block>", "<heading>Drafter's Note</heading>")
+        # line = line.replace("<form.name.block>Tax Notes</form.name.block>", "<heading>Tax Notes</heading>")
+        # if "<heading>Notes to Form</heading>" in line or "<trace.deleted Drafter's Note />" in line:
+        if ("<heading>Notes to Form</heading>" in line) or ("<trace>Notes to Form</trace>" in line) or ("<heading>Drafter's Note</heading>" in line):
+            # lines[i] = lines[i].replace("<form.name.block>Notes to Form</form.name.block>", "<heading>Notes to Form</heading>")
+            # line = line.replace("<form.name.block>Notes to Form</form.name.block>", "<heading>Notes to Form</heading>")
+            result.append("<note.block>")
+            i += 1
+            # Check if next line is a heading
+            note_head = None
+            flag_ng = False
+            if i < len(lines):
+                match = re.match(r"<heading>(.*?)</heading>", lines[i].strip())
+                if match:
+                    note_head = match.group(1)
+                    i += 1
+            if note_head:
+                if "tax notes" in note_head.lower():
+                    result.append('<note.group note.head="taxnotes">')
+                else:
+                    result.append(f'<note.group note.head="none">')
+                flag_ng=True
+            else:
+                # result.append(lines[i].strip())
+                if lines[i].strip() != "<research.reference.block>":
+                    result.append('<note.group note.head="none">')
+                    flag_ng=True
+            # Collect note lines until <research.reference.block> is found
+            while i < len(lines) and lines[i].strip() != "<research.reference.block>":
+                if "Drafter's Note" not in lines[i]:
+                    result.append(lines[i].strip())
+                i += 1
+            
+            if flag_ng:
+                result.append(f"</note.group>")
+            # Now add the research reference block (and its content)
+            if i < len(lines) and lines[i].strip() == "<research.reference.block>":
+                result.append("<research.reference.block>")
+                i += 1
+                # Collect lines inside the research reference block
+                while i < len(lines) and lines[i].strip() != "</research.reference.block>":
+                    result.append(lines[i].strip())
+                    i += 1
+                # Close research.reference.block
+                if i < len(lines) and lines[i].strip() == "</research.reference.block>":
+                    result.append("</research.reference.block>")
+                    i += 1
+            result.append("</note.block>")
+            # result.append("</form>")  # Add form.unit after note.block - REMOVED: This was causing extra </para> tags
+        else:
+            result.append(line)
+            i += 1
+    return result
+
+
+# In[757]:
 
 
 def add_tags(lines):
+    
     result = []
     i = 0
     while i < len(lines):
         line = lines[i]
-        
+        print(i, line)
         if "<field>" in line:
             # Search for <field>...</field> in the whole line
             match = re.search(r"<field>(.*?)</field>", line)
@@ -1880,26 +2034,35 @@ def add_tags(lines):
                 if "form.du" in field_text or "form.samp" in field_text or "fcap.ref" in field_text:
                     # Make sure update_form_tags is defined elsewhere
                     form_line, offset = update_form_tags(lines[i:])
+                    # print(form_line)
+                    # print(offset)
                     # print("====================Form line found:", form_line)
                     result.append(form_line)
                     i += offset  # Skip processed lines
                     continue  # Avoid incrementing i again at the end
+                    
                 else:
                     result.append(line)
             else:
-                result.append(line)            
+                result.append(line)       
         else:
             result.append(line)
         i += 1
     
     headings_done = False
     heading_lines = []
-        
     non_heading_lines = []
+    # print("After adding form tags:", result)
     # If any line contains "<form ", return as-is
-    
+    results_updated = add_comment_blocks(result)
     # if any("<form " in line for line in result):
-    for line in result:
+    # print("Checking for notes...", results_updated)
+    # for i, line in enumerate(results_updated):
+    #     results_updated[i] = results_updated[i].replace("<form.name.block>Notes to Form</form.name.block>", "<heading>Notes to Form</heading>")
+    #     results_updated[i] = results_updated[i].replace("<form.name.block>Drafter's Note</form.name.block>", "<heading>Drafter's Note</heading>")
+    #     results_updated[i] = results_updated[i].replace("<form.name.block>Tax Notes</form.name.block>", "<heading>Tax Notes</heading>")
+    # results_updated = add_notes(results_updated)
+    for line in results_updated:
         if not headings_done and "<heading>" in line:
             heading_lines.append(line)
         else:
@@ -1911,7 +2074,7 @@ def add_tags(lines):
     # return result
 
 
-# In[ ]:
+# In[758]:
 
 
 def process_tip(lines):
@@ -1951,7 +2114,7 @@ def add_feature_tags(input_lines):
     return output_lines
 
 
-# In[ ]:
+# In[759]:
 
 
 def add_para_tags(text):
@@ -1984,16 +2147,16 @@ def add_para_tags(text):
                 line = line.replace("</field>", ">\n<para.text>\n", 1)
                 print("After p.ct.id replacement:", line)
                 
-                if ("st.ref.id" in line) or ("cc.ref.id" in line):
-                    line = find_closing_tag_llm(line, workflow_id = "6c2542fd-bda9-47fa-8998-d86a0f6611e2")
+                # if ("st.ref.id" in line) or ("cc.ref.id" in line) or ("x.ref.id" in line):
+                #     line = find_closing_tag_llm(line, workflow_id = "6c2542fd-bda9-47fa-8998-d86a0f6611e2")
                 
                 # Replace 'p.ct.id=' with '<para ct.id=' in the line
 
-                if 'x.ref.id=' in line:
-                    print("Before x.ref.id replacement:", line)
-                    line = re.sub(r'<field>x\.ref\.id="[^"]*"</field>', '<x>', line.strip())
-                    print("Found x.ref.id in line:", line)
-                    # b = b.replace("</field>", "", -1)
+                # if 'x.ref.id=' in line:
+                #     print("Before x.ref.id replacement:", line)
+                #     line = re.sub(r'<field>x\.ref\.id="[^"]*"</field>', '<x>', line.strip())
+                #     print("Found x.ref.id in line:", line)
+                #     # b = b.replace("</field>", "", -1)
                 if 'url.ref.id=' in line:
                     line = re.sub(r'<field>url\.ref\.id="[^"]*"</field>', '', line.strip())
                     line = re.sub(r'<url>', '<url>', line.strip())
@@ -2020,8 +2183,8 @@ def add_para_tags(text):
                 
                 if '<rc>' in line:
                     result.append('</rc>')
-                if '<x>' in line:
-                    result.append('</x>')
+                # if '<x>' in line:
+                #     result.append('</x>')
                 
                 # Only add closing para tags if we actually started a para block
                 if para_already_added:
@@ -2041,7 +2204,7 @@ def add_para_tags(text):
     return result
 
 
-# In[ ]:
+# In[760]:
 
 
 def add_footnote_tags(lines):
@@ -2084,14 +2247,14 @@ def add_footnote_tags(lines):
                         b = b.replace("<field>", "", 1)
                         b = b.replace("</field>", ">\n<para.text>\n", 1)
                         
-                        if ("st.ref.id" in b) or ("cc.ref.id" in b):
-                            print("st or cc foung in footnote body:")
-                            b = find_closing_tag_llm(b, workflow_id = "6c2542fd-bda9-47fa-8998-d86a0f6611e2")
+                        # if ("st.ref.id" in b) or ("cc.ref.id" in b) or ("x.ref.id" in b):
+                        #     print("st or cc foung in footnote body:")
+                        #     b = find_closing_tag_llm(b, workflow_id = "6c2542fd-bda9-47fa-8998-d86a0f6611e2")
                         # Replace 'p.ct.id=' with '<para ct.id=' in the line
 
-                        if 'x.ref.id=' in b:
-                            b = re.sub(r'<field>x\.ref\.id=(.*)</field>', '<x>', b.strip())
-                            # b = b.replace("</field>", "", -1)
+                        # if 'x.ref.id=' in b:
+                        #     b = re.sub(r'<field>x\.ref\.id=(.*)</field>', '<x>', b.strip())
+                        #     # b = b.replace("</field>", "", -1)
 
 
                         # b = re.sub(r'p\.ct\.id=', '<para ct.id=', line.strip())
@@ -2136,7 +2299,7 @@ def add_footnote_tags(lines):
     
 
 
-# In[ ]:
+# In[761]:
 
 
 # def modify_table_tags(lines):
@@ -2144,7 +2307,7 @@ def add_footnote_tags(lines):
 #     result.append("<tbl>")
 
 
-# In[ ]:
+# In[762]:
 
 
 # def add_tables(lines):
@@ -2169,7 +2332,7 @@ def add_footnote_tags(lines):
         
 
 
-# In[ ]:
+# In[763]:
 
 
 def build_reference_block(lines):
@@ -2202,7 +2365,7 @@ def build_reference_block(lines):
     return "\n".join(block), j
 
 
-# In[ ]:
+# In[764]:
 
 
 def find_im_ending(lines):
@@ -2216,7 +2379,7 @@ def find_im_ending(lines):
     return len(lines)  # If no closing tag found, return end of lines
 
 
-# In[ ]:
+# In[765]:
 
 
 import re
@@ -2267,112 +2430,28 @@ def add_images(lines):
 # In[ ]:
 
 
-def add_notes(lines):
-    i = 0
-    result = []
-    while i < len(lines):
-        line = lines[i].strip()
-        # if "<heading>Notes to Form</heading>" in line or "<trace.deleted Drafter's Note />" in line:
-        if ("<heading>Notes to Form</heading>" in line) or ("<trace>Notes to Form</trace>" in line) or ("<heading>Drafter's Note</heading>" in line):
-            result.append("<note.block>")
-            i += 1
-            # Check if next line is a heading
-            note_head = None
-            if i < len(lines):
-                match = re.match(r"<heading>(.*?)</heading>", lines[i].strip())
-                if match:
-                    note_head = match.group(1)
-                    i += 1
-            if note_head:
-                if "tax notes" in note_head.lower():
-                    result.append('<note.group note.head="taxnotes">')
-                else:
-                    result.append(f'<note.group note.head="none">')
-            else:
-                # result.append(lines[i].strip())
-                if lines[i].strip() != "<research.reference.block>":
-                    result.append('<note.group note.head="none">')
-            # Collect note lines until <research.reference.block> is found
-            while i < len(lines) and lines[i].strip() != "<research.reference.block>":
-                if "Drafter's Note" not in lines[i]:
-                    result.append(lines[i].strip())
-                i += 1
-            
-            
-            result.append("</note.group>")
-            # Now add the research reference block (and its content)
-            if i < len(lines) and lines[i].strip() == "<research.reference.block>":
-                result.append("<research.reference.block>")
-                i += 1
-                # Collect lines inside the research reference block
-                while i < len(lines) and lines[i].strip() != "</research.reference.block>":
-                    result.append(lines[i].strip())
-                    i += 1
-                # Close research.reference.block
-                if i < len(lines) and lines[i].strip() == "</research.reference.block>":
-                    result.append("</research.reference.block>")
-                    i += 1
-            result.append("</note.block>")
-            # result.append("</form>")  # Add form.unit after note.block - REMOVED: This was causing extra </para> tags
-        else:
-            result.append(line)
-            i += 1
-    return result
+
 
 
 # In[ ]:
 
 
-def add_comment_blocks(lines):
-    i = 0
-    result = []
-    while i < len(lines):
-        line = lines[i].strip()
-        # if "<heading>Notes to Form</heading>" in line or "<trace.deleted Drafter's Note />" in line:
-        if ("<heading>Author's Comment</heading>" in line) or ("<trace>Author's Comment</trace>" in line):
-            # result.append("<note.block>")
-            i += 1
-            # Check if next line is a heading
-            note_head = None
-            if i < len(lines):
-                match = re.match(r"<heading>(.*?)</heading>", lines[i].strip())
-                if match:
-                    note_head = match.group(1)
-                    i += 1
-            if note_head:
-            #     if "tax notes" in note_head.lower():
-            #         result.append('<note.group note.head="taxnotes">')
-                # else:
-                result.append(f'<commentary.note>')
 
-                result.append(f'<head>')
-                result.append(f'<name.block>')
-                result.append(f'<name>')
-                result.append(f'<bold>Author&apos;s Comment</bold>')
-                result.append(f'</name>')
-                result.append(f'</name.block>')
-                result.append(f'</head>')
-            # Now add the research reference block (and its content)
-            # if i < len(lines) and lines[i].strip() == "<research.reference.block>":
-            #     result.append("<research.reference.block>")
-            #     i += 1
-            #     # Collect lines inside the research reference block
-            while i < len(lines) and lines[i].strip() != "<section>":
-                result.append(lines[i].strip())
-                i += 1
-            #     # Close research.reference.block
-            #     if i < len(lines) and lines[i].strip() == "</research.reference.block>":
-            #         result.append("</research.reference.block>")
-            #         i += 1
-            result.append("</commentary.note>")
-            # result.append("</form>")  # Add form.unit after note.block
-        else:
-            result.append(line)
-            i += 1
-    return result
 
 
 # In[ ]:
+
+
+
+
+
+# In[766]:
+
+
+# add_comment_blocks(test)
+
+
+# In[767]:
 
 
 def add_items_tags(lines):
@@ -2395,7 +2474,7 @@ def add_items_tags(lines):
     return result
 
 
-# In[ ]:
+# In[768]:
 
 
 import re
@@ -2503,11 +2582,10 @@ def parse_checklist_dynamic(input_text):
 # print(json.dumps(result, indent=2))
 
 
-# In[ ]:
+# In[769]:
 
 
 import re
-import os
 
 
 def extract_para_info(text):
@@ -2576,7 +2654,7 @@ def convert(json_data):
 
 
 
-# In[ ]:
+# In[770]:
 
 
 def add_checklist(input_lines):
@@ -2656,13 +2734,7 @@ def add_checklist(input_lines):
     return output_lines, heading_lines
 
 
-# In[ ]:
-
-
-
-
-
-# In[ ]:
+# In[771]:
 
 
 def process_x_lines(lines):
@@ -2689,215 +2761,246 @@ def process_x_lines(lines):
     return result
 
 
-# In[ ]:
+# In[772]:
 
 
-#Execution starts here
+def flatten_trace(text):
+    # This pattern finds runs of 2+ consecutive <trace>...</trace> tags
+    pattern = r'((?:<trace>.*?</trace>){2,})'
 
-def process_docx(docx_path):
-    # docx_path = r"C:\Users\6122060\Downloads\AIML\XML Track Changes\Chapter conversion\Forms\Bound Volumes--Styled RTF\NYLB\docx_NYLB 30 (revision copy).docx"
-    with zipfile.ZipFile(docx_path, 'r') as docx_zip:
-        xml_content = docx_zip.read('word/document.xml')
-        # Try to read footnotes.xml if it exists
-        try:
-            footnote_xml_content = docx_zip.read('word/footnotes.xml')
-            footnote_tree = etree.fromstring(footnote_xml_content)
-        except KeyError:
-            footnote_xml_content = None
-            footnote_tree = None
+    def flatten_traces(match):
+        # Find all <trace> contents in the matched sequence
+        texts = re.findall(r'<trace>(.*?)</trace>', match.group(0), re.DOTALL)
+        # Flatten and wrap in a single <trace>
+        return f'<trace>{" ".join(t.strip() for t in texts)}</trace>'
+    
+    # Replace only runs of 2 or more consecutive <trace> tags
+    output = re.sub(pattern, flatten_traces, text)
+    output = re.sub("</trace><trace.deleted/>", "</trace>", output)
+    output = re.sub("<trace></trace>", "", output)
+    output = re.sub("</trace><trace>", "", output)
 
-    doc_tree = etree.fromstring(xml_content)
-
-
-    whole_text = extract_full_text_with_footnotes_track(doc_tree, footnote_tree)
-
-    # # Parse the footnotes XML
-    footnote_tree = etree.fromstring(xml_content)
-
-    # Pretty print and save to a file
-    pretty_footnote_xml = etree.tostring(
-        footnote_tree,
-        pretty_print=True,
-        encoding='utf-8',
-        xml_declaration=True
-    )
-
-    with open("temp_files/doc_document_xml.xml", 'wb') as f:
-        f.write(pretty_footnote_xml)
-
-    # You can now use `raw_text` in another application or write it to a file
-    with open('temp_files/test_doc_iiioutput.txt', 'w', encoding="utf-8") as f:
-        f.write(whole_text)
-
-    return whole_text
+    return output
 
 
-def add_inital_tags():
-    # Adding outline name block
-    if "Chapter".lower() in lines[i+1].lower():
-        remainder_line = lines[i+1].split("Chapter")[-1].strip().split(" ")
-        xml_text += f"\n<outline.name.block><label>Chapter</label><designator>{remainder_line[0]}</designator><name>{remainder_line[1]}</name></outline.name.block>"
-        i += 1  # Skip the next line as it has been processed
-
-    if "Scope Statement".lower() in lines[i+1].lower():
-        xml_text += "\n<scope.statement.block>"
-        xml_text += f"\n<para><para.text>{lines[i+2]}</para.text></para>"
-        xml_text += "\n</scope.statement.block>"
-        i += 2  # Skip the next two lines as they have been processed
-
-    if "Treated Elsewhere".lower() in lines[i+1].lower():
-        xml_text += "\n<treated.elsewhere.block>"
-        treated_text, index = get_ending_treated(lines[i+2:])
-        index = i + 2 + index  # Adjust index to account for the lines processed
-        treated_text = process_x_lines(treated_text)
-        xml_text += f"\n{("\n".join(treated_text))}"
-        xml_text += "\n</treated.elsewhere.block>"
-        i = index  # Skip the processed lines
-    # print(i)
-    if "Research References".lower() in lines[i].lower():
-        # xml_text += "\n<research.reference.block>"
-        # reference_text, j = find_r_block_ending(lines[i+1:])
-        ref_block, j = build_reference_block(lines[i+1:])
-        xml_text += "\n" + ref_block
-        # xml_text += "\n".join(reference_text)
-        # xml_text += "\n</research.reference.block>"
-
-    xml_text += "\n</front>"
-    i += j+1 # Skip the next j lines as they have been processed
-    CHAPTER_NUMBER=remainder_line[0].split(".")[0].strip()
-    return xml_text, i
+# In[773]:
 
 
+def main_section(s_xml_text, section_blocks):
 
-
-
-
-
-# In[ ]:
-
-
-def process_chapter_body(second_set_lines, s_xml_text):
-    """Main entry for processing chapter body and appending XML."""
-    s_xml_text.append("<chapter.body>")
-    parts = split_text_by_continuous_roman_numerals(second_set_lines)
-    if parts:
-        for part in parts:
-            process_part(part, s_xml_text)
-    else:
-        print("The Roman numerals are not continuous. No sections were extracted.")
-    s_xml_text.append("</chapter.body>")
-    s_xml_text.append("</chapter>")
-    return s_xml_text
-def process_part(part, s_xml_text):
-    """Processes a single part (by Roman numeral) and appends XML."""
-    first_line = part.split("\n")[0].strip()
-    s_xml_text.append("<analytical.level>")
-    s_xml_text.append("<front>\n<outline.name.block>")
-    s_xml_text.append(f"<designator>{first_line.split('. ')[0]}</designator>")
-    s_xml_text.append(f"<name>{' '.join(first_line.split('. ')[1:])}</name>")
-    s_xml_text.append("</outline.name.block>\n</front>")
-
-    analytical_blocks = split_analytical_blocks(part.split("\n")[1:])
-    s_xml_text.append("<analytical.level.body>")
-    if analytical_blocks:
-        for designator, lines in analytical_blocks.items():
-            process_analytical_block(designator, lines, s_xml_text)
-    else:
-        print("No analytical blocks found in the part.")
-        process_section_blocks(part.split("\n")[1:], s_xml_text)
-    s_xml_text.append("</analytical.level.body>")
-    s_xml_text.append("</analytical.level>")
-
-def process_analytical_block(designator, lines, s_xml_text):
-    """Processes an analytical block and appends XML."""
-    s_xml_text.append("<analytical.level>")
-    s_xml_text.append("<front>\n<outline.name.block>")
-    s_xml_text.append(f"<designator>{designator}</designator>")
-    s_xml_text.append(f"<name>{' '.join(lines[0].split('. ')[1:])}</name>")
-    s_xml_text.append("</outline.name.block>\n</front>")
-
-    number_sections = split_numeric_sections(lines[1:])
-    s_xml_text.append("<analytical.level.body>")
-    if number_sections:
-        for n_section in number_sections:
-            process_numeric_section(n_section, s_xml_text)
-    else:
-        process_section_blocks(lines[1:], s_xml_text)
-    s_xml_text.append("</analytical.level.body>")
-    s_xml_text.append("</analytical.level>")
-
-def process_numeric_section(n_section, s_xml_text):
-    """Processes a numeric section and appends XML."""
-    s_xml_text.append("<analytical.level>")
-    s_xml_text.append("<front>\n<outline.name.block>")
-    s_xml_text.append(f"<designator>{n_section[0].split('.')[0]}</designator>")
-    s_xml_text.append(f"<name>{' '.join(n_section[0].split('.')[1:])}</name>")
-    s_xml_text.append("</outline.name.block>\n</front>")
-    section_blocks = split_into_sections(n_section[1:])
-    s_xml_text.append("<analytical.level.body>")
-    process_section_blocks(section_blocks, s_xml_text)
-    s_xml_text.append("</analytical.level.body>")
-    s_xml_text.append("</analytical.level>")
-
-def process_section_blocks(section_blocks, s_xml_text):
-    """Processes section blocks (list of sections) and appends XML."""
     s_xml_text.append("<section.block>")
     for section in section_blocks:
         if not section:
             continue
-        process_section(section, s_xml_text)
-    s_xml_text.append("</section.block>")
+        designator = section[0].split(". ")[0]                    
+        
+        # s_xml_text.append("<section.block>")
+        s_xml_text.append("<section>")
+        s_xml_text.append("<section.front>")
+        s_xml_text.append("<outline.name.block>")
+        s_xml_text.append("<label>&sect;</label>")
+        s_xml_text.append(f"<designator>{designator}</designator>")
+        s_xml_text.append(f"<name>{" ".join(section[0].split('. ')[1:])}</name>")
+        s_xml_text.append("</outline.name.block>")
+        print("eSection",section)
+        j=0
+        rest_section = section[1:]
+        if "research reference" in section[1].lower():
+            ref_block, j = build_reference_block(section[2:])
+            s_xml_text.append(ref_block)
+            rest_section = section[j+2:]
 
-def process_section(section, s_xml_text):
-    """Processes a single section and appends XML."""
-    designator = section[0].split(". ")[0]
-    name = " ".join(section[0].split('. ')[1:])
-    s_xml_text.append("<section>")
-    s_xml_text.append("<section.front>")
-    s_xml_text.append("<outline.name.block>")
-    s_xml_text.append("<label>&sect;</label>")
-    s_xml_text.append(f"<designator>{designator}</designator>")
-    s_xml_text.append(f"<name>{name}</name>")
-    s_xml_text.append("</outline.name.block>")
 
-    rest_section = section[1:]
-    if len(rest_section) > 1 and "research reference" in rest_section[0].lower():
-        ref_block, j = build_reference_block(rest_section[1:])
-        s_xml_text.append(ref_block)
-        rest_section = rest_section[j+1:]
+        # print("Section j",rest_section)
+        # Process the section body for research tags
+        research_tags_added, k = add_research_tags(rest_section)
 
-    research_tags_added, _ = add_research_tags(rest_section)
-    para_tags_added = add_para_tags(research_tags_added)
-    tagged, form_heading_lines = add_tags(para_tags_added)
-    if form_heading_lines:
-        s_xml_text.append("<online.view>")
-        for heading in form_heading_lines:
-            s_xml_text.append(heading.replace("<heading>","<online.view.item>").replace("</heading>","</online.view.item>").strip())
-        s_xml_text.append("</online.view>")
-
-    feature_tagged = add_feature_tags(tagged)
-    footnote_tagged = add_footnote_tags(feature_tagged)
-    image_tagged = add_images(footnote_tagged)
-    note_tagged = add_notes(image_tagged)
-    comment_tags_added = add_comment_blocks(note_tagged)
-
-    # Checklist handling
-    if "Checklist--" in name:
-        list_tagged, heading_lines = add_checklist(comment_tags_added)
-        if heading_lines:
+        # print("Section after research tags:", research_tags_added)
+        #Process the section body for paragraph tags
+        para_tags_added = add_para_tags(research_tags_added)
+        print("Paragraph tags added 1:", para_tags_added)
+        
+        #Process the section body for form, signature and table tags
+        tagged_old, form_heading_lines = add_tags(para_tags_added)
+        print("After adding form tags:", tagged_old)
+        if form_heading_lines:
             s_xml_text.append("<online.view>")
-            for heading in heading_lines:
+            for heading in form_heading_lines:
                 s_xml_text.append(heading.replace("<heading>","<online.view.item>").replace("</heading>","</online.view.item>").strip())
             s_xml_text.append("</online.view>")
-    else:
-        list_tagged = note_tagged
+        # print("After adding form tags:", tagged)
+        tagged = [part for item in tagged_old for part in item.split("\n")]
+        for i, line in enumerate(tagged):
+            tagged[i] = tagged[i].replace("<form.name.block>Notes to Form</form.name.block>", "<heading>Notes to Form</heading>")
+            tagged[i] = tagged[i].replace("<form.name.block>Drafter's Note</form.name.block>", "<heading>Drafter's Note</heading>")
+            tagged[i] = tagged[i].replace("<form.name.block>Tax Notes</form.name.block>", "<heading>Tax Notes</heading>")
+            
+        feature_tagged = add_feature_tags(tagged) 
+        #Process the section body for footnote tags
+        footnote_tagged = add_footnote_tags(feature_tagged)
 
-    items_tagged = add_items_tags(list_tagged)
-    s_xml_text.append("</section.front>")
-    s_xml_text.append("<section.body>")
-    s_xml_text.append("\n".join(items_tagged))
-    s_xml_text.append("</section.body>")
-    s_xml_text.append("</section>")
+        #Process images
+        image_tagged = add_images(footnote_tagged)
+
+        # print("Image tagged:", image_tagged)
+
+        #Process note block
+        note_tagged = add_notes(image_tagged)
+
+        comment_tags_added = add_comment_blocks(note_tagged)
+
+        #Process checklist block
+        if "Checklist--" in " ".join(section[0].split('. ')[1:]):
+            list_tagged, heading_lines = add_checklist(comment_tags_added)
+            
+            if heading_lines:
+                s_xml_text.append("<online.view>")
+                for heading in heading_lines:
+                    s_xml_text.append(heading.replace("<heading>","<online.view.item>").replace("</heading>","</online.view.item>").strip())
+                s_xml_text.append("</online.view>")
+                
+        else:
+            list_tagged = comment_tags_added
+        
+        items_tagged = add_items_tags(list_tagged)
+        
+        s_xml_text.append("</section.front>")
+        
+        
+        s_xml_text.append("<section.body>")
+
+        s_xml_text.append("\n".join(items_tagged))
+        s_xml_text.append("</section.body>")
+        
+        s_xml_text.append("</section>")
+    s_xml_text.append("</section.block>")
+   
+
+    return s_xml_text
+
+
+# In[774]:
+
+
+#Execution starts here
+
+
+# In[775]:
+
+
+docx_path = r'C:\Users\6122060\Downloads\track changes\doc_NYLB 32 (revision copy)_track.docx'
+# docx_path = r"C:\Users\6122060\Downloads\FLPRFMS 10 TRACKING & REVISIONS (revision copy).docx"
+# docx_path = r"C:\Users\6122060\Downloads\AIML\XML Track Changes\Chapter conversion\Forms\Bound Volumes--Styled RTF\NYLB\docx_NYLB 30 (revision copy).docx"
+with zipfile.ZipFile(docx_path, 'r') as docx_zip:
+    xml_content = docx_zip.read('word/document.xml')
+    # Try to read footnotes.xml if it exists
+    try:
+        footnote_xml_content = docx_zip.read('word/footnotes.xml')
+        footnote_tree = etree.fromstring(footnote_xml_content)
+    except KeyError:
+        footnote_xml_content = None
+        footnote_tree = None
+
+doc_tree = etree.fromstring(xml_content)
+
+
+whole_text = extract_full_text_with_footnotes_track(doc_tree, footnote_tree)
+
+# # Parse the footnotes XML
+footnote_tree = etree.fromstring(xml_content)
+
+# Pretty print and save to a file
+pretty_footnote_xml = etree.tostring(
+    footnote_tree,
+    pretty_print=True,
+    encoding='utf-8',
+    xml_declaration=True
+)
+
+
+whole_text = flatten_trace(whole_text)
+with open("doc_document_xml.xml", 'wb') as f:
+    f.write(pretty_footnote_xml)
+
+# You can now use `raw_text` in another application or write it to a file
+with open('test_doc_iiioutput.txt', 'w', encoding="utf-8") as f:
+    f.write(whole_text)
+
+
+# In[776]:
+
+
+lines = whole_text.split('\n')
+
+
+# In[777]:
+
+
+print(lines[:30])  # Print the first 5 lines to verify the output
+
+
+# In[778]:
+
+
+xml_text=[]
+
+
+# In[779]:
+
+
+for i,line in enumerate(lines):
+    if "<field>" in line:
+        # print(i)
+        break
+    
+#added first pheonix line
+xml_text = lines[i].split("</field>")[-1].strip()
+
+
+#Chapter start
+xml_text += "\n<chapter>"
+j=0
+
+#Adding Metadata block
+metadata_text = extract_text_between_tags(lines[i+1])[0]
+if metadata_text.startswith("ch.rh"):
+    metadata_value = metadata_text.split("=")[1].replace('"', '').replace("'", "").strip()
+    xml_text += f"\n<metadata.block><metadata field=\"right.running.head\"><value>{metadata_value}</value></metadata></metadata.block>"
+xml_text += "\n<front>"
+
+
+# Adding outline name block
+if "Chapter".lower() in lines[i+1].lower():
+    remainder_line = lines[i+1].split("Chapter")[-1].strip().split(" ")
+    xml_text += f"\n<outline.name.block><label>Chapter</label><designator>{remainder_line[0]}</designator><name>{remainder_line[1]}</name></outline.name.block>"
+    i += 1  # Skip the next line as it has been processed
+
+if "Scope Statement".lower() in lines[i+1].lower():
+    xml_text += "\n<scope.statement.block>"
+    xml_text += f"\n<para><para.text>{lines[i+2]}</para.text></para>"
+    xml_text += "\n</scope.statement.block>"
+    i += 2  # Skip the next two lines as they have been processed
+
+if "Treated Elsewhere".lower() in lines[i+1].lower():
+    xml_text += "\n<treated.elsewhere.block>"
+    treated_text, index = get_ending_treated(lines[i+2:])
+    index = i + 2 + index  # Adjust index to account for the lines processed
+    treated_text = process_x_lines(treated_text)
+    xml_text += f"\n{("\n".join(treated_text))}"
+    xml_text += "\n</treated.elsewhere.block>"
+    i = index  # Skip the processed lines
+# print(i)
+if "Research References".lower() in lines[i].lower():
+    # xml_text += "\n<research.reference.block>"
+    # reference_text, j = find_r_block_ending(lines[i+1:])
+    ref_block, j = build_reference_block(lines[i+1:])
+    xml_text += "\n" + ref_block
+    # xml_text += "\n".join(reference_text)
+    # xml_text += "\n</research.reference.block>"
+
+xml_text += "\n</front>"
+i += j+1 # Skip the next j lines as they have been processed
+# print(j)
 
 
 # In[ ]:
@@ -2905,100 +3008,313 @@ def process_section(section, s_xml_text):
 
 
 
+
+# In[780]:
+
+
+second_set_lines = lines[i:]  
+s_xml_text = [] 
+
+
+# In[781]:
+
+
+print(xml_text)
+
+
+# In[782]:
+
+
+s_xml_text
+
+
+# In[783]:
+
+
+s_xml_text.append("<chapter.body>")
+
+parts = split_text_by_continuous_roman_numerals(second_set_lines)
+# parts = [parts[1]]  # Assuming you want to process only the second part as per your original code
+print("Parts", len(parts))
+if len(parts) > 1:
+    for i, part in enumerate(parts, start=1):
+        #look for analytical block
+        first_line = part.split("\n")[0].strip()
+        s_xml_text.append("<analytical.level>")
+        s_xml_text.append("<front>\n<outline.name.block>")
+        s_xml_text.append(f"<designator>{first_line.split(". ")[0]}</designator>")
+        s_xml_text.append(f"<name>{" ".join(first_line.split(". ")[1:])}</name>")
+        s_xml_text.append("</outline.name.block>\n</front>")
+
+        analytical_blocks = split_analytical_blocks(part.split("\n")[1:])  # Skip the first line which is the Roman numeral
+        if analytical_blocks:
+            s_xml_text.append("<analytical.level.body>")
+            for designator, lines in analytical_blocks.items():
+                # print("Analytical block found")
+                # s_xml_text.append("<analytical.level.body>")
+                s_xml_text.append("<analytical.level>")
+                s_xml_text.append("<front>\n<outline.name.block>")
+                s_xml_text.append(f"<designator>{designator}</designator>")
+                s_xml_text.append(f"<name>{" ".join(lines[0].split(". ")[1:])}</name>")
+                s_xml_text.append("</outline.name.block>\n</front>")
+                
+                # print(f"Processing analytical block: {designator}")
+                number_section = split_numeric_sections(lines[1:])  # Skip the first line which is the designator
+                
+                if number_section:
+                    # print("numeric sections found in analytical block:", designator)
+                    # print("Number of numeric sections:", number_section)
+                    s_xml_text.append("<analytical.level.body>")
+                    
+                    for n_section in number_section:
+                        # s_xml_text.append("<analytical.level.body>")
+                        s_xml_text.append("<analytical.level>")
+                        s_xml_text.append("<front>\n<outline.name.block>")
+                        s_xml_text.append(f"<designator>{n_section[0].split('.')[0]}</designator>")
+                        s_xml_text.append(f"<name>{" ".join(n_section[0].split('.')[1:])}</name>")
+                        s_xml_text.append("</outline.name.block>\n</front>")
+                        # print(f"Processing section: {section[0]}")
+                        # print(f"Lines in section: {len(section)}")
+                        print("n_section", n_section)
+                        section_blocks = split_into_sections(n_section[1:])
+                        # print("Section blocks found:", section_blocks)
+                        s_xml_text.append("<analytical.level.body>")
+                        s_xml_text = main_section(s_xml_text, section_blocks)
+                        s_xml_text.append("</analytical.level>")
+                    s_xml_text.append("</analytical.level.body>")
+                        
+                else:
+                    # print("No numeric sections found in analytical block:", designator)
+                    section_blocks = split_into_sections(lines[1:])
+                    s_xml_text.append("<analytical.level.body>")
+                    s_xml_text = main_section(s_xml_text, section_blocks)
+                    s_xml_text.append("</analytical.level.body>")
+                s_xml_text.append("</analytical.level>")
+                # s_xml_text.append("</analytical.level.body>")
+                
+        
+            s_xml_text.append("</analytical.level.body>")
+            s_xml_text.append("</analytical.level>")
+        else:
+            print("No analytical blocks found in the part.")
+            section_blocks = split_into_sections(lines[1:])
+            s_xml_text.append("<analytical.level.body>")
+            s_xml_text = main_section(s_xml_text, section_blocks)
+            s_xml_text.append("</analytical.level.body>")
+
+else:
+    print("The Roman numerals are not continuous. No sections were extracted.")
+    section_blocks = split_into_sections(lines[1:])
+    s_xml_text = main_section(s_xml_text, section_blocks)
+
+s_xml_text.append("</chapter.body>")
+s_xml_text.append("</chapter>")
+
+
+# In[784]:
+
+
+test_xml=[]
+
+
+# In[785]:
+
+
+for line in s_xml_text:
+    if "<chapter.body>" in line:
+        test_xml.append(line)
+
+
+# In[786]:
+
+
+test_xml
+
+
+# In[787]:
+
+
+xml_text
+
+
+# In[788]:
+
+
+final_xml = xml_text + '\n' + "\n".join(s_xml_text)
+
+
+# In[789]:
+
+
+decoded_text = ""
+
+
+# In[790]:
+
+
+entity_mapping = {
+    # '&dblsect;': '__dblsect__',
+    # '&mdash;': '__mdash__',
+    # '&ldquo;': '__ldquo__',
+    # '&rdquo;': '__rdquo__',
+    # '&sect;': '__sect__',
+    # '&dblpara;': '__dblpara__',
+    # '&dollar;': '__dollar__',
+    # '&para;': '__para__',
+    # '&percnt;': '__percnt__',
+    # '&lsqb;': '__lsqb__',
+    # '&rsqb;': '__rsqb__',
+    # '&hellip;': '__hellip__',
+    # '&brace;': '__brace__',
+    # '&emsp;': '__emsp__',
+    # '&ndash;': '__ndash__',
+    # '&bull;': '__bull__',
+    # '&ballot;': '__ballot__',
+    '§':'',
+    '&ss;': '&dblsect;',
+    '&s;': '&sect;',
+    '&pp;': '&dblpara;',
+    '&p;': '&para;',
+    '&b;': '&bull;',
+    '[': '&lsqb;',
+    ']': '&rsqb;',
+    '<trace.deleted/><trace>': '<trace>',
+    '<finstr>': '<inline.instr>',
+    '</finstr>': '</inline.instr>',
+    '►' : '',
+    '&ldquo;': '',
+    '&rdquo;': '',
+    ' & ': ' &amp; ',
+    '.</rc>':'</rc>.',
+    '.</tk>':'</tk>.',
+    '.</wd>':'</wd>.',
+    '.</x>':'</x>.',
+    '--':'<sep/>',
+    '&percnt;': '',
+    '<br>':'\n',
+    '</form>\n</para>':'</form>',
+    '\n\n':"\n"
+}
+
+def replace_entities(text, entity_mapping):
+    # Replace all occurrences of entities in the text
+    for entity, value in entity_mapping.items():
+        text = text.replace(entity, value)
+    return text
+
+decoded_text = replace_entities(final_xml, entity_mapping)
+
+# print(decoded_text)
+
+
+# In[791]:
+
+
+decoded_lines = decoded_text.split("\n")
+final_tagged_lines = []
+trace_buffer = []
+for line in decoded_lines:
+    # if line.startswith('<trace>'):
+    #     trace_buffer.append(line)
+    # else:
+    #     if trace_buffer:
+    #         response_trace = find_closing_tag_llm(trace_buffer, "71b000bf-ad60-47a3-b4a8-20e419509782")
+    #         trace_buffer = []
+    #         final_tagged_lines.append(response_trace)
+    #     else:
+    final_tagged_lines.append(line)
+        # Optionally process non-trace lines here
+
+# If the file ends with trace lines, process any remaining traces
+if trace_buffer:
+    find_closing_tag_llm(trace_buffer, "71b000bf-ad60-47a3-b4a8-20e419509782")
+
+
+# In[792]:
+
+
+for i, line in enumerate(final_tagged_lines):
+    trace_count = len(re.findall(r"<trace>", line))
+    
+    # If the line starts with the target string and <trace> occurs only once
+    if line.strip().startswith("<reference.entry><ref.text><trace>") and trace_count == 1:
+        # Replace the start of the line
+        final_tagged_lines[i] = re.sub(
+            r"<reference\.entry><ref\.text><trace>",
+            "<reference.entry date.trace=\"1\"><ref.text>",
+            final_tagged_lines[i]
+        )
+        final_tagged_lines[i] = re.sub(r"</trace>", "", final_tagged_lines[i])
+    
+    
+    
+    
+
+
+# In[793]:
+
+
+text = "\n".join(final_tagged_lines)
+
+
+# In[794]:
+
+
+# Split text into lines
+lines = text.split('\n')
+
+# Process each line
+new_lines = []
+for line in lines:
+    words = line.split()
+    new_words = []
+    for word in words:
+        if '&' in word and ';' not in word:
+            word = word.replace('&', '&amp;')
+        new_words.append(word)
+    new_line = ' '.join(new_words)
+    new_lines.append(new_line)
+
+# Join lines back with line breaks
+new_text = '\n'.join(new_lines)
+
+
+# In[795]:
+
+
+final_tagged_lines = new_text.split("\n")
+
+
+# In[796]:
+
+
+# final_xml_text = re.sub('<field><para ct.id="(.*?)"</field>', '<para ct.id="\1">', decoded_text)
+
+
+# In[797]:
+
+
+with open("temp_files/test.xml", 'w', encoding="utf-8") as f:
+    # f.write(xml_text)
+    # f.write("\n".join(s_xml_text))
+    f.write(("\n".join(final_tagged_lines)).replace("<tagged>","").replace("</tagged>","").replace("\n\n","\n"))
+# s_xml_text
+
+
+# In[798]:
+
+
+# print(xml_text)
+# print("\n".join(s_xml_text))
+
+
 # In[ ]:
-def handle_entities(final_xml):
-
-    entity_mapping = {
-        # '&dblsect;': '__dblsect__',
-        # '&mdash;': '__mdash__',
-        # '&ldquo;': '__ldquo__',
-        # '&rdquo;': '__rdquo__',
-        # '&sect;': '__sect__',
-        # '&dblpara;': '__dblpara__',
-        # '&dollar;': '__dollar__',
-        # '&para;': '__para__',
-        # '&percnt;': '__percnt__',
-        # '&lsqb;': '__lsqb__',
-        # '&rsqb;': '__rsqb__',
-        # '&hellip;': '__hellip__',
-        # '&brace;': '__brace__',
-        # '&emsp;': '__emsp__',
-        # '&ndash;': '__ndash__',
-        # '&bull;': '__bull__',
-        # '&ballot;': '__ballot__',
-        '§':'',
-        '&ss;': '&dblsect;',
-        '&s;': '&sect;',
-        '&pp;': '&dblpara;',
-        '&p;': '&para;',
-        '&b;': '&bull;',
-        '[': '&lsqb;',
-        ']': '&rsqb;',
-        '<trace.deleted/><trace>': '<trace>',
-        '<finstr>': '<inline.instr>',
-        '</finstr>': '</inline.instr>',
-        '►' : '',
-        '&ldquo;': '',
-        '&rdquo;': '',
-        ' & ': ' &amp; ',
-        '.</rc>':'</rc>.',
-        '.</tk>':'</tk>.',
-        '.</wd>':'</wd>.',
-        '.</x>':'</x>.',
-        '--':'<sep/>',
-        '&percnt;': '',
-        '<br>':'\n',
-        '</form>\n</para>':'</form>'
-    }
-
-    def replace_entities(text, entity_mapping):
-        # Replace all occurrences of entities in the text
-        for entity, value in entity_mapping.items():
-            text = text.replace(entity, value)
-        return text
-
-    decoded_text = replace_entities(final_xml, entity_mapping)
-    return decoded_text
-
-
-if "__main__" == __name__:
-    input_folder = r".\Input"
-    output_folder = r".\Output"
-
-    for filename in os.listdir(input_folder):
-        if filename.lower().endswith(".docx"):
-            docx_path = os.path.join(input_folder, filename)
-            whole_text = process_docx(docx_path)
-            lines = whole_text.split('\n')
-
-            for i, line in enumerate(lines):
-                if "<field>" in line:
-                    break        
-
-            xml_text = lines[i].split("</field>")[-1].strip()
-            xml_text += "\n<chapter>"
-
-            metadata_text = extract_text_between_tags(lines[i+1])[0]
-            if metadata_text.startswith("ch.rh"):
-                metadata_value = metadata_text.split("=")[1].replace('"', '').replace("'", "").strip()
-                xml_text += f"\n<metadata.block><metadata field=\"right.running.head\"><value>{metadata_value}</value></metadata></metadata.block>"
-            xml_text += "\n<front>"
-
-            xml_text, i = add_inital_tags(xml_text)
-            second_set_lines = lines[i:]  
-            s_xml_text = [] 
-            s_xml_text = process_chapter_body(second_set_lines, s_xml_text)
-            final_xml = xml_text + '\n' + "\n".join(s_xml_text)
-
-            entities_handled = handle_entities(final_xml)
-
-            output_filename = os.path.splitext(filename)[0] + ".txt"
-            output_path = os.path.join(output_folder, output_filename)
-            with open(output_path, 'w', encoding="utf-8") as f:
-                f.write(entities_handled)
 
 
 
+
+
+# In[ ]:
 
 
 
