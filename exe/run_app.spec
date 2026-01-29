@@ -1,4 +1,5 @@
 # -*- mode: python ; coding: utf-8 -*-
+
 from PyInstaller.utils.hooks import collect_data_files
 from PyInstaller.utils.hooks import copy_metadata
 
@@ -6,13 +7,12 @@ datas = [('app.py', '.')]
 datas += collect_data_files('streamlit')
 datas += copy_metadata('streamlit')
 
-
 a = Analysis(
     ['run_app.py'],
     pathex=[],
     binaries=[],
     datas=datas,
-    hiddenimports=['streamlit.runtime.scriptrunner.magic_funcs','win32com','win32com.client', 'streamlit', 'openai'],
+    hiddenimports=['streamlit.runtime.scriptrunner.magic_funcs', 'openai', 'win32com', 'websocket'],
     hookspath=[],
     hooksconfig={},
     runtime_hooks=[],
